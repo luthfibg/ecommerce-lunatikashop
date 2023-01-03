@@ -284,6 +284,7 @@ hr {
 
 footer {
   background-color: #222;
+  /* bottom: 0; */
 }
 
 footer h5 {
