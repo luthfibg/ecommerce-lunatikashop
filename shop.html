@@ -17,37 +17,70 @@
     <title>Lunatika Shop</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+    
+    <!-- <section class="headband fixed-top">
+      <div class="container">
+        <h6>Lunatika</h6>     
+      </div>
+    </section> -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <!-- <a class="navbar-brand" href="#">
             <img src="assets/logo/lunatika-shop50[bgless].png" alt="" />
-          </a>
+          </a> -->
+          <span class="logo-holder">Lunatika</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span id="menu_bar"><i class="fas fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link nav-link-special" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link nav-link-special" href="#">Trade Center</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link nav-link-special" href="#">Statistics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link nav-link-special" href="#">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link nav-link-special" href="#">Contact Us</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <i class="fas fa-search"></i>
                 <i class="fas fa-shopping-bag"></i>
-              </li>
+              </li> -->
           </div>
         </div>
+    </nav>
+    <nav class="navbar navbar-shadow navbar-expand-md navbar-light sticky-top bg-white py-5">
+      <div class="container">
+        <span style="font-size: 11.5pt; color: springgreen;">Categories</span>
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="ms-3 collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <i class="fas fa-history"></i>                   
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-bell"></i>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-cart-shopping"></i>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
     </nav>
 
     <section id="featured my-5 pb-5">
@@ -118,6 +151,76 @@
             <button class="buy-btn">Buy Now</button>
           </div>
         </div>
+    </section>
+
+    <section id="featured my-5 pb-5">
+      <div class="container text-center mt-5 py-5">
+        <h3>Our Featured</h3>
+        <hr class="mx-auto">
+        <p>Here you can check out our new products with fair price</p>
+      </div>
+      <div class="row mx-auto container">
+        <div class="product text-center col-lg-3 col-12">
+          <div class="img-container">
+            <img src="assets/products/prod-avr64dd32.jpeg" alt="product1" class="img-fluid mb-3">
+          </div>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Atmel AVR64DD32</h5>
+          <h4 class="p-price">$29.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-12">
+          <div class="img-container">
+            <img src="assets/products/prod002-avr128db48.png" alt="product2" class="img-fluid mb-3">
+          </div>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Atmel AVR128DB48</h5>
+          <h4 class="p-price">$43.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-12">
+          <div class="img-container">
+            <img src="assets/products/prod006-arduinomega2560rev3.png" alt="product3" class="img-fluid mb-3">
+          </div>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Arduino Mega2560 R3</h5>
+          <h4 class="p-price">$39.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product text-center col-lg-3 col-12">
+          <div class="img-container">
+            <img src="assets/products/prod004-attiny1627.png" alt="product4" class="img-fluid mb-3">
+          </div>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5 class="p-name">Atmel ATtiny16727</h5>
+          <h4 class="p-price">$34.00</h4>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
     </section>
 
     <footer class="mt-5 py-5">

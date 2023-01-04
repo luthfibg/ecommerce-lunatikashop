@@ -40,11 +40,32 @@ h6 {
   color: #d8d8d8;
 }
 
-.navbar {
-  font-size: 15px;
+.logo-holder {
+  font-size: 12.5pt;
+  color: #d8d8d8;
+}
+
+.nav-link-special {
+  opacity: 0.5;
+}
+
+/* .headband {
+  font-size: 12px;
   top: 0;
   left: 0;
-  box-shadow: 0 1px 5px #ddd;
+  height: 25px;
+  width: 100%;
+} */
+.navbar {
+  font-size: 14px;
+  top: 0;
+  left: 0;
+  height: 50px;
+}
+
+.navbar-shadow {
+  box-shadow: 0 1px 6px #ddd;
+  clip-path: inset(0 0 0 0);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -93,7 +114,7 @@ h6 {
 }
 
 #navbarSupportedContent > ul {
-  margin: 1rem;
+  /* margin: 1rem 1rem 1rem 0; */
   justify-content: flex-end;
   align-items: flex-end;
 }
