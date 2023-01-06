@@ -33,7 +33,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span id="menu_bar"><i class="fas fa-bars"></i></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="c" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a class="nav-link nav-link-special" href="#">About Us</a>
@@ -75,6 +75,23 @@
               <i class="fas fa-cart-shopping"></i>
             </li>
           </ul>
+          <div class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between" style="font-size: 13pt;">
+            <a href="#">
+              <span class="badge rounded-pill bg-secondary">chips</span>
+            </a>
+            <a href="#" class="ms-3">
+              <span class="badge rounded-pill bg-secondary">wires</span>
+            </a>
+            <a href="#" class="ms-3">
+              <span class="badge rounded-pill bg-secondary">sensors</span>
+            </a>
+            <a href="#" class="ms-3">
+              <span class="badge rounded-pill bg-secondary">actuators</span>
+            </a>
+            <a href="#" class="ms-3">
+              <span class="badge rounded-pill bg-secondary">powers</span>
+            </a>
+          </div>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -89,10 +106,18 @@
           <hr class="mx-auto">
           <p>Here you can check out our new products with fair price</p>
         </div>
-        <div class="row mx-auto container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 container">
+          <div class="col">
+            <div class="card h-100">
+              <img src="assets/products/prod-avr64dd32.jpeg" alt="product1" class="img-fluid mb-3">
+              <div class="card-body">
+                <h5 class="card-title">AVR-64DD32</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
           <div class="product text-center col-lg-3 col-12">
             <div class="img-container">
-              <img src="assets/products/prod-avr64dd32.jpeg" alt="product1" class="img-fluid mb-3">
             </div>
             <div class="star">
               <i class="fas fa-star"></i>
