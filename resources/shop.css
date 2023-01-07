@@ -1,0 +1,15 @@
+.card-header {
+  width: 100%;
+  height: 50%;
+}
+.card-text {
+  font-size: 10pt;
+}
+
+.fa-tag-custom {
+  color: brown;
+}
+
+.fa-map-marker-alt-custom {
+  color: springgreen;
+}
