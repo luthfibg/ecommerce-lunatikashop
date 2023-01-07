@@ -13,3 +13,8 @@
 .fa-map-marker-alt-custom {
   color: springgreen;
 }
+
+.badge.bg-danger {
+  background-color: rgb(255, 147, 147) !important;
+  color: black !important;
+}
