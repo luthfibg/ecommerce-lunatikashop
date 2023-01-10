@@ -240,6 +240,11 @@ hr {
   text-align: center;
 }
 
+.card-wrapper {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
 .img-container {
   display: flex;
   align-items: center;
@@ -274,7 +279,7 @@ hr {
 }
 
 .star {
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 .star i {

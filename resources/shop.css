@@ -32,3 +32,25 @@
   flex-basis: 24%;
   cursor: pointer;
 }
+
+.product-etalase-title {
+  color: #696969;
+}
+
+section .row div div input {
+  width: 55px !important;
+}
+
+section .row div div button {
+  font-size: 10pt !important;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+section .row div h2 {
+  color: orangered;
+}
+
+.card-links {
+  opacity: 0.7;
+}
