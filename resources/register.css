@@ -1,0 +1,36 @@
+#register-form {
+  width: 80%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid springgreen;
+}
+
+#register-form input {
+  width: 100%;
+  margin: 5px auto;
+}
+
+#register-form #btn-submit {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #register-form input {
+    width: 100%;
+    margin: 5px auto;
+  }
+  #register-form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  #register-form input {
+    width: 65%;
+    margin: 5px auto;
+  }
+  #register-form {
+    width: 50%;
+  }
+}

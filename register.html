@@ -24,16 +24,22 @@
       <div class="mx-auto container mt-5">
         <form action="" id="register-form">
           <div class="form-group">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" required autocomplete="off" />
+          </div>
+          <div class="form-group">
             <input type="text" class="form-control" name="email" id="email" placeholder="Email" required autocomplete="off" />
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="password" id="password" placeholder="Password" required />
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required />
           </div>
           <div class="form-group">
-            <input type="submit" class="btn btn-success btn-submit" name="btn-login" id="btn-login" value="Login" />
+            <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required />
           </div>
           <div class="form-group">
-            <a href="#" class="btn-link text-decoration-none">Don't have account yet, registrate me</a>
+            <input type="submit" class="btn btn-success btn-submit" name="btn_register" id="btn_register" value="Register" />
+          </div>
+          <div class="form-group">
+            <a href="login.html" class="btn-link text-decoration-none">I have already have an account</a>
           </div>
         </form>
       </div>
