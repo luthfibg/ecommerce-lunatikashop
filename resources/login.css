@@ -1,0 +1,30 @@
+#login-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid springgreen;
+}
+
+#login-form input {
+  width: 100%;
+  margin: 5px auto;
+}
+
+#login-form #btn-submit {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #login-form input {
+    width: 100%;
+    margin: 5px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #login-form input {
+    width: 65%;
+    margin: 5px auto;
+  }
+}
