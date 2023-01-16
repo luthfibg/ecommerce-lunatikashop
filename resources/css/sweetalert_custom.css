@@ -1,0 +1,31 @@
+@import 'theme.css';
+
+.swal-modal {
+  background-color: var(--dark-second);
+  color: var(--light-primary);
+}
+
+.swal-title {
+  color: var(--light-primary);
+  font-size: 20px;
+}
+
+.swal-text {
+  color: var(--light-primary);
+  font-size: 14px;
+}
+
+.swal-icon--success:before,
+.swal-icon--success,
+.swal-icon--success:after,
+.swal-icon--success__hide-corners {
+  background: none !important;
+}
+
+.swal-icon--success__line--tip {
+  background-color: #a5dc85;
+}
+
+.swal-button {
+  background-color: var(--component-orange);
+}

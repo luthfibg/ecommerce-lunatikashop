@@ -26,6 +26,7 @@ $success_msg[] = 'Sweet Alert Success';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="resources/css/product.css">
+    <link rel="stylesheet" href="resources/css/sweetalert_custom.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
     <title> Lunatika Shop </title>
@@ -52,8 +53,8 @@ $success_msg[] = 'Sweet Alert Success';
     
     <script src="resources/js/product.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="components/alert.php"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <?php include 'components/alert.php' ?>
   </body>
 </html>
