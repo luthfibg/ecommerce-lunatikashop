@@ -9,16 +9,7 @@
     <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4/css/metro-all.min.css">
 
     <link rel="stylesheet" href="../resources/css/responsive_style.css">
-    <title>Admin Login</title>
+    <title>Lunatika Shop</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row d-flex flex-align-center">
-            
-        </div>
-    </div>    
-    
-    <!-- Metro UI -->
-    <script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
-  </body>
-</html>
+    <!-- below is content from ref -->
