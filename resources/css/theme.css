@@ -1,8 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900;800;600;500;400;300;200&display=swap');
 :root {
   --light-primary: #fffefe;
+  --light-shadow: #646464;
   --dark-base: #4c5460;
   --dark-second: #141416;
   --dark-warm: #3a3a3b;
   --component-orange: #ff592c;
   --component-livid: #61718a;
+}
+
+.title-lvl-1 {
+  font-size: 36pt;
+  font-weight: 800;
+  color: var(--light-primary) !important;
+  font-family: 'Mulish', sans-serif;
+  /* text-shadow: 3px 3px 3px var(--light-shadow); */
+}
+.title-lvl-2 {
+  font-size: 24pt;
+  font-weight: 600;
+  color: var(--light-primary) !important;
+  font-family: 'Mulish', sans-serif;
+  text-shadow: 2px 2px 2px var(--light-shadow);
+}
+.title-lvl-3 {
+  font-size: 16pt;
+  font-weight: 500;
+  color: var(--light-primary) !important;
+  font-family: 'Mulish', sans-serif;
+  text-shadow: 1px 1px 1px var(--light-shadow);
+}
+
+div {
+  font-family: 'Mulish', sans-serif;
+  color: var(--light-primary) !important;
+}
+
+.card {
+  background-color: var(--dark-second) !important;
+  border: none !important;
+}
+
+.component-tone {
+  background-color: var(--component-orange) !important;
 }

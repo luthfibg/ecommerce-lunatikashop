@@ -1,14 +1,16 @@
-<div class="card grid image-header w-50 p-3">
+<div class="card grid image-header w-50 p-3 mx-auto">
     <div class="row p-2 d-flex flex-justify-center">
-        Admin Login
+        <p class="title-lvl-3">Admin Login</p>
     </div>
     <div class="row p-2 d-flex flex-column text-center">
-        <p class="fg-gray">Posted on January 21, 2015</p>
-        Quisque eget vestibulum nulla. Quisque quis dui quis ex
-        ultricies efficitur vitae non felis. Phasellus quis nibh
-        hendrerit...
-    </div>
-    <div class="row d-flex p-2 flex-justify-center">
-        <button class="button secondary">Login</button>
+        <form>
+            <div class="mb-3">
+                <input type="email" data-role="input" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button class="button secondary component-tone">Login</button>
+        </form>
     </div>
 </div>
