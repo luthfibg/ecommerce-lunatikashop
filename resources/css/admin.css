@@ -6,7 +6,7 @@
   max-width: 1200px;
   margin: 0 auto;
   background-color: var(--component-livid);
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -14,12 +14,12 @@
 }
 
 .message span {
-  font-size: 2rem;
+  font-size: 0.9rem;
   color: var(--light-primary);
 }
 
 .message i {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: var(--component-orange);
   cursor: pointer;
 }
