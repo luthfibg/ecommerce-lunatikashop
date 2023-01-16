@@ -6,17 +6,27 @@ container {
   .container {
     max-width: 540px;
   }
+  /* .card {
+    width: 60% !important;
+    height: auto;
+  } */
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
+  .card {
+    width: 50% !important;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+  .card {
+    width: 25% !important;
   }
 }
 

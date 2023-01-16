@@ -31,6 +31,7 @@
   text-shadow: 1px 1px 1px var(--light-shadow);
 }
 
+*,
 div {
   font-family: 'Mulish', sans-serif;
   color: var(--light-primary) !important;

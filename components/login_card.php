@@ -1,4 +1,4 @@
-<div class="card grid image-header w-50 p-3 mx-auto">
+<div class="card image-header w-75 w-50-sm w-25-lg p-3">
     <div class="row p-2 d-flex flex-justify-center">
         <p class="title-lvl-3">Admin Login</p>
     </div>
@@ -7,10 +7,10 @@
             <div class="mb-3">
                 <input type="email" oninput="this.value = this.value.replace(/\s/g, '')" data-role="input" class="form-control" id="exampleInputEmail1" placeholder="Email">
             </div>
-            <div class="mb-3">
+            <div class="mb-5">
                 <input type="password" oninput="this.value = this.value.replace(/\s/g, '')" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <button class="button secondary component-tone">Login</button>
+            <input type="submit" name="submit_login" class="button secondary component-tone mt-5" value="Login">
         </form>
     </div>
 </div>
