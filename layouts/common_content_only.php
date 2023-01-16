@@ -15,12 +15,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../resources/css/responsive_style.css">
     <link rel="stylesheet" href="../resources/css/theme.css">
     <title> <?php echo $title; ?> </title>
   </head>
   <body style="background-color: var(--dark-base);">
     <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center">
+        <?php 
+        if (isset($message)) {
+          foreach ($message as $message) {
+            echo '
+            <div class="message">
+              <span>'.$message.'</span>
+              <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+            </div>
+            ';
+          }
+        }
+        ?>
         <?php include($content); ?>
     </div>
     
