@@ -5,6 +5,14 @@ a {
   text-decoration: none !important;
 }
 
+body {
+  background-color: var(--dark-base);
+}
+
+body i {
+  margin: 5px;
+}
+
 .dropdown-toggle::before {
   display: none !important;
 }

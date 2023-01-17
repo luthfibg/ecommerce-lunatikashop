@@ -1,5 +1,9 @@
 @import 'theme.css';
 
+body {
+  background-color: var(--dark-base) !important;
+}
+
 body i {
   margin: 10px;
 }

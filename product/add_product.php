@@ -29,10 +29,10 @@ include('../components/connection.php');
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="resources/css/product.css">
-    <link rel="stylesheet" href="resources/css/sweetalert_custom.css">
-    <link rel="stylesheet" href="resources/css/responsive_style.css">
-    <link rel="stylesheet" href="resources/css/theme.css">
+    <link rel="stylesheet" href="../resources/css/product.css">
+    <link rel="stylesheet" href="../resources/css/sweetalert_custom.css">
+    <link rel="stylesheet" href="../resources/css/responsive_style.css">
+    <link rel="stylesheet" href="../resources/css/theme.css">
     <title> Lunatika Shop </title>
 </head>
 

@@ -1,5 +1,5 @@
 <header class="header">
-  <!-- <section class="flex">
+  <section class="flex">
     <a href="../product/add_product.php" class="logo">Logo.</a>
     <nav class="navbar">
       <a href="../product/add_product.php">
@@ -18,8 +18,8 @@
         <span>(<?= $total_cart_items; ?>)</span>
       </a>
     </nav>
-  </section> -->
-  <nav class="navbar">
+  </section>
+  <!-- <nav class="navbar">
     <ul class="h-menu mega">
       <li><a href="#">Home</a></li>
       <li>
@@ -57,5 +57,5 @@
       </li>
       <li><a href="#">Cart</a></li>
     </ul>
-  </nav>
+  </nav> -->
 </header>
