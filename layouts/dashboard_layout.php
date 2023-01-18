@@ -1,3 +1,13 @@
+<?php
+include('../components/connect.php');
+
+session_start();
+
+$admin_id = $_SESSION['admin_id'];
+if (!isset($admin_id)) {
+    header('location:admin_login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,5 +61,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+<?php include '../components/admin_header.php' ?>
 
 </html>
