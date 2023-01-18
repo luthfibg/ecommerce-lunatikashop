@@ -1,5 +1,18 @@
+<?php
+if (isset($message)) {
+    foreach ($message as $message) {
+        echo '
+            <div class="message w-75 w-50-sm w-25-lg">
+              <span>' . $message . '</span>
+              <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+            </div>
+            ';
+    }
+}
+?>
+
 <header class="header">
-    <section class="flex">
+    <section class="flex container">
         <a href="dashboard.php" class="logo">Admin
             <span>Panel</span>
         </a>
@@ -21,13 +34,15 @@
             $select_profile->execute([$admin_id]);
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
             ?>
-            <p><? $fetch_profile['name']; ?></p>
-            <a href="update_profile.php" class="btn">Update Profile</a>
+            <p>
+                <? $fetch_profile['name']; ?>
+            </p>
+            <a href="update_profile.php" class="btn btn-sm btn-outline-success">Update Profile</a>
             <div class="flex-btn">
-                <a href="admin_login.php" class="btn btn-info btn-opt">Login</a>
-                <a href="admin_register.php" class="btn btn-info btn-opt">Register</a>
+                <a href="admin_login.php" class="btn btn-sm btn-outline-info btn-opt">Login</a>
+                <a href="admin_register.php" class="btn btn-sm btn-outline-info btn-opt">Register</a>
             </div>
-            <a href="components/admin_logout.php" class="btn btn-danger btn-delete">Logout</a>
+            <a href="components/admin_logout.php" class="btn btn-outline-danger btn-sm btn-delete">Logout</a>
         </div>
     </section>
 </header>

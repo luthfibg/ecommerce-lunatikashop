@@ -35,3 +35,43 @@ body {
 .message i:hover {
   color: var(--component-livid);
 }
+
+.btn,
+.btn-delete,
+.btn-opt {
+  display: block;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--light-primary);
+  padding: 1rem 3rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.flex-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+header section.flex a {
+  font-size: 18pt;
+  color: var(--light-primary);
+}
+
+header section.flex nav a,
+header section.flex .icons {
+  font-size: 11.5pt;
+  font-weight: 300;
+  color: var(--light-primary);
+}
+
+header section.flex .profile a {
+  font-size: 12pt;
+}
+
+header section.flex .profile .btn {
+  padding: 5px;
+}

@@ -2,6 +2,19 @@
   width: 100%;
 }
 
+@media (max-width: 575.98px) {
+  .flex-btn {
+    flex-flow: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html {
+    font-size: 55%;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

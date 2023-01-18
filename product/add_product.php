@@ -28,7 +28,7 @@
 
 <body style="background-color: var(--dark-base);">
     <?php
-    include('../components/connection.php');
+    include '../components/connection.php';
 
     // $success_msg[] = 'Sweet Alert Success';
     ?>
