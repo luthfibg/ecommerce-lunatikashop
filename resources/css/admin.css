@@ -131,4 +131,28 @@ header .flex .profile {
   border: 1px solid var(--light-primary);
   border-radius: 0.5rem;
   padding: 1.3rem;
+  width: 18rem;
+  display: none;
+  animation: fadeIn 0.2s linear;
+}
+
+header .flex .profile p {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--light-primary);
+}
+
+header .flex .profile.active {
+  display: inline-block;
+}
+
+#menu-btn {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(1rem);
+  }
 }

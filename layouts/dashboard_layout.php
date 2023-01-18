@@ -54,11 +54,10 @@ if (!isset($admin_id)) {
         // }
         ?> */
     </div> -->
-
-    <script src="../resources/js/admin.js"></script>
+    <?php include 'components/admin_header.php' ?>
+    <script src="resources/js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-<?php include 'components/admin_header.php' ?>
 
 </html>
