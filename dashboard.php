@@ -1,8 +1,8 @@
 <?php
 
 $title = 'Lunatika Shop';
-$header = 'components/header.php';
-$content = 'components/login_card.php';
+$header = 'components/admin_header.php';
+// $content = 'components/login_card.php';
 $footer = 'components/footer.php';
 include('components/connection.php');
 include('layouts/dashboard_layout.php');

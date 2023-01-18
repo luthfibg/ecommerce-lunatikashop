@@ -5,12 +5,12 @@ $header = '';
 $content = 'components/login_card.php';
 $footer = '';
 include('components/connection.php');
-include('layouts/common_content_only.php');
+include('layouts/login_layout.php');
 
 session_start();
 
 if (isset($_POST['submit_login'])) {
-    
+
     $name = $_POST['name'];
     $name = filter_var(htmlspecialchars($name));
     $pass = sha1($_POST['password']);
@@ -23,6 +23,7 @@ if (isset($_POST['submit_login'])) {
         $fetch_admin_id = $select_admin->fetch(PDO::FETCH_ASSOC);
         $_SESSION['admin_id'] = $fetch_admin_id['id'];
         $message[] = "you are logged in!";
+        header('location:dashboard.php');
     } else {
         $message[] = "incorrect username or password!";
     }
