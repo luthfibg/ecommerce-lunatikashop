@@ -31,7 +31,8 @@
 </head>
 
 <body style="background: var(--dark-base);">
-  <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
+  <div
+    class="container mw-100 h-100 pos-absolute d-flex flex-justify-center flex-align-center justify-content-center align-items-center flex-column">
     <?php include($content); ?>
   </div>
 

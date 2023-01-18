@@ -4,9 +4,9 @@ body {
   background-color: var(--dark-base) !important;
 }
 
-body i {
+/* body i {
   margin: 10px;
-}
+} */
 
 .message {
   position: sticky;
