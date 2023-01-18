@@ -12,7 +12,7 @@ if (isset($message)) {
 ?>
 
 <header class="header">
-    <section class="flex container">
+    <section class="flex container py-3">
         <a href="dashboard.php" class="logo">Admin
             <span>Panel</span>
         </a>
