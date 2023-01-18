@@ -22,6 +22,12 @@
             $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
             ?>
             <p><? $fetch_profile['name']; ?></p>
+            <a href="update_profile.php" class="btn">Update Profile</a>
+            <div class="flex-btn">
+                <a href="admin_login.php" class="btn btn-info btn-opt">Login</a>
+                <a href="admin_register.php" class="btn btn-info btn-opt">Register</a>
+            </div>
+            <a href="components/admin_logout.php" class="btn btn-danger btn-delete">Logout</a>
         </div>
     </section>
 </header>

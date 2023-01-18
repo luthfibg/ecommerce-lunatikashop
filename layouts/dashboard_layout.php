@@ -1,5 +1,4 @@
 <?php
-include('../components/connect.php');
 
 session_start();
 
@@ -41,26 +40,25 @@ if (!isset($admin_id)) {
 </head>
 
 <body style="background: var(--dark-base);">
-    <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
-        <?php
-        if (isset($message)) {
-            foreach ($message as $message) {
-                echo '
-            <div class="message">
-              <span>' . $message . '</span>
-              <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
-            </div>
-            ';
-            }
-        }
-        ?>
-        <?php include($header); ?>
-    </div>
+    <!-- <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
+        /* <?php
+        // if (isset($message)) {
+        //    foreach ($message as $message) {
+        //       echo '
+        // <div class="message">
+        //   <span>' . $message . '</span>
+        //   <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+        // </div>
+        //   ';
+        //    }
+        // }
+        ?> */
+    </div> -->
 
     <script src="../resources/js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-<?php include '../components/admin_header.php' ?>
+<?php include 'components/admin_header.php' ?>
 
 </html>
