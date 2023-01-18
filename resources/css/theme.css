@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900;800;600;500;400;300;200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mulish:wght@900;800;600;500;400;300;200&display=swap');
 :root {
   --light-primary: #fffefe;
   --light-shadow: #646464;
@@ -7,6 +7,16 @@
   --dark-warm: #3a3a3b;
   --component-orange: #ff592c;
   --component-livid: #4e5b6e;
+}
+
+section {
+  margin: 0 auto !important;
+}
+
+* {
+  box-sizing: none;
+  text-decoration: none !important;
+  scrollbar-width: thin;
 }
 
 .title-lvl-1 {

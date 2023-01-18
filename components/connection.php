@@ -9,18 +9,20 @@ try {
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   echo '
-    <i class="fa-solid fa-circle-check"></i>
   ';
-} catch(PDOException $e) {
+  // <i class="fa-solid fa-circle-check"></i>
+
+} catch (PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
 
-function create_unique_id() {
+function create_unique_id()
+{
   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
   $characters_length = strlen($characters);
   $random_string = '';
 
-  for ($i=0; $i < 20; $i++) {
+  for ($i = 0; $i < 20; $i++) {
     $random_string .= $characters[mt_rand(0, $characters_length - 1)];
   }
   return $random_string;
