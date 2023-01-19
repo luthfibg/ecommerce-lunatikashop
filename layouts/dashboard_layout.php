@@ -67,6 +67,25 @@ if (!isset($admin_id)) {
 
             <div class="box">
                 <?php
+                $total_pendings = 0;
+                $select_pendings = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
+                $select_pendings->execute(['pending']);
+
+                while ($fetch_pendings = $select_pendings->fetch(PDO::FETCH_ASSOC)) {
+                    $total_pendings += $fetch_pendings['total_price'];
+                }
+                ?>
+
+                <h3>
+                    <span>$</span>
+                    <?= $total_pendings; ?>
+                    <span>/-</span>
+                </h3>
+                <p>Total Pendings</p>
+                <a href="placed_orders.php" class="btn btn-sm">View Pendings</a>
+            </div>
+            <div class="box">
+                <?php
                 $total_completes = 0;
                 $select_completes = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
                 $select_completes->execute(['completed']);
@@ -82,7 +101,29 @@ if (!isset($admin_id)) {
                     <span>/-</span>
                 </h3>
                 <p>Total Completes</p>
-                <a href="placed_orders.php" class="btn btn-sm">See Orders</a>
+                <a href="placed_orders.php" class="btn btn-sm">View Completed Orders</a>
+            </div>
+            <div class="box">
+                <?php
+                $select_orders = $conn->prepare("SELECT * FROM `orders`");
+                $select_orders->execute();
+                $num_of_orders = $select_orders->rowCount();
+                ?>
+
+                <h3><?= $num_of_orders; ?></h3>
+                <p>Total Orders</p>
+                <a href="placed_orders.php" class="btn btn-sm">View Orders</a>
+            </div>
+            <div class="box">
+                <?php
+                $select_products = $conn->prepare("SELECT * FROM `products`");
+                $select_products->execute();
+                $num_of_products = $select_products->rowCount();
+                ?>
+
+                <h3><?= $num_of_products; ?></h3>
+                <p>Amount Of Products</p>
+                <a href="placed_products.php" class="btn btn-sm">View Products</a>
             </div>
         </section>
     </div>
