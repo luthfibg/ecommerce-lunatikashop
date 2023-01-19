@@ -39,8 +39,8 @@ if (isset($message)) {
             </p>
             <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
             <div class="flex-btn">
-                <a href="admin_login.php" class="btn btn-sm btn-opt">Login</a>
-                <a href="admin_register.php" class="btn btn-sm btn-opt">Register</a>
+                <a href="login.php" class="btn btn-sm btn-opt">Login</a>
+                <a href="register.php" class="btn btn-sm btn-opt">Register</a>
             </div>
             <a href="components/admin_logout.php" class="btn btn-sm btn-delete">Logout</a>
         </div>
