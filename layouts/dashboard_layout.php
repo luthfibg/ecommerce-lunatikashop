@@ -125,6 +125,39 @@ if (!isset($admin_id)) {
                 <p>Amount Of Products</p>
                 <a href="placed_products.php" class="btn btn-sm">View Products</a>
             </div>
+            <div class="box">
+                <?php
+                $select_users = $conn->prepare("SELECT * FROM `users`");
+                $select_users->execute();
+                $num_of_users = $select_users->rowCount();
+                ?>
+
+                <h3><?= $num_of_users; ?></h3>
+                <p>Amount Of User</p>
+                <a href="user_accounts.php" class="btn btn-sm">View Users</a>
+            </div>
+            <div class="box">
+                <?php
+                $select_admins = $conn->prepare("SELECT * FROM `admins`");
+                $select_admins->execute();
+                $num_of_admins = $select_admins->rowCount();
+                ?>
+
+                <h3><?= $num_of_admins; ?></h3>
+                <p>Amount Of Admin</p>
+                <a href="admin_accounts.php" class="btn btn-sm">View Admins</a>
+            </div>
+            <div class="box">
+                <?php
+                $select_messages = $conn->prepare("SELECT * FROM `messages`");
+                $select_messages->execute();
+                $num_of_messages = $select_messages->rowCount();
+                ?>
+
+                <h3><?= $num_of_messages; ?></h3>
+                <p>New Messages</p>
+                <a href="messages.php" class="btn btn-sm">View Messages</a>
+            </div>
         </section>
     </div>
 

@@ -24,6 +24,7 @@ section {
   box-sizing: none;
   text-decoration: none !important;
   scrollbar-width: thin;
+  text-transform: capitalize;
 }
 
 .title-lvl-1 {
