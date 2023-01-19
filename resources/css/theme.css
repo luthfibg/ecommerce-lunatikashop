@@ -8,6 +8,7 @@
   --component-orange: #ff592c;
   --component-livid: #4e5b6e;
 
+  --min-box-shadow: 0 0 2px rgb(121, 120, 119);
   --box-shadow: 0 0 5px rgb(121, 120, 119);
   --bottom-clip-path: inset(0px 0px -5px 0px);
   --bottom-box-shadow: {

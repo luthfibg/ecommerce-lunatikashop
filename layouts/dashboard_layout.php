@@ -58,9 +58,11 @@ if (!isset($admin_id)) {
     <div class="container">
         <section class="dashboard">
             <div class="box">
-                <h3>Welcome</h3>
-                <p>
+                <h3>
                     <?= $fetch_profile['name'] ?>
+                </h3>
+                <p>
+                    Operator
                 </p>
                 <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
             </div>
