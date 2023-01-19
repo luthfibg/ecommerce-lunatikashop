@@ -42,7 +42,8 @@ if (isset($message)) {
                 <a href="login.php" class="btn btn-sm btn-opt">Login</a>
                 <a href="register.php" class="btn btn-sm btn-opt">Register</a>
             </div>
-            <a href="components/admin_logout.php" class="btn btn-sm btn-delete">Logout</a>
+            <a href="../logout.php" onclick="return confirm('Are you sure logout from this site?');"
+                class="btn btn-sm btn-delete">Logout</a>
         </div>
     </section>
 </header>
