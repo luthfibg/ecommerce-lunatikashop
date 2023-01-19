@@ -33,6 +33,20 @@
 <body style="background: var(--dark-base);">
   <div
     class="container mw-100 h-100 pos-absolute d-flex flex-justify-center flex-align-center justify-content-center align-items-center flex-column">
+    <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
+      <?php
+      if (isset($message)) {
+        foreach ($message as $message) {
+          echo '
+        <div class="message">
+          <span>' . $message . '</span>
+          <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+        </div>
+          ';
+        }
+      }
+      ?>
+    </div>
     <?php include($content); ?>
   </div>
 

@@ -24,12 +24,19 @@ if (isset($_POST['submit_register'])) {
     if ($select_admin->rowCount() > 0) {
         $message[] = 'User already exists';
     } else {
-        if ($pass != $conf_pass) {
-            $message[] = 'Password doesn\'t matched!';
+        if ($name == '' || $name == null) {
+            $message[] = 'Username or password cannot empty!';
+        } elseif ($pass == '' || $pass == null) {
+            $message[] = 'Username or password cannot empty!';
         } else {
-            $insert_admin = $conn->prepare("INSERT INTO `admins` (name, password) VALUES (?,?)");
-            $insert_admin->execute([$name, $conf_pass]);
-            $message[] = 'New admin registered';
+            if ($pass != $conf_pass) {
+                $message[] = 'Password doesn\'t matched!';
+            } else {
+                $insert_admin = $conn->prepare("INSERT INTO `admins` (name, password) VALUES (?,?)");
+                $insert_admin->execute([$name, $conf_pass]);
+                header('location:login.php');
+                $message[] = 'New admin registered';
+            }
         }
     }
 }
