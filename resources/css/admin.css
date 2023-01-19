@@ -42,6 +42,7 @@ body {
   outline-style: solid;
   outline-color: var(--component-orange) !important;
   background-color: transparent;
+  font-size: 12pt;
 }
 
 .btn:hover {

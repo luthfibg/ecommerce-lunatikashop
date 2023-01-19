@@ -62,6 +62,27 @@ if (!isset($admin_id)) {
                 <p>
                     <?= $fetch_profile['name'] ?>
                 </p>
+                <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
+            </div>
+
+            <div class="box">
+                <?php
+                $total_completes = 0;
+                $select_completes = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
+                $select_completes->execute(['completed']);
+
+                while ($fetch_completes = $select_completes->fetch(PDO::FETCH_ASSOC)) {
+                    $total_completes += $fetch_completes['total_price'];
+                }
+                ?>
+
+                <h3>
+                    <span>$</span>
+                    <?= $total_completes; ?>
+                    <span>/-</span>
+                </h3>
+                <p>Total Completes</p>
+                <a href="placed_orders.php" class="btn btn-sm">See Orders</a>
             </div>
         </section>
     </div>
