@@ -55,15 +55,17 @@ if (!isset($admin_id)) {
         ?> */
     </div> -->
     <?php include 'components/admin_header.php' ?>
+    <div class="container">
+        <section class="dashboard">
+            <div class="box">
+                <h3>Welcome</h3>
+                <p>
+                    <?= $fetch_profile['name'] ?>
+                </p>
+            </div>
+        </section>
+    </div>
 
-    <section class="dashboard">
-        <div class="box">
-            <h3>Welcome</h3>
-            <p>
-                <?= $fetch_profile['name'] ?>
-            </p>
-        </div>
-    </section>
     <script src="resources/js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
