@@ -1,10 +1,8 @@
 <?php
 include('components/connection.php');
-$select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
-$select_profile->execute([$admin_id]);
-$fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
 
 session_start();
+
 $admin_id = $_SESSION['admin_id'];
 if (!isset($admin_id)) {
     header('location:login.php');
@@ -44,6 +42,12 @@ if (!isset($admin_id)) {
 </head>
 
 <body style="background: var(--dark-base);">
+    <?php
+    $select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
+    $select_profile->execute([$admin_id]);
+    $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+    ?>
+    <?php include($header) ?>
     <div
         class="container mw-100 h-100 pos-absolute d-flex flex-justify-center flex-align-center justify-content-center align-items-center flex-column">
         <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">

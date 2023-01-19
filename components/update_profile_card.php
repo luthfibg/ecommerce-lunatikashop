@@ -7,7 +7,7 @@
     </div>
     <div class="row p-2 d-flex flex-column text-center">
         <form action="" method="POST">
-            <input type="text" name="old_pass" value="<?= $fetch_profile['password'] ?>">
+            <input type="hidden" name="old_pass" value="<?= $fetch_profile['password'] ?>">
             <div class="mb-3">
                 <input type="text" name="name" oninput="this.value = this.value.replace(/\s/g, '')" data-role="input"
                     class="form-control" id="inputUsername" value="<?= $fetch_profile['name'] ?>" placeholder="
