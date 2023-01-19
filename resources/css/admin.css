@@ -163,14 +163,20 @@ header .flex .profile.active {
 /**************************/
 /**************************/
 
-.dashboard {
+.dashboard h3 {
+  text-align: center;
+  font-size: 1.65rem;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+.dashboard .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
 }
 
-.dashboard .box {
+.dashboard .box-container .box {
   text-align: center;
   background-color: var(--dark-second);
   border: none;
@@ -180,22 +186,27 @@ header .flex .profile.active {
   padding: 1rem;
 }
 
-.dashboard .box h3 {
-  font-size: 1.4rem;
+.dashboard .box-container .box h3 {
+  font-size: 1.65rem;
   color: var(--light-primary);
   padding: 1.1rem;
   border-radius: 0.3rem;
+  text-transform: capitalize;
   background-color: var(--dark-warm);
 }
 
-.dashboard .box p {
-  font-size: 0.95rem;
+.dashboard .box-container .box h3 span {
+  color: var(--component-orange);
+}
+
+.dashboard .box-container .box p {
+  font-size: 1.65rem;
   color: var(--component-livid);
   margin: 0 0 5rem 0;
   padding: 0 1.1rem;
 }
 
-.dashboard .box .btn {
-  font-size: 1.035rem;
-  padding: 0.4rem 0.6rem;
+.dashboard .box-container .box .btn {
+  font-size: 1.435rem;
+  padding: 0.8rem 1.2rem;
 }

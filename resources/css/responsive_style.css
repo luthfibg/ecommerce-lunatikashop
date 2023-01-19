@@ -1,18 +1,7 @@
+@import 'theme.css';
+
 .container {
   width: 100%;
-}
-
-@media (max-width: 575.98px) {
-  .flex-btn {
-    flex-flow: column;
-    gap: 0;
-  }
-}
-
-@media (max-width: 991.98px) {
-  html {
-    font-size: 55%;
-  }
 }
 
 @media (min-width: 576px) {
@@ -44,6 +33,16 @@
   .card {
     width: 25% !important;
   }
+  .dashboard .box-container .box {
+    padding: 1.5rem;
+  }
+  .dashboard .box-container .box p {
+    font-size: 0.95rem;
+  }
+  .dashboard .box-container .box .btn {
+    font-size: 1.035rem;
+    padding: 0.4rem 0.6rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -56,4 +55,51 @@
   .container {
     max-width: 1360px;
   }
+}
+
+@media (max-width: 575.98px) {
+  .flex-btn {
+    flex-flow: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header section.flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-bottom: var(--light-border);
+    background-color: var(--dark-warm);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header section.flex .navbar a {
+    display: block !important;
+    margin: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  /* css rule */
+}
+
+@media (max-width: 1451.98px) {
+  /* css rule */
 }
