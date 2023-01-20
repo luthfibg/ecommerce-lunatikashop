@@ -12,6 +12,7 @@
             ?>
             <div class="box">
                 <img src="assets/images/<?= $fetch_products['image_01']; ?>" alt="Haylou GS">
+                <div class="name"><?= $fetch_products['name']; ?></div>
             </div>
             <?php
         }
