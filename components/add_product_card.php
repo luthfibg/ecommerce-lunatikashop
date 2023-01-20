@@ -1,4 +1,4 @@
-<div class="card image-header w-100 w-75-sm">
+<div class="card image-header w-100 w-75-sm w-50-lg">
     <div class="row p-2 d-flex flex-justify-center">
         <p class="title-lvl-3">Insert Product</p>
     </div>

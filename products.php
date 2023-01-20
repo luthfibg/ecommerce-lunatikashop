@@ -1,5 +1,7 @@
 <?php
 
+include('components/connection.php');
+
 session_start();
 
 $admin_id = $_SESSION['admin_id'];
@@ -8,7 +10,7 @@ if (!isset($admin_id)) {
 }
 
 if (isset($_POST['submit_add_product'])) {
-    $name = $_POST['name'];
+    $name = $_POST['product_name'];
     $name = filter_var(htmlspecialchars($name));
     $price = $_POST['price'];
     $price = filter_var(htmlspecialchars($price));
@@ -91,25 +93,22 @@ $title = 'Product Management';
 </head>
 
 <body style="background: var(--dark-base);">
-    <!-- <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
-        /* <?php
-        // if (isset($message)) {
-        //    foreach ($message as $message) {
-        //       echo '
-        // <div class="message">
-        //   <span>' . $message . '</span>
-        //   <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
-        // </div>
-        //   ';
-        //    }
-        // }
-        ?> */
-    </div> -->
     <?php include 'components/admin_header.php' ?>
-    <div class="container">
-        <section class="insert-product">
-            <?php include('components/add_product_card.php'); ?>
-        </section>
+    <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
+        <?php
+        $message = array();
+        if (isset($message)) {
+            foreach ($message as $message) {
+                echo '
+        <div class="message">
+          <span>' . $message . '</span>
+          <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
+        </div>
+          ';
+            }
+        }
+        ?>
+        <?php include('components/add_product_card.php'); ?>
     </div>
 
     <script src="resources/js/admin.js"></script>
