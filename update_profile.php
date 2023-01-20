@@ -21,11 +21,11 @@ if (isset($_POST['submit_update'])) {
     $fetch_previous_pass = $select_old_pass->fetch(PDO::FETCH_ASSOC);
     $previous_pass = $fetch_previous_pass['password'];
 
-    $old_pass = $_POST['old_password'];
+    $old_pass = sha1($_POST['old_password']);
     $old_pass = filter_var(htmlspecialchars($old_pass));
-    $new_pass = $_POST['new_password'];
+    $new_pass = sha1($_POST['new_password']);
     $new_pass = filter_var(htmlspecialchars($new_pass));
-    $confirm_pass = $_POST['confirm_new_password'];
+    $confirm_pass = sha1($_POST['confirm_new_password']);
     $confirm_pass = filter_var(htmlspecialchars($confirm_pass));
 
     if ($old_pass == $empty_pass) {
