@@ -39,6 +39,9 @@
   .dashboard .box-container .box {
     padding: 1.5rem;
   }
+  .dashboard .box-container .box h3 {
+    font-size: 1.35rem !important;
+  }
   .dashboard .box-container .box p {
     font-size: 0.95rem;
   }

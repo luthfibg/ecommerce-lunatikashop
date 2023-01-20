@@ -57,7 +57,7 @@ if (!isset($admin_id)) {
     <?php include 'components/admin_header.php' ?>
     <div class="container">
         <section class="dashboard">
-            <h3 class="mt-5 mb-3">Dashboard</h3>
+            <h3 class="mt-5 mb-3">- - - -</h3>
             <div class="box-container">
                 <div class="box">
                     <h3>
@@ -81,7 +81,7 @@ if (!isset($admin_id)) {
                     ?>
 
                     <h3>
-                        <span>$</span>
+                        <span>Rp</span>
                         <?= $total_pendings; ?>
                         <span>/-</span>
                     </h3>
@@ -100,7 +100,7 @@ if (!isset($admin_id)) {
                     ?>
 
                     <h3>
-                        <span>$</span>
+                        <span>Rp</span>
                         <?= $total_completes; ?>
                         <span>/-</span>
                     </h3>
