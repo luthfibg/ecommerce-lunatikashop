@@ -78,6 +78,10 @@ header section.flex a {
   color: var(--light-primary);
 }
 
+header section.flex .navbar a:hover {
+  color: var(--component-livid) !important;
+}
+
 header section.flex nav a,
 header section.flex .icons {
   margin: 0 1rem;
@@ -92,7 +96,7 @@ header section.flex .icons > * {
 }
 
 header section.flex .icons > *:hover {
-  color: var(--component-livid);
+  color: var(--component-orange) !important;
 }
 
 header section.flex .profile a {
