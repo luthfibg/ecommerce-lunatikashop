@@ -7,6 +7,8 @@ if (!isset($admin_id)) {
     header('location:login.php');
 }
 
+$title = 'Product Management';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,7 +59,7 @@ if (!isset($admin_id)) {
     </div> -->
     <?php include 'components/admin_header.php' ?>
     <div class="container">
-        <section class="dashboard">
+        <section class="insert-product">
             <?php include('components/add_product_card.php'); ?>
         </section>
     </div>
