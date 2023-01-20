@@ -48,8 +48,8 @@ if (isset($_POST['submit_add_product'])) {
             move_uploaded_file($img2_tmp_name, $img2_path);
             move_uploaded_file($img3_tmp_name, $img3_path);
 
-            $insert_product = $conn->prepare("INSERT INTO `products`(name, details, price, image_01, image_02, image_03) VALUES (?,?,?,?,?,?)");
-            $insert_product->execute([$name, $details, $price, $img1, $img2, $img3]);
+            $insert_product = $conn->prepare("INSERT INTO `products`(name, price, image_01, image_02, image_03, details) VALUES (?,?,?,?,?,?)");
+            $insert_product->execute([$name, $price, $img1, $img2, $img3, $details]);
 
             $message[] = 'New product successfully inserted';
         }
@@ -94,7 +94,7 @@ $title = 'Product Management';
 
 <body style="background: var(--dark-base);">
     <?php include 'components/admin_header.php' ?>
-    <div class="container ins mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
+    <div class="container ins py-5 mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
         <?php
         $message = array();
         if (isset($message)) {

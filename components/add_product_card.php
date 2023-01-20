@@ -1,4 +1,4 @@
-<div class="card image-header w-100 w-75-sm w-50-lg">
+<div class="card image-header w-100 w-75-sm w-50-lg mb-5">
     <div class="row p-2 d-flex flex-justify-center">
         <p class="title-lvl-3">Insert Product</p>
     </div>
@@ -30,7 +30,7 @@
                         accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff" required>
                 </div>
                 <div class="mb-5">
-                    <textarea name="details" class="form-control box" maxlength="500" id="details" cols="30" rows="10"
+                    <textarea name="details" class="form-control box" maxlength="5000" id="details" cols="100" rows="10"
                         placeholder="Product Details" required></textarea>
                 </div>
                 <input type="submit" name="submit_add_product" class="btn btn-sm secondary component-tone mt-5 w-100"
