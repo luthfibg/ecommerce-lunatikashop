@@ -39,7 +39,18 @@ if (isset($_POST['submit_add_product'])) {
     if ($select_products->rowCount() > 0) {
         $message[] = 'Product already exist!';
     } else {
-        $message[] = 'Feature Coming Soon!';
+        if ($img1_size > 2000000 or $img2_size > 2000000 or $img3_size > 2000000) {
+            $message[] = 'Image exceeds the maximum limit of 2MB';
+        } else {
+            move_uploaded_file($img1_tmp_name, $img1_path);
+            move_uploaded_file($img2_tmp_name, $img2_path);
+            move_uploaded_file($img3_tmp_name, $img3_path);
+
+            $insert_product = $conn->prepare("INSERT INTO `products`(name, details, price, image_01, image_02, image_03) VALUES (?,?,?,?,?,?)");
+            $insert_product->execute([$name, $details, $price, $img1, $img2, $img3]);
+
+            $message[] = 'New product successfully inserted';
+        }
     }
 }
 
