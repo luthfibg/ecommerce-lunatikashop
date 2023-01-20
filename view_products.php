@@ -62,6 +62,7 @@ $title = 'Product Management';
             }
         }
         ?>
+        <?php include('components/product_lists.php') ?>
         <!-- content here -->
     </div>
 
