@@ -1,6 +1,7 @@
 <?php
 
 include 'components/connection.php';
+$message = array();
 if (isset($message)) {
     foreach ($message as $message) {
         echo '

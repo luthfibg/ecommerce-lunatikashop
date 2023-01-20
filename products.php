@@ -58,13 +58,7 @@ if (!isset($admin_id)) {
     <?php include 'components/admin_header.php' ?>
     <div class="container">
         <section class="dashboard">
-            <form action="" method="POST">
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>Product Name (Required)</span>
-                    </div>
-                </div>
-            </form>
+            <?php include('components/add_product_card.php'); ?>
         </section>
     </div>
 
