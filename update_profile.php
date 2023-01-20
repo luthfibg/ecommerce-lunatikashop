@@ -7,12 +7,13 @@ $footer = '';
 include('components/connection.php');
 include('layouts/update_profile_layout.php');
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit_update'])) {
     $name = $_POST['name'];
-    $name = filter_var($name, FILTER_SANITIZE_STRING);
+    $name = filter_var(htmlspecialchars($name));
 
     $update_name = $conn->prepare("UPDATE `admins` SET name = ? WHERE id = ?");
     $update_name->execute([$name, $admin_id]);
+    echo $admin_id;
 
     $empty_pass = 'da39a3ee5e6b4b0d3255bfef95601890afd80709';
     $select_old_pass = $conn->prepare("SELECT password FROM `admins` WHERE id = ?");
@@ -21,16 +22,16 @@ if (isset($_POST['submit'])) {
     $previous_pass = $fetch_previous_pass['password'];
 
     $old_pass = $_POST['old_password'];
-    $old_pass = filter_var($old_pass, FILTER_SANITIZE_STRING);
+    $old_pass = filter_var(htmlspecialchars($old_pass));
     $new_pass = $_POST['new_password'];
-    $new_pass = filter_var($new_pass, FILTER_SANITIZE_STRING);
-    $confirm_pass = $_POST['confirm_password'];
-    $confirm_pass = filter_var($confirm_pass, FILTER_SANITIZE_STRING);
+    $new_pass = filter_var(htmlspecialchars($new_pass));
+    $confirm_pass = $_POST['confirm_new_password'];
+    $confirm_pass = filter_var(htmlspecialchars($confirm_pass));
 
     if ($old_pass == $empty_pass) {
         $message[] = 'Please enter old password';
-    } else if ($old_pass != $new_pass) {
-        $message[] = 'Old password didn\'t matched';
+    } else if ($old_pass == $new_pass) {
+        $message[] = 'Old password couldn\'t same';
     } else if ($new_pass != $confirm_pass) {
         $message[] = 'Password didn\'t matched';
     } else {
