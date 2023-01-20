@@ -7,6 +7,42 @@ if (!isset($admin_id)) {
     header('location:login.php');
 }
 
+if (isset($_POST['submit_add_product'])) {
+    $name = $_POST['name'];
+    $name = filter_var(htmlspecialchars($name));
+    $price = $_POST['price'];
+    $price = filter_var(htmlspecialchars($price));
+    $details = $_POST['details'];
+    $details = filter_var(htmlspecialchars($details));
+
+    $img1 = $_FILES['img1']['name'];
+    $img1 = filter_var(htmlspecialchars($img1));
+    $img1_size = $_FILES['img1']['size'];
+    $img1_tmp_name = $_FILES['img1']['tmp_name'];
+    $img1_path = 'assets/images/products' . $img1;
+
+    $img2 = $_FILES['img2']['name'];
+    $img2 = filter_var(htmlspecialchars($img2));
+    $img2_size = $_FILES['img2']['size'];
+    $img2_tmp_name = $_FILES['img2']['tmp_name'];
+    $img2_path = 'assets/images/products' . $img2;
+
+    $img3 = $_FILES['img3']['name'];
+    $img3 = filter_var(htmlspecialchars($img3));
+    $img3_size = $_FILES['img3']['size'];
+    $img3_tmp_name = $_FILES['img3']['tmp_name'];
+    $img3_path = 'assets/images/products' . $img3;
+
+    $select_products = $conn->prepare("SELECT * FROM `products` WHERE name = ?");
+    $select_products->execute([$name]);
+
+    if ($select_products->rowCount() > 0) {
+        $message[] = 'Product already exist!';
+    } else {
+        $message[] = 'Feature Coming Soon!';
+    }
+}
+
 $title = 'Product Management';
 
 ?>
