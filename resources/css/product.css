@@ -42,7 +42,7 @@ header section.flex {
   justify-content: space-between;
 }
 
-header section.flex .logo {
+/* header section.flex .logo {
   font-size: 1.8rem;
   color: var(--component-livid);
   margin-left: 25px;
@@ -67,16 +67,22 @@ header .flex .navbar a {
 
 .empty-space {
   visibility: hidden;
-}
+} */
+
+/* .container .insert-product .card form {
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: 2rem;
+} */
 
 .container .insert-product .card label {
   text-align: left;
-  font-size: 1.5rem !important;
+  font-size: 1.1rem !important;
 }
 .container .insert-product .card input {
   font-size: 1.5rem;
-  padding: 1rem;
-  height: 3rem !important;
+  padding: 0.5rem;
+  /* height: 3rem !important; */
 }
 
 .container .insert-product .card textarea {

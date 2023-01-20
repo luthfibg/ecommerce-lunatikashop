@@ -35,6 +35,7 @@ $title = 'Product Management';
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="../resources/css/admin.css">
+    <link rel="stylesheet" href="../resources/css/product.css">
     <link rel="stylesheet" href="../resources/css/responsive_style.css">
     <link rel="stylesheet" href="../resources/css/theme.css">
     <title>

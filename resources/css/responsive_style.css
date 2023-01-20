@@ -43,6 +43,10 @@
     font-size: 1.035rem;
     padding: 0.4rem 0.6rem;
   }
+  .container .insert-product .card label,
+  .container .insert-product .card input {
+    font-size: 0.85rem;
+  }
 }
 
 @media (min-width: 1200px) {
