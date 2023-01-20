@@ -66,6 +66,13 @@
     font-size: 0.85rem;
     transition: 0.8s;
   }
+  header .flex .product-operation {
+    left: 16rem;
+    width: 12rem;
+  }
+  header .flex .product-operation.active a {
+    font-size: 0.95rem;
+  }
 }
 
 @media (min-width: 1200px) {

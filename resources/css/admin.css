@@ -128,6 +128,38 @@ header .flex {
   position: relative;
 }
 
+header .flex .product-operation {
+  position: absolute;
+  top: 100%;
+  left: 18rem;
+  background-color: var(--dark-second);
+  border: 0.5px solid var(--light-secondary);
+  border-radius: 0.3rem;
+  padding: 1.3rem;
+  width: 18rem;
+  display: none;
+  z-index: 99991;
+  animation: fadeIn 0.2s linear;
+}
+
+header .flex .product-operation.active.active {
+  display: inline-block;
+}
+
+header .flex .product-operation.active a {
+  display: block;
+  width: 100%;
+  font-size: 1.65rem;
+}
+
+header section.flex .product-operation.active a i {
+  color: var(--component-orange) !important;
+}
+
+header section.flex .product-operation.active a:hover {
+  color: var(--component-livid) !important;
+}
+
 header .flex .profile {
   position: absolute;
   top: 120%;

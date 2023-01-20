@@ -19,9 +19,19 @@ if (isset($message)) {
         <a href="dashboard.php" class="logo">Admin
             <span>Panel</span>
         </a>
+        <div class="product-operation">
+            <a href="products.php">
+                <i class="fas fa-circle-plus"></i>
+                <span class="ms-3">Insert Product</span>
+            </a>
+            <a href="view_products.php" class="mt-3">
+                <i class="fas fa-cubes"></i>
+                <span class="ms-3">All Product</span>
+            </a>
+        </div>
         <nav class="navbar">
             <a href="dashboard.php">Dashboard</a>
-            <a href="products.php">Products</a>
+            <a href="javascript:;" onclick="menu()" id="product-btn">Products</a>
             <a href="placed_orders.php">Placed Orders</a>
             <a href="admin_accounts.php">Admin Accounts</a>
             <a href="user_accounts.php">User Accounts</a>
