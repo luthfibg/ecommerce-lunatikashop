@@ -7,7 +7,8 @@
             <div class="flex">
                 <div class="mb-3">
                     <input type="text" name="product_name" maxlength="100" data-role="input" class="form-control box"
-                        id="productName" placeholder="Product Name (Required)" required>
+                        id="productName" placeholder="Product Name (Required)"
+                        onclick="this.style.color='var(--component-livid)'" required>
                 </div>
                 <div class="mb-5">
                     <input type="number" min="0" max="999999999999" name="price" class="form-control box" id="price"

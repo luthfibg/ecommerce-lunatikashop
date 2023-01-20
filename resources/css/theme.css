@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Mulish:wght@900;800;600;500;400;300;200&display=swap');
 :root {
   --light-primary: #fffefe;
+  --light-secondary: #999494;
   --light-shadow: #646464;
   --dark-base: #242525;
   --dark-second: #141416;

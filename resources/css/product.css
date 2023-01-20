@@ -88,3 +88,32 @@ header .flex .navbar a {
 .container .card textarea {
   width: 100%;
 }
+
+.container .card .row .flex input {
+  background-color: var(--dark-warm);
+  color: var(--light-secondary) !important;
+  font-weight: 300 !important;
+  border: none;
+}
+
+.container .card textarea {
+  background-color: var(--dark-warm);
+  color: var(--light-secondary);
+  border: none;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.container .card .row .flex input[type='file']::file-selector-button {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.2em;
+  background-color: var(--component-orange);
+  color: var(--light-primary);
+  font-size: 1.5rem;
+  transition: 1s;
+}
+
+.container .card .row .flex input[type='file']::file-selector-button:hover {
+  background-color: var(--dark-second);
+}

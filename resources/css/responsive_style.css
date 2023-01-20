@@ -43,12 +43,22 @@
     font-size: 1.035rem;
     padding: 0.4rem 0.6rem;
   }
-  .container .card .row .flex label,
   .container .card .row .flex input {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   .container .card .row .flex label {
     font-size: 0.95rem !important;
+  }
+  .container .card .row .flex textarea {
+    font-size: 0.95rem;
+  }
+  .container .card .row .flex input[type='file']::file-selector-button {
+    padding: 0.5rem;
+    border-radius: 0.2em;
+    background-color: var(--component-orange);
+    color: var(--light-primary);
+    font-size: 0.85rem;
+    transition: 0.8s;
   }
 }
 
