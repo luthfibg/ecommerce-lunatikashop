@@ -117,3 +117,7 @@ header .flex .navbar a {
 .container .card .row .flex input[type='file']::file-selector-button:hover {
   background-color: var(--dark-second);
 }
+
+.container .card .row .flex input[type='submit'] {
+  color: var(--light-primary) !important;
+}

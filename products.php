@@ -94,7 +94,7 @@ $title = 'Product Management';
 
 <body style="background: var(--dark-base);">
     <?php include 'components/admin_header.php' ?>
-    <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
+    <div class="container ins mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
         <?php
         $message = array();
         if (isset($message)) {
