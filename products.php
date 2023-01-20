@@ -21,19 +21,19 @@ if (isset($_POST['submit_add_product'])) {
     $img1 = filter_var(htmlspecialchars($img1));
     $img1_size = $_FILES['img1']['size'];
     $img1_tmp_name = $_FILES['img1']['tmp_name'];
-    $img1_path = 'assets/images/products' . $img1;
+    $img1_path = 'assets/images/products/' . $img1;
 
     $img2 = $_FILES['img2']['name'];
     $img2 = filter_var(htmlspecialchars($img2));
     $img2_size = $_FILES['img2']['size'];
     $img2_tmp_name = $_FILES['img2']['tmp_name'];
-    $img2_path = 'assets/images/products' . $img2;
+    $img2_path = 'assets/images/products/' . $img2;
 
     $img3 = $_FILES['img3']['name'];
     $img3 = filter_var(htmlspecialchars($img3));
     $img3_size = $_FILES['img3']['size'];
     $img3_tmp_name = $_FILES['img3']['tmp_name'];
-    $img3_path = 'assets/images/products' . $img3;
+    $img3_path = 'assets/images/products/' . $img3;
 
     $select_products = $conn->prepare("SELECT * FROM `products` WHERE name = ?");
     $select_products->execute([$name]);
