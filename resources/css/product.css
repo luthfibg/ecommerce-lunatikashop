@@ -134,3 +134,26 @@ header .flex .navbar a {
   text-transform: capitalize;
   color: var(--component-livid);
 }
+
+/***************************/
+/** View All Product Part **/
+/***************************/
+/***************************/
+
+.container .product-card .product-card-body h5 {
+  font-size: 1.8rem !important;
+}
+
+.container .product-card .product-card-body p {
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+}
+
+.container .product-card .product-card-body .btn-product {
+  font-size: 1.5rem;
+  padding: 0.8rem;
+}
+
+.container .product-card .product-card-body > * {
+  margin-top: 1rem;
+}

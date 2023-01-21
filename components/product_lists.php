@@ -1,37 +1,36 @@
-<div class="container-box">
-    <p class="mb-3">No product inserted</p>
-    <?php
+<p class="mb-3">No product inserted</p>
+<?php
 
-    $show_product = $conn->prepare("SELECT * FROM `products`");
-    $show_product->execute();
+$show_product = $conn->prepare("SELECT * FROM `products`");
+$show_product->execute();
 
-    if ($show_product->rowCount() > 0) {
-        while ($fetch_products = $show_product->fetch(PDO::FETCH_ASSOC)) {
-            # code...
-    
-            ?>
-            <div class="card" style="width: 18rem;">
-                <img src="assets/images/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <?= $fetch_products['name']; ?>
-                    </h5>
-                    <h5 class="card-title">
-                        <?= $fetch_products['price']; ?>
-                    </h5>
-                    <p class="card-text">
-                        <span>Rp</span>
-                        <?= $fetch_products['details']; ?>
-                    </p>
-                    <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="btn btn-sm">Update</a>
-                    <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="btn btn-sm"
-                        onclick="return confirm('Are you sure to delete this product?')">Delete</a>
-                </div>
-            </div>
-            <?php
-        }
-    } else {
+if ($show_product->rowCount() > 0) {
+    while ($fetch_products = $show_product->fetch(PDO::FETCH_ASSOC)) {
         # code...
+
+        ?>
+        <div class="card product-card w-75">
+            <img src="assets/images/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
+            <div class="card-body product-card-body">
+                <h5 class="card-title product-card-spec">
+                    <?= $fetch_products['name']; ?>
+                </h5>
+                <h5 class="card-title product-card-spec">
+                    <span>Rp</span>
+                    <?= $fetch_products['price']; ?>
+                    <span>,-</span>
+                </h5>
+                <p class="card-text product-card-spec">
+                    <?= $fetch_products['details']; ?>
+                </p>
+                <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="btn btn-sm btn-product mt-5">Update</a>
+                <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="btn btn-sm btn-product mt-3"
+                    onclick="return confirm('Are you sure to delete this product?')">Delete</a>
+            </div>
+        </div>
+        <?php
     }
-    ?>
-</div>
+} else {
+    # code...
+}
+?>

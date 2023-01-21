@@ -15,6 +15,9 @@
   .header .flex .profile {
     width: 30rem;
   }
+  .container .product-card {
+    width: 50% !important;
+  }
 }
 
 @media (min-width: 768px) {
