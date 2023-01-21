@@ -23,7 +23,9 @@
                         <span>Rp</span>
                         <?= $fetch_products['details']; ?>
                     </p>
-                    <a href="#" class="btn btn-primary">Update</a>
+                    <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="btn btn-sm">Update</a>
+                    <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="btn btn-sm"
+                        onclick="return confirm('Are you sure to delete this product?')">Delete</a>
                 </div>
             </div>
             <?php
