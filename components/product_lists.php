@@ -10,9 +10,21 @@
             # code...
     
             ?>
-            <div class="box">
-                <img src="assets/images/<?= $fetch_products['image_01']; ?>" alt="Haylou GS">
-                <div class="name"><?= $fetch_products['name']; ?></div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <?= $fetch_products['name']; ?>
+                    </h5>
+                    <h5 class="card-title">
+                        <?= $fetch_products['price']; ?>
+                    </h5>
+                    <p class="card-text">
+                        <span>Rp</span>
+                        <?= $fetch_products['details']; ?>
+                    </p>
+                    <a href="#" class="btn btn-primary">Update</a>
+                </div>
             </div>
             <?php
         }
