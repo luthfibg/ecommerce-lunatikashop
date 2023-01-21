@@ -76,6 +76,19 @@
   header .flex .product-operation.active a {
     font-size: 0.95rem;
   }
+  .container .product-card {
+    width: 18rem !important;
+  }
+  .container .product-card .product-card-body h5 {
+    font-size: 1.2rem !important;
+  }
+  .container .product-card .product-card-body p {
+    font-size: 0.85rem !important;
+  }
+  .container .product-card .product-card-body .btn {
+    padding: 0.3rem;
+    font-size: 0.9rem !important;
+  }
 }
 
 @media (min-width: 1200px) {
