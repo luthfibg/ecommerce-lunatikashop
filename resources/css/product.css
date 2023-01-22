@@ -238,3 +238,8 @@ header .flex .navbar a {
 .update-product form .image-container .sub-image img:hover {
   transform: scale(1.1);
 }
+
+.update-product form .box {
+  background-color: var(--dark-second);
+  border: var(--light-border);
+}

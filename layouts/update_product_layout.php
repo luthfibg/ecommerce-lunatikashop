@@ -60,7 +60,7 @@
         }
         ?>
 
-        <section class="update-product">
+        <section class="update-product upd">
             <?php include('components/update_product_form.php') ?>
         </section>
     </div>

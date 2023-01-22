@@ -41,6 +41,9 @@
   .ins .card {
     width: 50% !important;
   }
+  .upd .card {
+    width: 75% !important;
+  }
   .dashboard .box-container .box {
     padding: 1.5rem;
   }
