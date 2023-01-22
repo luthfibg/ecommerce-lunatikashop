@@ -87,8 +87,8 @@ $title = 'Product Management';
         }
         ?>
 
-        <section class="view_products">
-            <div class="box-container grid">
+        <section class="view-products grid">
+            <div class="box-container row">
                 <?php include('components/product_lists.php') ?>
             </div>
         </section>

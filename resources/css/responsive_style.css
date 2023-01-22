@@ -15,9 +15,9 @@
   .header .flex .profile {
     width: 30rem;
   }
-  .container .product-card {
+  /* .container .product-card {
     width: 36rem !important;
-  }
+  } */
 }
 
 @media (min-width: 768px) {
@@ -77,7 +77,9 @@
     font-size: 0.95rem;
   }
   .container .product-card {
-    width: 22rem !important;
+    /* width: 18rem !important; */
+    padding: 0;
+    margin: 0.5rem;
   }
   .container .product-card .product-card-body > * {
     margin-top: 0.7rem;
