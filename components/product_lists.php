@@ -23,9 +23,12 @@ if ($show_product->rowCount() > 0) {
                 <p class="card-text product-card-spec">
                     <?= $fetch_products['details']; ?>
                 </p>
-                <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="btn btn-sm btn-product mt-5">Update</a>
-                <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="btn btn-sm btn-product mt-3"
-                    onclick="return confirm('Are you sure to delete this product?')">Delete</a>
+                <div class="flex-action d-flex justify-content-between">
+                    <a href="update_product.php?update=<?= $fetch_products['id']; ?>"
+                        class="btn btn-sm btn-product mt-5 btn-upload">Update</a>
+                    <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="btn btn-sm btn-product mt-5 btn-delete"
+                        onclick="return confirm('Are you sure to delete this product?')">Delete</a>
+                </div>
             </div>
         </div>
         <?php

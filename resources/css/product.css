@@ -139,7 +139,11 @@ header .flex .navbar a {
 /** View All Product Part **/
 /***************************/
 /***************************/
-
+/* .container .product-card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+} */
 .container .product-card .product-card-body h5 {
   font-size: 1.8rem !important;
 }
@@ -155,13 +159,25 @@ header .flex .navbar a {
 }
 
 .container .product-card .product-card-body > * {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.container .product-card .product-card-body .flex-action {
+  gap: 1rem;
+}
+
+.container .product-card .product-card-body .flex-action .btn-delete {
+  color: var(--component-orange) !important;
+}
+
+.container .product-card .product-card-body .flex-action .btn-delete:hover {
+  color: var(--light-primary) !important;
 }
 
 .container.view {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 24rem);
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1rem;
   justify-content: center;
   align-items: flex-start;
 }
