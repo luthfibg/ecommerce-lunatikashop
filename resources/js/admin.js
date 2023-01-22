@@ -27,13 +27,15 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 };
 
-// $('#user-btn').click(function (e) {
-//   $('.profile').addClass('active');
-//   // $('html').addClass('open');
-//   $('html, body').addClass('noscroll');
-//   e.stopPropagation();
-// });
+var mainImage = document.getElementById('mainImg');
+var subImages = document.getElementsByClassName('subImg');
 
-// $('body').click(function (e) {
-//   e.stopPropagation();
-// });
+subImages[0].onclick = function () {
+  mainImage.src = subImages[0].src;
+};
+
+for (let i = 0; i < 4; i++) {
+  subImages[i].onclick = function () {
+    mainImage.src = subImages[i].src;
+  };
+}

@@ -11,12 +11,12 @@ if ($show_products->rowCount() > 0) {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="image-container">
                 <div class="main-image">
-                    <img src="assets/images/products/<?= $fetch_products['image_01'] ?>" alt="">
+                    <img src="assets/images/products/<?= $fetch_products['image_01'] ?>" id="mainImg" alt="">
                 </div>
                 <div class="sub-image">
-                    <img src="assets/images/products/<?= $fetch_products['image_01'] ?>" alt="">
-                    <img src="assets/images/products/<?= $fetch_products['image_02'] ?>" alt="">
-                    <img src="assets/images/products/<?= $fetch_products['image_03'] ?>" alt="">
+                    <img src="assets/images/products/<?= $fetch_products['image_01'] ?>" class="subImg" alt="">
+                    <img src="assets/images/products/<?= $fetch_products['image_02'] ?>" class="subImg" alt="">
+                    <img src="assets/images/products/<?= $fetch_products['image_03'] ?>" class="subImg" alt="">
                 </div>
             </div>
             <div class="card image-header w-100 w-75-sm w-50-lg mb-5">
@@ -67,3 +67,5 @@ if ($show_products->rowCount() > 0) {
     echo '<p class="empty">No product inserted</p>';
 }
 ?>
+
+<script src="../resources/js/admin.js"></script>
