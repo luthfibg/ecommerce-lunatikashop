@@ -20,14 +20,14 @@ if (isset($_GET['delete'])) {
     unlink('assets/images/products/' . $fetch_delete_image['image_02']);
     unlink('assets/images/products/' . $fetch_delete_image['image_03']);
 
-    $delete_product = $conn->prepare("DELETE FROM `products` WHERE pid = ?");
+    $delete_product = $conn->prepare("DELETE FROM `products` WHERE id = ?");
     $delete_product->execute([$delete_id]);
 
-    $delete_cart = $conn->prepare("DELETE FROM `carts` WHERE pid = ?");
-    $delete_cart->execute([$delete_id]);
+    // $delete_cart = $conn->prepare("DELETE FROM `carts` WHERE pid = ?");
+    // $delete_cart->execute([$delete_id]);
 
-    $delete_wishlist = $conn->prepare("DELETE FROM `wishlists` WHERE pid = ?");
-    $delete_wishlist->execute([$delete_id]);
+    // $delete_wishlist = $conn->prepare("DELETE FROM `wishlists` WHERE pid = ?");
+    // $delete_wishlist->execute([$delete_id]);
 
     header('location:view_products.php');
 }
@@ -87,8 +87,8 @@ $title = 'Product Management';
         }
         ?>
 
-        <section class="view-products grid">
-            <div class="box-container row">
+        <section class="grid view-products">
+            <div class="row box-container">
                 <?php include('components/product_lists.php') ?>
             </div>
         </section>
