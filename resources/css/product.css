@@ -162,6 +162,14 @@ header .flex .navbar a {
   margin-top: 1.5rem;
 }
 
+.container .product-card .product-card-body .product-card-spec-price {
+  background-color: var(--dark-warm);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  color: var(--component-orange);
+  width: fit-content;
+}
+
 .container .product-card .product-card-body .flex-action {
   gap: 1rem;
 }
@@ -174,10 +182,20 @@ header .flex .navbar a {
   color: var(--light-primary) !important;
 }
 
-body .view {
+.view_product .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 33rem);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1rem;
   justify-content: center;
   align-items: flex-start;
+}
+
+.view_product .box-container .card {
+  text-align: center;
+  background-color: var(--dark-second);
+  border: none;
+  box-shadow: var(--min-box-shadow);
+  border-radius: 0.3rem;
+  text-align: center;
+  padding: 1rem;
 }

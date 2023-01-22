@@ -77,17 +77,20 @@
     font-size: 0.95rem;
   }
   .container .product-card {
-    width: 18rem !important;
+    width: 22rem !important;
+  }
+  .container .product-card .product-card-body > * {
+    margin-top: 0.7rem;
   }
   .container .product-card .product-card-body h5 {
-    font-size: 1.2rem !important;
+    font-size: 0.95rem !important;
   }
   .container .product-card .product-card-body p {
-    font-size: 0.85rem !important;
+    font-size: 0.8rem !important;
   }
   .container .product-card .product-card-body .btn {
     padding: 0.3rem;
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
   }
 }
 

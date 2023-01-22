@@ -1,4 +1,3 @@
-<p class="mb-3">No product inserted</p>
 <?php
 
 $show_product = $conn->prepare("SELECT * FROM `products`");
@@ -9,13 +8,13 @@ if ($show_product->rowCount() > 0) {
         # code...
 
         ?>
-        <div class="card product-card w-100">
-            <img src="assets/images/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
+        <div class="card product-card">
+            <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
             <div class="card-body product-card-body">
                 <h5 class="card-title product-card-spec">
                     <?= $fetch_products['name']; ?>
                 </h5>
-                <h5 class="card-title product-card-spec">
+                <h5 class="card-title product-card-spec-price">
                     <span>Rp</span>
                     <?= $fetch_products['price']; ?>
                     <span>,-</span>
@@ -35,6 +34,6 @@ if ($show_product->rowCount() > 0) {
         <?php
     }
 } else {
-    # code...
+    echo "<p class='mb-3'>No product inserted</p>";
 }
 ?>

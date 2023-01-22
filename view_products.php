@@ -71,7 +71,8 @@ $title = 'Product Management';
 
 <body style="background: var(--dark-base);">
     <?php include 'components/admin_header.php' ?>
-    <div class="container view py-5 mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
+    <div class="container">
+
         <?php
         $message = array();
         if (isset($message)) {
@@ -85,8 +86,12 @@ $title = 'Product Management';
             }
         }
         ?>
-        <?php include('components/product_lists.php') ?>
-        <!-- content here -->
+
+        <section class="view_products">
+            <div class="box-container grid">
+                <?php include('components/product_lists.php') ?>
+            </div>
+        </section>
     </div>
 
     <script src="resources/js/admin.js"></script>

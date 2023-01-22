@@ -61,6 +61,7 @@ div {
 .card {
   background-color: var(--dark-second) !important;
   border: none !important;
+  border-radius: 0.5rem !important;
 }
 
 .component-tone {
