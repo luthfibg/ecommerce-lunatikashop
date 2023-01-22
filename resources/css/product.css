@@ -174,7 +174,7 @@ header .flex .navbar a {
   color: var(--light-primary) !important;
 }
 
-.container.view {
+body .view {
   display: grid;
   grid-template-columns: repeat(auto-fit, 33rem);
   gap: 1rem;
