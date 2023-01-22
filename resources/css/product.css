@@ -200,3 +200,8 @@ header .flex .navbar a {
 .view-product {
   gap: 0.5rem;
 }
+
+.update-product form {
+  margin: 0 auto;
+  max-width: 70rem;
+}

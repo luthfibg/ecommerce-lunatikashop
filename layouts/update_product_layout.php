@@ -60,10 +60,8 @@
         }
         ?>
 
-        <section class="grid view-products">
-            <div class="row box-container">
-                <?php include('components/product_lists.php') ?>
-            </div>
+        <section class="update-product">
+            <?php include('components/update_product_form.php') ?>
         </section>
     </div>
 
