@@ -10,10 +10,10 @@ if ($show_products->rowCount() > 0) {
 
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="image-container">
-                <div class="main-image">
+                <div class="main-image my-3">
                     <img src="assets/images/products/<?= $fetch_products['image_01'] ?>" id="mainImg" alt="">
                 </div>
-                <div class="sub-image">
+                <div class="sub-image my-3">
                     <img src="assets/images/products/<?= $fetch_products['image_01'] ?>" class="subImg" alt="">
                     <img src="assets/images/products/<?= $fetch_products['image_02'] ?>" class="subImg" alt="">
                     <img src="assets/images/products/<?= $fetch_products['image_03'] ?>" class="subImg" alt="">

@@ -1,3 +1,4 @@
+//menu handler
 let profile = document.querySelector('.header .flex .profile');
 
 document.querySelector('#user-btn').onclick = () => {
@@ -27,6 +28,7 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 };
 
+// image child show
 var mainImage = document.getElementById('mainImg');
 var subImages = document.getElementsByClassName('subImg');
 

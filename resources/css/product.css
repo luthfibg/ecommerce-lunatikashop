@@ -228,7 +228,7 @@ header .flex .navbar a {
   width: 8rem;
   height: 7rem;
   object-fit: contain;
-  border: var(--light-border);
+  border: none;
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 0.5rem;
