@@ -204,4 +204,37 @@ header .flex .navbar a {
 .update-product form {
   margin: 0 auto;
   max-width: 70rem;
+  background-color: var(--dark-second);
+  border-radius: 0.5rem;
+  box-shadow: var(--min-box-shadow);
+  border: var(--light-border);
+  padding: 2rem;
+}
+
+.update-product form .image-container .main-image img {
+  height: 20rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.update-product form .image-container .sub-image {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.update-product form .image-container .sub-image img {
+  width: 8rem;
+  height: 7rem;
+  object-fit: contain;
+  border: var(--light-border);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transform: 0.2s linear;
+}
+
+.update-product form .image-container .sub-image img:hover {
+  transform: scale(1.1);
 }
