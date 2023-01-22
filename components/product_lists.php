@@ -26,7 +26,8 @@ if ($show_product->rowCount() > 0) {
                 <div class="flex-action d-flex justify-content-between">
                     <a href="update_product.php?update=<?= $fetch_products['id']; ?>"
                         class="btn btn-sm btn-product mt-5 btn-upload">Update</a>
-                    <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="btn btn-sm btn-product mt-5 btn-delete"
+                    <a href="view_products.php?delete=<?= $fetch_products['id']; ?>"
+                        class="btn btn-sm btn-product mt-5 btn-delete"
                         onclick="return confirm('Are you sure to delete this product?')">Delete</a>
                 </div>
             </div>

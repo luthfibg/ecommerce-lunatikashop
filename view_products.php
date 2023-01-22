@@ -9,6 +9,13 @@ if (!isset($admin_id)) {
     header('location:login.php');
 }
 
+if (isset($_GET['delete'])) {
+
+    $delete_id = $_GET['delete'];
+    $delete_product_image = $conn->prepare("SELECT * FROM `products` WHERE id = ?");
+    $delete_product_image->execute([$delete_id]);
+}
+
 
 $title = 'Product Management';
 
