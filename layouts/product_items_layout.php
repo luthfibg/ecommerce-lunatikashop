@@ -1,41 +1,3 @@
-<?php
-
-include('components/connection.php');
-
-session_start();
-
-$admin_id = $_SESSION['admin_id'];
-if (!isset($admin_id)) {
-    header('location:login.php');
-}
-
-if (isset($_GET['delete'])) {
-
-    $delete_id = $_GET['delete'];
-    $delete_product_image = $conn->prepare("SELECT * FROM `products` WHERE id = ?");
-    $delete_product_image->execute([$delete_id]);
-
-    $fetch_delete_image = $delete_product_image->fetch(PDO::FETCH_ASSOC);
-    unlink('assets/images/products/' . $fetch_delete_image['image_01']);
-    unlink('assets/images/products/' . $fetch_delete_image['image_02']);
-    unlink('assets/images/products/' . $fetch_delete_image['image_03']);
-
-    $delete_product = $conn->prepare("DELETE FROM `products` WHERE id = ?");
-    $delete_product->execute([$delete_id]);
-
-    // $delete_cart = $conn->prepare("DELETE FROM `carts` WHERE pid = ?");
-    // $delete_cart->execute([$delete_id]);
-
-    // $delete_wishlist = $conn->prepare("DELETE FROM `wishlists` WHERE pid = ?");
-    // $delete_wishlist->execute([$delete_id]);
-
-    header('location:view_products.php');
-}
-
-
-$title = 'Product Management';
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,19 +21,21 @@ $title = 'Product Management';
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="resources/css/admin.css">
-    <link rel="stylesheet" href="resources/css/product.css">
-    <link rel="stylesheet" href="resources/css/responsive_style.css">
-    <link rel="stylesheet" href="resources/css/theme.css">
+    <link rel="stylesheet" href="resources/css/products.css">
+    <link rel="stylesheet" href="resources/css/items_responsive.css">
     <title>
         <?php echo $title; ?>
     </title>
 </head>
 
 <body style="background: var(--dark-base);">
-    <?php include 'components/admin_header.php' ?>
-    <div class="container">
 
+    <!-- default embeded header start -->
+    <?php include 'components/admin_header.php' ?>
+    <!-- default embeded header end -->
+
+    <div class="container">
+        <!-- php notification section start -->
         <?php
         $message = array();
         if (isset($message)) {
@@ -85,12 +49,26 @@ $title = 'Product Management';
             }
         }
         ?>
+        <!-- php notification section end -->
 
-        <section class="view-products">
-            <div class="grid box-container">
-                <?php include('components/product_lists.php') ?>
-            </div>
-        </section>
+        <!-- main content start -->
+        <div class="grid items-container">
+            <?php
+            $show_product = $conn->prepare("SELECT * FROM `products`");
+            $show_product->execute();
+
+            if ($show_product->rowCount() > 0) {
+                while ($fetch_products = $show_product->fetch(PDO::FETCH_ASSOC)) {
+                    ?>
+                    <?php include('components/product_item_card.php') ?>
+                    <?php
+                }
+            } else {
+                echo "<p class='mb-3'>Items Center Empty</p>";
+            }
+            ?>
+        </div>
+        <!-- main content end -->
     </div>
 
     <script src="resources/js/admin.js"></script>

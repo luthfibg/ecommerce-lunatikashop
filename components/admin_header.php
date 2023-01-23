@@ -24,9 +24,9 @@ if (isset($message)) {
                 <i class="fas fa-circle-plus"></i>
                 <span class="ms-3">Insert Product</span>
             </a>
-            <a href="view_products.php" class="mt-3">
+            <a href="product_items.php" class="mt-3">
                 <i class="fas fa-cubes"></i>
-                <span class="ms-3">All Product</span>
+                <span class="ms-3">Items Center</span>
             </a>
         </div>
         <nav class="navbar">

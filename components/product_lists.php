@@ -8,7 +8,7 @@ if ($show_product->rowCount() > 0) {
         # code...
 
         ?>
-        <div class="card product-card cell-12 cell-sm-half cell-lg-4">
+        <div class="card product-card g-col-12 g-col-md-6">
             <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
             <div class="card-body product-card-body">
                 <h5 class="card-title product-card-spec">

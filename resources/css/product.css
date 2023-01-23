@@ -145,6 +145,12 @@ header .flex .navbar a {
   /* height: 15rem; */
   object-fit: contain;
 }
+.container .product-card {
+  padding: 0;
+}
+.container .product-card .product-card-body {
+  margin: 0;
+}
 .container .product-card .product-card-body h5 {
   font-size: 1.8rem !important;
 }
@@ -186,6 +192,16 @@ header .flex .navbar a {
 
 .container .view-product .box-container .card {
   padding: 0;
+}
+
+.view-product {
+  gap: 1rem !important;
+}
+
+.view-product .box-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem !important;
 }
 
 .view-product .box-container .card {
