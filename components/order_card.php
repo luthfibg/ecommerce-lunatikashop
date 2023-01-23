@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box g-col-12 g-col-md-6 g-col-lg-4">
     <span class="order-detail">User ID:&nbsp;
         <span>
             <?= $fetch_orders['user_id']; ?>

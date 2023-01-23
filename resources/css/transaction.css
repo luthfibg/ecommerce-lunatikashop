@@ -3,13 +3,13 @@
 .placed-orders h3 {
   text-align: center;
 }
-.placed-orders .box-container {
+/* .placed-orders .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 33rem);
   gap: 1.5rem;
   justify-content: center;
   align-items: flex-start;
-}
+} */
 
 .placed-orders .box-container .box {
   background-color: var(--dark-second);
@@ -27,6 +27,20 @@
 
 .placed-orders .box-container .box .order-detail {
   display: block;
+}
+
+.placed-orders .box-container .box .dropdown {
+  width: 100%;
+  background-color: var(--dark-warm);
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  font-size: 1.65rem;
+  color: var(--light-primary);
+  text-transform: capitalize;
+}
+
+.placed-orders .box-container .box .flex-action {
+  bottom: 0;
 }
 
 .placed-orders .box-container .box .flex-action > * {
