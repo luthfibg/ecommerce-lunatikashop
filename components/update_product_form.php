@@ -9,6 +9,10 @@ if ($show_products->rowCount() > 0) {
         ?>
 
         <form action="" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="pid" value="<?= $fetch_products['id']; ?>">
+            <input type="hidden" name="old_image1" value="<?= $fetch_products['image_01']; ?>">
+            <input type="hidden" name="old_image2" value="<?= $fetch_products['image_02']; ?>">
+            <input type="hidden" name="old_image3" value="<?= $fetch_products['image_03']; ?>">
             <div class="image-container">
                 <div class="main-image my-3">
                     <img src="assets/images/products/<?= $fetch_products['image_01'] ?>" id="mainImg" alt="">
@@ -43,19 +47,19 @@ if ($show_products->rowCount() > 0) {
                         <div class="mb-5">
                             <label for="img1" class="text-start">Product Image 1</label>
                             <input type="file" name="img1" class="form-control box" id="img1" placeholder="Product Image 1"
-                                accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff" required>
+                                accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff">
                         </div>
                         <div class="mb-5">
                             <label for="img2" class="text-start">Product Image 2</label>
                             <input type="file" name="img2" class="form-control box" id="img2" placeholder="Product Image 2"
-                                accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff" required>
+                                accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff">
                         </div>
                         <div class="mb-5" class="text-start">
                             <label for="img3">Product Image 3</label>
                             <input type="file" name="img3" class="form-control box" id="img3" placeholder="Product Image 3"
-                                accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff" required>
+                                accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff">
                         </div>
-                        <input type="submit" name="submit_add_product" class="btn btn-sm secondary component-tone mt-5 w-100"
+                        <input type="submit" name="submit_update_product" class="btn btn-sm secondary component-tone mt-5 w-100"
                             value="Insert Product">
                     </div>
                 </div>
