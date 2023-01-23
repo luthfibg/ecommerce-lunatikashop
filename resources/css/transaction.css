@@ -1,0 +1,18 @@
+@import 'theme.css';
+
+.placed-orders .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.placed-orders .box-container .box {
+  background-color: var(--dark-second);
+  border-radius: 0.5rem;
+  box-shadow: var(--min-box-shadow);
+  border: var(--light-border);
+  padding: 1.5rem;
+  padding-top: 1rem;
+}
