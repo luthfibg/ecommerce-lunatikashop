@@ -131,7 +131,7 @@ header .flex {
 header .flex .product-operation {
   position: absolute;
   top: 100%;
-  left: 18rem;
+  margin-left: -5rem;
   background-color: var(--dark-second);
   border: 0.5px solid var(--light-secondary);
   border-radius: 0.3rem;

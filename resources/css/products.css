@@ -36,3 +36,25 @@
 .items-container .card .flex-action .btn.btn-delete {
   color: var(--component-orange);
 }
+
+/* External remote style */
+
+header .flex .product-operation {
+  position: absolute;
+  top: 100%;
+  margin-left: -5rem;
+  background-color: var(--dark-second);
+  border: 0.5px solid var(--light-secondary);
+  border-radius: 0.3rem;
+  padding: 1.3rem;
+  width: 15rem;
+  display: none;
+  z-index: 99991;
+  animation: fadeIn 0.2s linear;
+}
+
+header .flex .product-operation.active a {
+  display: block;
+  width: 100%;
+  font-size: 1rem !important;
+}

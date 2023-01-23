@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="resources/css/main.css">
     <link rel="stylesheet" href="resources/css/products.css">
     <link rel="stylesheet" href="resources/css/items_responsive.css">
-    <title>F:\app\laragon\www\lunatika_shop\components\admin_header.php on line 47
-
+    <title>
         <?php echo $title; ?>
     </title>
 </head>

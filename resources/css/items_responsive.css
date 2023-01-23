@@ -27,3 +27,26 @@
     max-width: 1360px;
   }
 }
+
+@media (max-width: 991.98px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header section.flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-bottom: var(--light-border);
+    background-color: var(--dark-warm);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header section.flex .navbar a {
+    display: block !important;
+    margin: 0.5rem 1rem;
+    width: 100%;
+  }
+}
