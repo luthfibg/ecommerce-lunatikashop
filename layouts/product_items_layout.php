@@ -21,9 +21,13 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="resources/css/admin.css">
+    <link rel="stylesheet" href="resources/css/theme.css">
+    <link rel="stylesheet" href="resources/css/main.css">
     <link rel="stylesheet" href="resources/css/products.css">
     <link rel="stylesheet" href="resources/css/items_responsive.css">
-    <title>
+    <title>F:\app\laragon\www\lunatika_shop\components\admin_header.php on line 47
+
         <?php echo $title; ?>
     </title>
 </head>
@@ -52,7 +56,7 @@
         <!-- php notification section end -->
 
         <!-- main content start -->
-        <div class="grid items-container">
+        <div class="grid items-container py-5">
             <?php
             $show_product = $conn->prepare("SELECT * FROM `products`");
             $show_product->execute();

@@ -1,0 +1,38 @@
+@import 'theme.css';
+
+.items-container {
+  margin: 0;
+}
+
+.items-container .card {
+  margin: 0;
+}
+
+.items-container .card .card-body > * {
+  margin-top: 1rem;
+}
+
+.items-container .card h5 {
+  font-size: 1.1rem;
+}
+
+.items-container .card p {
+  height: 9rem;
+  font-size: 0.9rem;
+  font-weight: 300 !important;
+}
+
+.items-container .card .flex-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-container .card .flex-action .btn {
+  width: 38%;
+  font-size: 0.9rem;
+  color: var(--light-primary);
+}
+
+.items-container .card .flex-action .btn.btn-delete {
+  color: var(--component-orange);
+}
