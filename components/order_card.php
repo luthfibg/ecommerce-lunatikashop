@@ -1,4 +1,9 @@
 <div class="box">
+    <p>User ID:&nbsp;
+        <span>
+            <?= $fetch_orders['user_id']; ?>
+        </span>
+    </p>
     <p>Placed on:&nbsp;
         <span>
             <?= $fetch_orders['placed_on']; ?>
@@ -39,4 +44,7 @@
             <?= $fetch_orders['total_price']; ?>
         </span>
     </p>
+    <form action="" method="POST">
+        <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
+    </form>
 </div>
