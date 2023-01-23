@@ -32,7 +32,7 @@ if (isset($message)) {
         <nav class="navbar">
             <a href="dashboard.php">Dashboard</a>
             <a href="javascript:;" onclick="menu()" id="product-btn">Products</a>
-            <a href="placed_orders.php">Placed Orders</a>
+            <a href="placed_orders.php">Orders</a>
             <a href="admin_accounts.php">Admin Accounts</a>
             <a href="user_accounts.php">User Accounts</a>
             <a href="messages.php">Messages</a>

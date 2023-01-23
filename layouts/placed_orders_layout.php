@@ -54,22 +54,26 @@
         <!-- php notification section end -->
 
         <!-- main content start -->
-        <div class="grid items-container py-5">
-            <?php
-            $show_product = $conn->prepare("SELECT * FROM `products`");
-            $show_product->execute();
+        <section class="placed-orders py-5">
+            <h3>Placed Orders</h3>
+            <div class="box-container">
+                <?php
+                $select_orders = $conn->prepare("SELECT * FROM `orders`");
+                $select_orders->execute();
 
-            if ($show_product->rowCount() > 0) {
-                while ($fetch_products = $show_product->fetch(PDO::FETCH_ASSOC)) {
-                    ?>
-                    <?php include('components/product_item_card.php') ?>
-                    <?php
+                if ($select_orders->rowCount() > 0) {
+                    while ($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)) {
+                        # code...
+                        ?>
+                        <?php include('components/order_card.php'); ?>
+                        <?php
+                    }
+                } else {
+                    echo '<p class="empty">Orders Center Empty</p>';
                 }
-            } else {
-                echo "<p class='mb-3'>Items Center Empty</p>";
-            }
-            ?>
-        </div>
+                ?>
+            </div>
+        </section>
         <!-- main content end -->
     </div>
 
