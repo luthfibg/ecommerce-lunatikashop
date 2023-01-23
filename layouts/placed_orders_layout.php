@@ -56,7 +56,7 @@
 
         <!-- main content start -->
         <section class="placed-orders py-5">
-            <h3>Placed Orders</h3>
+            <h3 class="my-5">Placed Orders</h3>
             <div class="box-container">
                 <?php
                 $select_orders = $conn->prepare("SELECT * FROM `orders`");

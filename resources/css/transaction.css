@@ -1,5 +1,8 @@
 @import 'theme.css';
 
+.placed-orders h3 {
+  text-align: center;
+}
 .placed-orders .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 33rem);
@@ -15,4 +18,20 @@
   border: var(--light-border);
   padding: 1.5rem;
   padding-top: 1rem;
+}
+
+.placed-orders .box-container .box > * {
+  margin-top: 0.5rem;
+  font-size: 1.65rem;
+}
+
+.placed-orders .box-container .box .order-detail {
+  display: block;
+}
+
+.placed-orders .box-container .box .flex-action > * {
+  width: 9rem;
+  height: 4rem;
+  font-size: 1.65rem;
+  color: var(--light-primary) !important;
 }
