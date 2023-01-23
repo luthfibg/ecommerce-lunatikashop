@@ -15,9 +15,12 @@
     max-width: 960px;
   }
   .items-container .card p {
-    height: 12rem !important;
+    height: 10rem !important;
     font-size: 0.9rem !important;
     font-weight: 300 !important;
+  }
+  header .flex .product-operation {
+    left: 18rem;
   }
 }
 
