@@ -10,10 +10,21 @@
 
 .items-container .card .card-body > * {
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .items-container .card h5 {
   font-size: 1.1rem;
+}
+
+.items-container .card h5.product-card-spec-price {
+  background-color: var(--dark-warm);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  width: fit-content;
+  color: var(--component-orange);
+  font-size: 0.95rem;
+  cursor: pointer;
 }
 
 .items-container .card p {
@@ -41,7 +52,9 @@
   color: var(--dark-second);
 }
 
+/*************************/
 /* External remote style */
+/*************************/
 
 header .flex .product-operation {
   position: absolute;
