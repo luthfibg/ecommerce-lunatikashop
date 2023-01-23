@@ -1,4 +1,4 @@
-<div class="card product-card">
+<div class="card product-card col-6">
     <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
     <div class="card-body product-card-body">
         <h5 class="card-title product-card-spec">

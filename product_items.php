@@ -2,10 +2,9 @@
 
 $title = 'Product Management';
 include('components/connection.php');
-include('layouts/product_items_layout.php');
 
 session_start();
-
+include('layouts/product_items_layout.php');
 $admin_id = $_SESSION['admin_id'];
 if (!isset($admin_id)) {
     header('location:login.php');

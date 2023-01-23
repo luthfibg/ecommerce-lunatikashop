@@ -1,0 +1,12 @@
+$enable-grid-classes: false;
+$enable-cssgrid: true;
+
+.col {
+  padding: 1rem;
+  background-color: #242525;
+  border: 1px solid #fffefe;
+  color: #fffefe;
+  text-align: center;
+}
+
+@import './bootstrap.scss';
