@@ -103,6 +103,16 @@
     padding: 0.3rem;
     font-size: 0.8rem !important;
   }
+  .placed-orders .box-container .box > * {
+    margin-top: 0.5rem;
+    font-size: 0.95rem !important;
+  }
+  .placed-orders .box-container .box .btn {
+    font-size: 0.95rem !important;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem 3rem;
+  }
 }
 
 @media (min-width: 1200px) {
