@@ -37,6 +37,10 @@
   color: var(--component-orange);
 }
 
+.items-container .card .flex-action .btn.btn-delete:hover {
+  color: var(--dark-second);
+}
+
 /* External remote style */
 
 header .flex .product-operation {
