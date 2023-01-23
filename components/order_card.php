@@ -46,5 +46,17 @@
     </p>
     <form action="" method="POST">
         <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
+        <select name="payment_status" class="dropdown" id="dropdown-payment">
+            <option value="" selected disabled>
+                <?= $fetch_orders['payment_status']; ?>
+            </option>
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+        </select>
+        <div class="flex-action d-flex justify-content-between items-center">
+            <input type="submit" value="Update" class="btn btn-sm" name="update_status">
+            <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="btn btn-sm btn-delete"
+                onclick="return confirm('Are you sure to delete this order?'); ">Delete</a>
+        </div>
     </form>
 </div>
