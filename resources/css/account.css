@@ -23,6 +23,10 @@
   font-size: 1.65rem;
 }
 
+.admin-account .box-container .box .keyspan {
+  color: var(--component-livid);
+}
+
 .admin-account .box-container .box .flex-action {
   justify-content: space-between !important;
   margin: 0;
