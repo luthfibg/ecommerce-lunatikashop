@@ -1,4 +1,4 @@
-<div class="box mb-3 g-col-12 g-col-md-6">
+<div class="box g-col-12 g-col-md-6">
     <span class="d-block">
         <span class="keyspan">Admin id:&nbsp;</span>
         <?= $fetch_admin_accounts['id'] ?>

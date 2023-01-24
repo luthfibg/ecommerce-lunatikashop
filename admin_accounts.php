@@ -11,6 +11,13 @@ if (!isset($admin_id)) {
 
 include('layouts/admin_account_layout.php');
 
+if (isset($_GET['delete'])) {
+    $delete_id = $_GET['delete'];
+    $delete_admin = $conn->prepare("DELETE FROM `admins` WHERE id = ?");
+    $delete_admin->execute([$delete_id]);
+
+    header('location:admin_accounts.php');
+}
 
 
 ?>
