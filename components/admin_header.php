@@ -26,7 +26,7 @@ if (isset($message)) {
             </a>
             <a href="product_items.php" class="mt-3">
                 <i class="fas fa-cubes"></i>
-                <span class="ms-3">Items Center</span>
+                <span class="ms-3">Products Center</span>
             </a>
         </div>
         <nav class="navbar">
