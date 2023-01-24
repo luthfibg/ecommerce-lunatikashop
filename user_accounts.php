@@ -4,8 +4,8 @@ $title = 'User Account';
 include('components/connection.php');
 
 session_start();
-$user_id = $_SESSION['user_id'];
-if (!isset($user_id)) {
+$admin_id = $_SESSION['admin_id'];
+if (!isset($admin_id)) {
     header('location:login.php');
 }
 
