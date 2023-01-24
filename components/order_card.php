@@ -1,45 +1,45 @@
 <div class="box g-col-12 g-col-md-6 g-col-lg-4">
-    <span class="order-detail">User ID:&nbsp;
+    <span class="order-detail"><span class="keyspan">User ID:&nbsp;</span>
         <span>
             <?= $fetch_orders['user_id']; ?>
         </span>
     </span>
-    <span class="order-detail">Placed on:&nbsp;
+    <span class="order-detail"><span class="keyspan">Placed on:&nbsp;</span>
         <span>
             <?= $fetch_orders['placed_on']; ?>
         </span>
     </span>
-    <span class="order-detail">Customer Name:&nbsp;
+    <span class="order-detail"><span class="keyspan">Customer Name:&nbsp;</span>
         <span>
             <?= $fetch_orders['name']; ?>
         </span>
     </span>
-    <span class="order-detail">Email Address:&nbsp;
+    <span class="order-detail"><span class="keyspan">Email Address:&nbsp;</span>
         <span>
             <?= $fetch_orders['email']; ?>
         </span>
     </span>
-    <span class="order-detail">Phone Number:&nbsp;
+    <span class="order-detail"><span class="keyspan">Phone Number:&nbsp;</span>
         <span>
             <?= $fetch_orders['number']; ?>
         </span>
     </span>
-    <span class="order-detail">Customer Address:&nbsp;
+    <span class="order-detail"><span class="keyspan">Customer Address:&nbsp;</span>
         <span>
             <?= $fetch_orders['address']; ?>
         </span>
     </span>
-    <span class="order-detail">Payment Method:&nbsp;
+    <span class="order-detail"><span class="keyspan">Payment Method:&nbsp;</span>
         <span>
             <?= $fetch_orders['method']; ?>
         </span>
     </span>
-    <span class="order-detail">Total Item Ordered:&nbsp;
+    <span class="order-detail"><span class="keyspan">Total Item Ordered:&nbsp;</span>
         <span>
             <?= $fetch_orders['total_products']; ?>
         </span>
     </span>
-    <span class="order-detail">Total Price:&nbsp;
+    <span class="order-detail"><span class="keyspan">Total Price:&nbsp;</span>
         <span>
             <?= $fetch_orders['total_price']; ?>
         </span>

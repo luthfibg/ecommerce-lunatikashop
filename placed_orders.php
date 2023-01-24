@@ -19,4 +19,13 @@ if (isset($_POST['update_status'])) {
 
     $message[] = 'Payment Status Updated';
 }
+
+if (isset($_GET['delete'])) {
+    $delete_id = $_GET['delete'];
+    $delete_order = $conn->prepare("DELETE FROM `orders` WHERE id = ?");
+    $delete_order->execute([$delete_id]);
+
+    header('location:placed_orders.php');
+}
+
 ?>

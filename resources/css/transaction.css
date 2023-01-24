@@ -29,6 +29,10 @@
   display: block;
 }
 
+.placed-orders .box-container .box .order-detail .keyspan {
+  color: var(--component-livid) !important;
+}
+
 .placed-orders .box-container .box .dropdown {
   width: 100%;
   background-color: var(--dark-warm);
