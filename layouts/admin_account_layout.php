@@ -22,6 +22,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="resources/css/admin.css">
+    <link rel="stylesheet" href="resources/css/account.css">
     <link rel="stylesheet" href="resources/css/theme.css">
     <link rel="stylesheet" href="resources/css/main.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
@@ -55,9 +56,26 @@
 
         <!-- main content start -->
         <section class="admin-account py-5">
-            <h3 class="my-5">Admin Account</h3>
-            <div class="box-container">
-                <!-- content is here -->
+            <h3 class="my-5 text-center">Admin Account</h3>
+            <div class="box-container grid">
+                <?php
+
+                $select_admin_account = $conn->prepare("SELECT * FROM `admins`");
+                $select_admin_account->execute();
+
+                if ($select_admin_account->rowCount() > 0) {
+                    while ($fetch_admin_accounts = $select_admin_account->fetch(PDO::FETCH_ASSOC)) {
+                        # code...
+                        ?>
+                        <?php include('components/admin_account_box.php'); ?>
+                        <?php
+                    }
+                } else {
+                    echo '<p class="empty">No Account Registered</p>';
+                }
+
+
+                ?>
             </div>
         </section>
         <!-- main content end -->

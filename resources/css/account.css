@@ -1,0 +1,41 @@
+@import 'theme.css';
+
+.admin-account {
+  margin: 0;
+}
+
+.admin-account h3 {
+  font-size: 1.85rem;
+}
+
+.admin-account .box-container {
+  margin: 0;
+}
+
+.admin-account .box-container .box {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--dark-second);
+  border-radius: 0.5rem;
+}
+
+.admin-account .box-container .box > * {
+  font-size: 1.65rem;
+}
+
+.admin-account .box-container .box .flex-action {
+  justify-content: space-between !important;
+  margin: 0;
+}
+
+.admin-account .box-container .box .flex-action .btn {
+  padding: 0.5rem 5rem !important;
+  width: fit-content;
+  color: var(--light-primary);
+  font-size: 1.65rem;
+}
+
+.admin-account .box-container .box .flex-action .btn-delete {
+  margin: 0 !important;
+  color: var(--component-orange) !important;
+}
