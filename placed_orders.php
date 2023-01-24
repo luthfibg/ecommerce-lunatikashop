@@ -2,6 +2,7 @@
 
 $title = 'Product Management';
 include('components/connection.php');
+include('components/_currency_format.php');
 
 session_start();
 $admin_id = $_SESSION['admin_id'];

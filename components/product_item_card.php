@@ -6,7 +6,7 @@
         </h5>
         <h5 class="card-title product-card-spec-price">
             <span>Rp</span>
-            <?= $fetch_products['price']; ?>
+            <?= currency_formatter($fetch_products['price']); ?>
             <span>,-</span>
         </h5>
         <p class="card-text product-card-spec">

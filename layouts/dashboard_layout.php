@@ -82,7 +82,7 @@ if (!isset($admin_id)) {
 
                     <h3>
                         <span>Rp</span>
-                        <?= $total_pendings; ?>
+                        <?= currency_formatter($total_pendings); ?>
                         <span>/-</span>
                     </h3>
                     <p>Total Pendings</p>
@@ -101,7 +101,7 @@ if (!isset($admin_id)) {
 
                     <h3>
                         <span>Rp</span>
-                        <?= $total_completes; ?>
+                        <?= currency_formatter($total_completes); ?>
                         <span>/-</span>
                     </h3>
                     <p>Total Completes</p>
@@ -114,7 +114,9 @@ if (!isset($admin_id)) {
                     $num_of_orders = $select_orders->rowCount();
                     ?>
 
-                    <h3><?= $num_of_orders; ?></h3>
+                    <h3>
+                        <?= $num_of_orders; ?>
+                    </h3>
                     <p>Total Orders</p>
                     <a href="placed_orders.php" class="btn btn-sm">View Orders</a>
                 </div>
@@ -125,7 +127,9 @@ if (!isset($admin_id)) {
                     $num_of_products = $select_products->rowCount();
                     ?>
 
-                    <h3><?= $num_of_products; ?></h3>
+                    <h3>
+                        <?= $num_of_products; ?>
+                    </h3>
                     <p>Amount Of Products</p>
                     <a href="placed_products.php" class="btn btn-sm">View Products</a>
                 </div>
@@ -136,7 +140,9 @@ if (!isset($admin_id)) {
                     $num_of_users = $select_users->rowCount();
                     ?>
 
-                    <h3><?= $num_of_users; ?></h3>
+                    <h3>
+                        <?= $num_of_users; ?>
+                    </h3>
                     <p>Amount Of User</p>
                     <a href="user_accounts.php" class="btn btn-sm">View Users</a>
                 </div>
@@ -147,7 +153,9 @@ if (!isset($admin_id)) {
                     $num_of_admins = $select_admins->rowCount();
                     ?>
 
-                    <h3><?= $num_of_admins; ?></h3>
+                    <h3>
+                        <?= $num_of_admins; ?>
+                    </h3>
                     <p>Amount Of Admin</p>
                     <a href="admin_accounts.php" class="btn btn-sm">View Admins</a>
                 </div>
@@ -158,7 +166,9 @@ if (!isset($admin_id)) {
                     $num_of_messages = $select_messages->rowCount();
                     ?>
 
-                    <h3><?= $num_of_messages; ?></h3>
+                    <h3>
+                        <?= $num_of_messages; ?>
+                    </h3>
                     <p>New Messages</p>
                     <a href="messages.php" class="btn btn-sm">View Messages</a>
                 </div>

@@ -40,9 +40,11 @@
         </span>
     </span>
     <span class="order-detail"><span class="keyspan">Total Price:&nbsp;</span>
+        Rp&nbsp;
         <span>
-            <?= $fetch_orders['total_price']; ?>
+            <?= currency_formatter($fetch_orders['total_price']); ?>
         </span>
+        -/
     </span>
     <form action="" method="POST" class="mt-5">
         <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
