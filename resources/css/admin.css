@@ -111,6 +111,10 @@ header section.flex .profile .btn {
   padding: 5px;
 }
 
+header section.flex .profile p {
+  color: var(--light-primary);
+}
+
 header {
   position: sticky;
   top: 0;
