@@ -15,7 +15,8 @@
 }
 
 .admin-account .box-container .box,
-.user-account .box-container .box {
+.user-account .box-container .box,
+.messages .box-container .box {
   padding: 1rem;
   margin: 0;
   background-color: var(--dark-second);
