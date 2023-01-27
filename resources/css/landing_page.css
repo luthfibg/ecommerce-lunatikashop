@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'theme.css';
 
 * {
   padding: 0;
@@ -8,7 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e4e9ec;
+  background-color: var(--dark-base);
 }
 
 h1 {
@@ -42,7 +43,7 @@ h6 {
 
 .logo-holder {
   font-size: 12.5pt;
-  color: #d8d8d8;
+  color: var(--component-orange);
 }
 
 .nav-link-special {
@@ -61,6 +62,7 @@ h6 {
   top: 0;
   left: 0;
   height: 50px;
+  background-color: var(--dark-second);
 }
 
 .navbar-shadow {
@@ -77,7 +79,7 @@ h6 {
 .navbar i:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar i.active {
-  color: springgreen;
+  color: var(--component-orange);
 }
 
 .navbar i {
@@ -128,7 +130,7 @@ h6 {
 }
 
 #home {
-  background-image: url('../assets/bg_image/backg.png');
+  background-image: url('../../assets/images/headers/vector_2648.png');
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -292,12 +294,12 @@ hr {
 }
 
 #banner {
-  background-image: url('../assets/banners/banner1.jpg');
+  background-image: url('../../assets/images/contents/conference.jpg');
   width: 100%;
   height: 60vh;
   background-size: cover;
   background-color: #d8d8d8;
-  background-position: top 30px center;
+  background-position: top 30px top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -308,8 +310,12 @@ hr {
   align-items: start;
 }
 
+#new .one .details h2 {
+  color: var(--component-orange) !important;
+}
+
 footer {
-  background-color: #222;
+  background-color: var(--dark-second);
   /* bottom: 0; */
 }
 
