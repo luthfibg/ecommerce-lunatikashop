@@ -60,7 +60,7 @@
             <div class="box-container grid">
                 <?php
 
-                $select_message = $conn->prepare("SELECT * FROM `users`");
+                $select_message = $conn->prepare("SELECT * FROM `messages`");
                 $select_message->execute();
 
                 if ($select_message->rowCount() > 0) {
