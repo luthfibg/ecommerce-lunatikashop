@@ -1,0 +1,10 @@
+@import 'theme.css';
+
+.header .icons a {
+  font-size: 1rem !important;
+}
+
+.header .icons #wishlist-btn .badge,
+.header .icons #cart-btn .badge {
+  font-size: 0.6rem !important;
+}

@@ -34,33 +34,50 @@ if (isset($message)) {
         </div>
         <nav class="navbar">
             <a href="home.php">Home</a>
-            <a href="placed_orders.php">Shop</a>
-            <a href="admin_accounts.php">My Orders</a>
+            <a href="shop.php">Shop</a>
+            <a href="my_orders.php">My Orders</a>
             <a href="javascript:;" onclick="menu()" id="product-btn">About</a>
-            <a href="user_accounts.php">Contact</a>
-            <a href="messages.php">Help Center</a>
+            <a href="contact.php">Contact</a>
+            <a href="help.php">Help Center</a>
         </nav>
         <div class="icons">
             <?php
-            $count_wishlist_items = $conn->prepare("SELECT * FROM `wishlists` WHERE user_id = ?");
-            $count_wishlist_items->execute();
+            $count_wishlist_items = $conn->prepare("SELECT * FROM `wishlist` WHERE user_id = ?");
+            $count_wishlist_items->execute([$user_id]);
             $total_wishlist_items = $count_wishlist_items->rowCount();
 
-            $count_cart_items = $conn->prepare("SELECT * FROM `carts` WHERE user_id = ?");
-            $count_cart_items->execute();
+            $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+            $count_cart_items->execute([$user_id]);
             $total_cart_items = $count_cart_items->rowCount();
             ?>
             <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="search.php" id="search-btn">
+                <i class="fas fa-search fa-sm"></i>
+            </a>
+            <a href="wishlist.php" id="wishlist-btn" class="position-relative ms-3 pe-3">
+                <i class="fas fa-heart fa-sm"></i>
+                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-warning">
+                    <?= $total_wishlist_items; ?>
+                    <span class="visually-hidden">wishlist</span>
+                </span>
+            </a>
+            <a href="cart.php" id="cart-btn" class="position-relative ms-0 pe-3">
+                <i class="fas fa-shopping-cart fa-sm"></i>
+                <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-warning">
+                    <?= $total_cart_items; ?>
+                    <span class="visually-hidden">cart</span>
+                </span>
+            </a>
             <div id="user-btn" class="fas fa-user"></div>
         </div>
         <div class="profile">
             <?php
-            $select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
-            $select_profile->execute([$admin_id]);
-            $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+            // $select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
+            // $select_profile->execute([$admin_id]);
+            // $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
             ?>
             <p>
-                <? $fetch_profile['name']; ?>
+                <? // $fetch_profile['name']; ?>
             </p>
             <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
             <div class="flex-btn">
