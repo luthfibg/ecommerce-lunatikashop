@@ -84,6 +84,18 @@
   header .flex .product-operation.active a {
     font-size: 0.95rem;
   }
+  .log .card form input[type='text'],
+  .log .card form input[type='password'] {
+    font-size: 0.9rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .log .card form input[type='submit'] {
+    padding: 0 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+  }
+
   /* .container .box-container .product-card {
     width: 18rem !important;
     margin: 0.25rem;
@@ -136,6 +148,16 @@
     font-size: 0.9rem;
   }
   .user-account .box-container .box .flex-action .btn {
+    padding: 0.5rem 5rem !important;
+    font-size: 0.9rem;
+  }
+  .messages h3 {
+    font-size: 1.3rem;
+  }
+  .messages .box-container .box > * {
+    font-size: 0.9rem;
+  }
+  .messages .box-container .box .flex-action .btn {
     padding: 0.5rem 5rem !important;
     font-size: 0.9rem;
   }

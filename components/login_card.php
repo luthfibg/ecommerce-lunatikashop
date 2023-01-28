@@ -1,6 +1,6 @@
 <div class="card image-header w-75 w-50-sm w-25-lg p-3">
     <div class="row p-2 d-flex flex-justify-center">
-        <p class="title-lvl-3">Admin Login</p>
+        <p class="title-card">Admin Login</p>
     </div>
     <div class="row p-2 d-flex flex-column text-center">
         <form action="" method="POST">

@@ -198,6 +198,26 @@ header .flex .profile.active {
   }
 }
 
+.log .card .title-card {
+  font-size: 1.85rem !important;
+}
+
+.log .card form input[type='text'],
+.log .card form input[type='password'] {
+  background-color: var(--dark-warm) !important;
+  color: var(--light-primary) !important;
+  outline: none !important;
+  border: none;
+  font-size: 1.65rem;
+  padding: 1rem;
+}
+
+.log .card form input[type='submit'] {
+  padding: 0 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.65rem;
+}
+
 /**************************/
 /** Admin Dashboard Part **/
 /**************************/
