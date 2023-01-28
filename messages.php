@@ -11,13 +11,13 @@ if (!isset($admin_id)) {
 
 include('layouts/messages_layout.php');
 
-// if (isset($_GET['delete'])) {
-//     $delete_id = $_GET['delete'];
-//     $delete_user = $conn->prepare("DELETE FROM `users` WHERE id = ?");
-//     $delete_user->execute([$delete_id]);
+if (isset($_GET['delete'])) {
+    $delete_id = $_GET['delete'];
+    $delete_message = $conn->prepare("DELETE FROM `messages` WHERE id = ?");
+    $delete_message->execute([$delete_id]);
 
-//     header('location:user_accounts.php');
-// }
+    header('location:messages.php');
+}
 
 
 ?>
