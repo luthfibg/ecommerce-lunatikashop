@@ -16,28 +16,40 @@ if (isset($message)) {
 
 <header class="header">
     <section class="flex container py-3">
-        <a href="dashboard.php" class="logo">Admin
-            <span>Panel</span>
+        <a href="home.php" class="logo">Lunatika
         </a>
         <div class="product-operation">
-            <a href="products.php">
+            <a href="#">
                 <i class="fas fa-circle-plus"></i>
-                <span class="ms-3">Insert Product</span>
+                <span class="ms-3">Lunatika</span>
             </a>
-            <a href="product_items.php" class="mt-3">
+            <a href="#" class="mt-3">
                 <i class="fas fa-cubes"></i>
-                <span class="ms-3">Products Center</span>
+                <span class="ms-3">Lunatika Shop</span>
+            </a>
+            <a href="#" class="mt-3">
+                <i class="fas fa-cubes"></i>
+                <span class="ms-3">Blogs</span>
             </a>
         </div>
         <nav class="navbar">
-            <a href="dashboard.php">Dashboard</a>
-            <a href="javascript:;" onclick="menu()" id="product-btn">Products</a>
-            <a href="placed_orders.php">Orders</a>
-            <a href="admin_accounts.php">Admin Accounts</a>
-            <a href="user_accounts.php">User Accounts</a>
-            <a href="messages.php">Messages</a>
+            <a href="home.php">Home</a>
+            <a href="placed_orders.php">Shop</a>
+            <a href="admin_accounts.php">My Orders</a>
+            <a href="javascript:;" onclick="menu()" id="product-btn">About</a>
+            <a href="user_accounts.php">Contact</a>
+            <a href="messages.php">Help Center</a>
         </nav>
         <div class="icons">
+            <?php
+            $count_wishlist_items = $conn->prepare("SELECT * FROM `wishlists` WHERE user_id = ?");
+            $count_wishlist_items->execute();
+            $total_wishlist_items = $count_wishlist_items->rowCount();
+
+            $count_cart_items = $conn->prepare("SELECT * FROM `carts` WHERE user_id = ?");
+            $count_cart_items->execute();
+            $total_cart_items = $count_cart_items->rowCount();
+            ?>
             <div id="menu-btn" class="fas fa-bars"></div>
             <div id="user-btn" class="fas fa-user"></div>
         </div>

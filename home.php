@@ -13,6 +13,6 @@ if (isset($_SESSION['user_id'])) {
 } else {
     $user_id = '';
 }
-include('index_layout.php');
+include('layouts/home_layout.php');
 
 ?>
