@@ -1,10 +1,200 @@
 @import 'theme.css';
 
-.header .icons a {
-  font-size: 1rem !important;
+.message {
+  position: sticky;
+  top: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--component-livid);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
-.header .icons #wishlist-btn .badge,
-.header .icons #cart-btn .badge {
-  font-size: 0.6rem !important;
+.message span {
+  font-size: 0.9rem;
+  color: var(--light-primary);
+}
+
+.message i {
+  font-size: 1.5rem;
+  color: var(--component-orange);
+  cursor: pointer;
+}
+
+.message i:hover {
+  color: var(--component-livid);
+}
+
+.btn {
+  outline: auto;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: var(--component-orange) !important;
+  background-color: transparent;
+  font-size: 12pt;
+}
+
+.btn:hover {
+  background-color: var(--component-orange) !important;
+}
+
+.btn,
+.btn-delete,
+.btn-opt {
+  display: block;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--light-primary);
+  padding: 1rem 3rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn-delete,
+.btn-opt {
+  margin-top: 1rem;
+}
+
+.flex-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.user_header section.flex a {
+  font-size: 18pt;
+  color: var(--light-primary);
+}
+
+.user_header section.flex .navbar a:hover {
+  color: var(--component-livid) !important;
+}
+
+.user_header section.flex nav a,
+.user_header section.flex .icons {
+  margin: 0 1rem;
+  font-size: 11.5pt;
+  font-weight: 300;
+  color: var(--light-primary);
+}
+
+.user_header section.flex .icons > * {
+  cursor: pointer;
+  margin-left: 1.1rem;
+}
+
+.user_header section.flex .icons > *:hover {
+  color: var(--component-orange) !important;
+}
+
+.user_header section.flex .profile > * {
+  font-size: 1.65rem !important;
+}
+
+.user_header section.flex .logo span {
+  color: var(--component-livid);
+}
+
+.user_header section.flex .profile .btn {
+  padding: 5px;
+}
+
+.user_header section.flex .profile p {
+  color: var(--light-primary);
+}
+
+.user_header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-second);
+  box-shadow: var(--bottom-box-shadow);
+  z-index: 9999;
+}
+
+.user_header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.user_header .flex .product-operation {
+  position: absolute;
+  top: 100%;
+  left: 14rem;
+  background-color: var(--dark-second);
+  border: 0.5px solid var(--light-secondary);
+  border-radius: 0.3rem;
+  padding: 1.3rem;
+  width: 20rem;
+  display: none;
+  z-index: 99991;
+  animation: fadeIn 0.2s linear;
+}
+
+.user_header .flex .product-operation.active.active {
+  display: inline-block;
+}
+
+.user_header .flex .product-operation.active a {
+  display: block;
+  width: 100%;
+  font-size: 1.65rem;
+}
+
+.user_header section.flex .product-operation.active a i {
+  color: var(--component-orange) !important;
+}
+
+.user_header section.flex .product-operation.active a:hover {
+  color: var(--component-livid) !important;
+}
+
+.user_header .flex .profile {
+  position: absolute;
+  top: 120%;
+  right: 2rem;
+  background-color: var(--dark-second);
+  border: 1px solid var(--light-primary);
+  border-radius: 0.5rem;
+  padding: 1.3rem;
+  width: 18rem;
+  display: none;
+  animation: fadeIn 0.2s linear;
+}
+
+.user_header .flex .profile p {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--light-primary);
+}
+
+.user_header .flex .profile.active {
+  display: inline-block;
+}
+
+#menu-btn {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(1rem);
+  }
+}
+
+.user_header .icons a {
+  font-size: 1.7rem !important;
+}
+
+.user_header .icons #wishlist-btn .badge,
+.user_header .icons #cart-btn .badge {
+  font-size: 1rem !important;
 }

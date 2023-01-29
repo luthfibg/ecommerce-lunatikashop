@@ -14,7 +14,7 @@ if (isset($message)) {
 }
 ?>
 
-<header class="header user_header">
+<header class="user_header">
     <section class="flex container py-3">
         <a href="home.php" class="logo">Lunatika
         </a>
@@ -90,7 +90,7 @@ if (isset($message)) {
                 <?php
             } else {
                 ?>
-                <p>User haven't logged in</p>
+                <p><i class="fa-solid fa-person-circle-exclamation" style="color: ;"></i>&nbsp;User haven't logged in</p>
                 <?php
             }
             ?>
