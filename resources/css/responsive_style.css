@@ -85,12 +85,18 @@
     font-size: 0.95rem;
   }
   .log .card form input[type='text'],
-  .log .card form input[type='password'] {
+  .log .card form input[type='password'],
+  .reg .card form input[type='text'],
+  .reg .card form input[type='password'],
+  .upd .card form input[type='text'],
+  .upd .card form input[type='password'] {
     font-size: 0.9rem !important;
     padding: 0.5rem !important;
   }
 
-  .log .card form input[type='submit'] {
+  .log .card form input[type='submit'],
+  .reg .card form input[type='submit'],
+  .upd .card form input[type='submit'] {
     padding: 0 0.5rem;
     border-radius: 0.3rem;
     font-size: 0.9rem;

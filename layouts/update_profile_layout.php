@@ -49,22 +49,20 @@ if (!isset($admin_id)) {
     ?>
     <?php include($header) ?>
     <div
-        class="container mw-100 h-100 pos-absolute d-flex flex-justify-center flex-align-center justify-content-center align-items-center flex-column">
-        <div class="container mw-100 h-100 pos-absolute d-flex flex-align-center flex-column">
-            <?php
-            $message = array();
-            if (isset($message)) {
-                foreach ($message as $message) {
-                    echo '
+        class="container upd mw-100 h-100 pos-absolute d-flex flex-justify-center flex-align-center justify-content-center align-items-center flex-column">
+        <?php
+        $message = array();
+        if (isset($message)) {
+            foreach ($message as $message) {
+                echo '
         <div class="message">
           <span>' . $message . '</span>
           <i class="fas fa-times" onclick="this.parentElement.remove();"></i>
         </div>
           ';
-                }
             }
-            ?>
-        </div>
+        }
+        ?>
         <?php include($content); ?>
     </div>
 
