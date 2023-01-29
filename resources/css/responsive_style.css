@@ -167,6 +167,21 @@
     padding: 0.5rem 5rem !important;
     font-size: 0.9rem;
   }
+
+  .user_header .flex .profile .when-no-user {
+    margin-bottom: 0;
+    font-size: 0.9rem !important;
+  }
+  .user_header section.flex nav a {
+    font-size: 0.9rem !important;
+  }
+  .user_header .icons a {
+    font-size: 1rem !important;
+  }
+  .user_header .icons #wishlist-btn .badge,
+  .user_header .icons #cart-btn .badge {
+    font-size: 0.5rem !important;
+  }
 }
 
 @media (min-width: 1200px) {

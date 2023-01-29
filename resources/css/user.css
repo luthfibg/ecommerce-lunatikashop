@@ -74,10 +74,9 @@
   color: var(--component-livid) !important;
 }
 
-.user_header section.flex nav a,
-.user_header section.flex .icons {
+.user_header section.flex nav a {
   margin: 0 1rem;
-  font-size: 11.5pt;
+  font-size: 1.65rem;
   font-weight: 300;
   color: var(--light-primary);
 }
@@ -91,9 +90,22 @@
   color: var(--component-orange) !important;
 }
 
-.user_header section.flex .profile > * {
-  font-size: 1.65rem !important;
+.user_header section.flex .icons .search-btn {
+  color: var(--component-crimson) !important;
 }
+.user_header section.flex .icons .wishlist-btn {
+  color: var(--component-emerald) !important;
+}
+.user_header section.flex .icons .cart-btn {
+  color: var(--component-golden) !important;
+}
+.user_header section.flex .icons .account-btn {
+  color: var(--component-turquoise) !important;
+}
+
+/* .user_header section.flex .profile > * {
+  font-size: 1.65rem !important;
+} */
 
 .user_header section.flex .logo span {
   color: var(--component-livid);
@@ -171,7 +183,7 @@
 
 .user_header .flex .profile p {
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.65rem;
   text-align: center;
   color: var(--light-primary);
 }
@@ -191,10 +203,10 @@
 }
 
 .user_header .icons a {
-  font-size: 1.7rem !important;
+  font-size: 1.8rem !important;
 }
 
 .user_header .icons #wishlist-btn .badge,
 .user_header .icons #cart-btn .badge {
-  font-size: 1rem !important;
+  font-size: 1.1rem !important;
 }

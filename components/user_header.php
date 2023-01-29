@@ -51,24 +51,24 @@ if (isset($message)) {
             $total_cart_items = $count_cart_items->rowCount();
             ?>
             <div id="menu-btn" class="fas fa-bars"></div>
-            <a href="search.php" id="search-btn">
+            <a href="search.php" class="search-btn">
                 <i class="fas fa-search fa-sm"></i>
             </a>
-            <a href="wishlist.php" id="wishlist-btn" class="position-relative ms-3 pe-3">
+            <a href="wishlist.php" class="wishlist-btn position-relative ms-3 pe-3">
                 <i class="fas fa-heart fa-sm"></i>
                 <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-warning">
                     <?= $total_wishlist_items; ?>
                     <span class="visually-hidden">wishlist</span>
                 </span>
             </a>
-            <a href="cart.php" id="cart-btn" class="position-relative ms-0 pe-3">
+            <a href="cart.php" class="cart-btn position-relative ms-0 pe-3">
                 <i class="fas fa-shopping-cart fa-sm"></i>
                 <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-warning">
                     <?= $total_cart_items; ?>
                     <span class="visually-hidden">cart</span>
                 </span>
             </a>
-            <div id="user-btn" class="fas fa-user"></div>
+            <div id="user-btn" class="account-btn fas fa-user"></div>
         </div>
         <div class="profile">
             <?php
@@ -90,7 +90,9 @@ if (isset($message)) {
                 <?php
             } else {
                 ?>
-                <p><i class="fa-solid fa-person-circle-exclamation" style="color: ;"></i>&nbsp;User haven't logged in</p>
+                <p class="when-no-user"><i class="fa-solid fa-person-circle-exclamation"
+                        style="color: var(--component-crimson);"></i>&nbsp;User
+                    haven't logged in</p>
                 <?php
             }
             ?>
