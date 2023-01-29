@@ -14,7 +14,7 @@ if (isset($message)) {
 }
 ?>
 
-<header class="header">
+<header class="header user_header">
     <section class="flex container py-3">
         <a href="home.php" class="logo">Lunatika
         </a>
@@ -72,20 +72,29 @@ if (isset($message)) {
         </div>
         <div class="profile">
             <?php
-            // $select_profile = $conn->prepare("SELECT * FROM `admins` WHERE id = ?");
-            // $select_profile->execute([$admin_id]);
-            // $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+            $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+            $select_profile->execute([$user_id]);
+            if ($select_profile->rowCount() > 0) {
+                $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+                ?>
+                <p>
+                <? $fetch_profile['name']; ?>
+                </p>
+                <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
+                <div class="flex-btn">
+                    <a href="login.php" class="btn btn-sm btn-opt">Login</a>
+                    <a href="register.php" class="btn btn-sm btn-opt">Register</a>
+                </div>
+                <a href="../logout.php" onclick="return confirm('Are you sure logout from this site?');"
+                    class="btn btn-sm btn-delete">Logout</a>
+                <?php
+            } else {
+                ?>
+                <p>User haven't logged in</p>
+                <?php
+            }
             ?>
-            <p>
-                <? // $fetch_profile['name']; ?>
-            </p>
-            <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
-            <div class="flex-btn">
-                <a href="login.php" class="btn btn-sm btn-opt">Login</a>
-                <a href="register.php" class="btn btn-sm btn-opt">Register</a>
-            </div>
-            <a href="../logout.php" onclick="return confirm('Are you sure logout from this site?');"
-                class="btn btn-sm btn-delete">Logout</a>
+
         </div>
     </section>
 </header>
