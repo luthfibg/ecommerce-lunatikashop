@@ -64,6 +64,10 @@ if (isset($message)) {
                 <p class="when-no-user"><i class="fa-solid fa-person-circle-exclamation"
                         style="color: var(--component-crimson);"></i>&nbsp;User
                     haven't logged in</p>
+                <div class="flex-btn">
+                    <a href="login.php" class="btn btn-sm btn-opt">Login</a>
+                    <a href="register.php" class="btn btn-sm btn-opt">Register</a>
+                </div>
                 <?php
             }
             ?>
