@@ -2,7 +2,8 @@
 
 $title = 'Welcome';
 $header = 'components/user_header.php';
-$content = 'components/content';
+$content = 'components/contents';
+$footer = 'components/footer.php';
 
 include('components/connection.php');
 
