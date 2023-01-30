@@ -45,7 +45,7 @@
     width: 50% !important;
   }
   .upd .card {
-    width: 75% !important;
+    width: 50% !important;
   }
   .dashboard .box-container .box {
     padding: 1.5rem;
@@ -147,6 +147,9 @@
     padding: 0.5rem 5rem !important;
     font-size: 0.9rem;
   }
+  .user_header section.flex a.logo {
+    font-size: 1.3rem !important;
+  }
   .user-account h3 {
     font-size: 1.3rem;
   }
@@ -181,6 +184,9 @@
   .user_header .icons #wishlist-btn .badge,
   .user_header .icons #cart-btn .badge {
     font-size: 0.5rem !important;
+  }
+  .home {
+    font-size: 0.9rem;
   }
 }
 
@@ -226,6 +232,26 @@
   }
 
   .header section.flex .navbar a {
+    display: block !important;
+    margin: 2rem;
+    width: 100%;
+  }
+
+  .user_header section.flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-bottom: var(--light-border);
+    background-color: var(--dark-warm);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .user_header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .user_header section.flex .navbar a {
     display: block !important;
     margin: 2rem;
     width: 100%;

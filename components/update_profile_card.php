@@ -15,7 +15,7 @@
             </div>
             <div class="mb-5">
                 <input type="password" name="old_password" maxlength="20"
-                    oninput="this.value = this.value.replace(/\s/g, '')" class="form-control" id="inputNewPassword1"
+                    oninput="this.value = this.value.replace(/\s/g, '')" class="form-control" id="inputOldPassword1"
                     placeholder="Old Password" required>
             </div>
             <div class="mb-5">

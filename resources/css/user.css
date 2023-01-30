@@ -65,6 +65,9 @@
   gap: 1rem;
 }
 
+.user_header section.flex a.logo {
+  font-size: 1.9rem !important;
+}
 .user_header section.flex a {
   font-size: 18pt;
   color: var(--light-primary);
@@ -200,6 +203,10 @@
   0% {
     transform: translateY(1rem);
   }
+}
+
+.user_header .icons {
+  margin-right: 0 !important;
 }
 
 .user_header .icons a {
