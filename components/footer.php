@@ -20,10 +20,40 @@
                 <i class="fas fa-phone"></i>
                 +628-2221-7777
             </a>
+            <a href="tel:+62822219292">
+                <i class="fas fa-phone"></i>
+                +628-2221-9292
+            </a>
             <a href="mailto:info@lunatika.co.id">
                 <i class="fas fa-envelope"></i>
                 info@lunatika.co.id
             </a>
+            <a href="https://www.somewhere-place.com">
+                <i class="fas fa-map-marker-alt"></i>
+                Nusantara, Indonesia - 70003
+            </a>
+        </div>
+        <div class="box">
+            <h4>Follow Us</h4>
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+                Twitter
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="#">
+                <i class="fab fa-youtube"></i>
+                Youtube
+            </a>
+        </div>
+        <div class="credit"> &copy; Copyright @
+            <?= date('Y'); ?> by <span>Muhamad Luthfi </span>| alright reserved.
         </div>
     </section>
 </footer>
