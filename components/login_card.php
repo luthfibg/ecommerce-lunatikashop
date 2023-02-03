@@ -14,5 +14,6 @@
             </div>
             <input type="submit" name="submit_login" class="button secondary component-tone mt-5" value="Login">
         </form>
+        <span>Haven't account? <a href="register.php">register</a></span>
     </div>
 </div>

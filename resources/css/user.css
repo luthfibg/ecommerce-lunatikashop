@@ -217,3 +217,45 @@
 .user_header .icons #cart-btn .badge {
   font-size: 1.1rem !important;
 }
+
+/* Footer Section */
+
+footer {
+  background-color: var(--dark-second);
+}
+
+footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-gap: 1rem;
+  align-items: flex-start;
+}
+
+footer .box-container .box h4 {
+  font-size: 1.9rem !important;
+  color: var(--light-primary);
+  text-transform: capitalize;
+}
+
+footer .box-container .box a {
+  display: block;
+  margin: 1rem 0;
+  color: var(--component-livid);
+  font-size: 1.65rem;
+}
+
+footer .box-container .box a i {
+  padding-right: 0.5rem;
+  transition: 0.2s linear;
+}
+
+footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+footer .credit {
+  padding: 1rem;
+  text-align: center;
+  border-top: var(--light-border);
+  font-size: 1.35rem;
+}
