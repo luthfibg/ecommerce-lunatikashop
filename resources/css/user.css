@@ -260,3 +260,7 @@ footer .credit {
   font-size: 1.35rem;
   margin-bottom: 0.5rem;
 }
+
+footer .credit span {
+  color: var(--component-turquoise);
+}
