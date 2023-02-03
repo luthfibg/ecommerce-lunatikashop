@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Shop Display';
+$title = 'My Cart';
 $header = 'components/user_header.php';
 $content = '';
 $footer = 'components/footer.php';
@@ -13,6 +13,6 @@ if (!isset($user_id)) {
     header('location:user_login.php');
 }
 
-include('layouts/shop_layout.php');
+include('layouts/cart_layout.php');
 
 ?>

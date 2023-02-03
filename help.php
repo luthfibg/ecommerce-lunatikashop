@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Shop Display';
+$title = 'Help Center';
 $header = 'components/user_header.php';
 $content = '';
 $footer = 'components/footer.php';
@@ -13,6 +13,6 @@ if (!isset($user_id)) {
     header('location:user_login.php');
 }
 
-include('layouts/shop_layout.php');
+include('layouts/help_layout.php');
 
 ?>

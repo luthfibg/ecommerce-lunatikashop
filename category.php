@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Shop Display';
+$title = 'Category';
 $header = 'components/user_header.php';
 $content = '';
 $footer = 'components/footer.php';
