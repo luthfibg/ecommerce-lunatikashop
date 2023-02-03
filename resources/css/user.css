@@ -258,4 +258,5 @@ footer .credit {
   text-align: center;
   border-top: var(--light-border);
   font-size: 1.35rem;
+  margin-bottom: 0.5rem;
 }

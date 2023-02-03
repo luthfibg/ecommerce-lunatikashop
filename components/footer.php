@@ -1,5 +1,5 @@
 <footer class="footer">
-    <section class="box-container px-3">
+    <section class="box-container px-3 px-5-md">
         <div class="box">
             <h4>Quick Links</h4>
             <a href="home.php"><i class="fas fa-angle-right"></i>home</a>
@@ -52,8 +52,8 @@
                 Youtube
             </a>
         </div>
-        <div class="credit"> &copy; Copyright @
-            <?= date('Y'); ?> by <span>Muhamad Luthfi </span>| alright reserved.
-        </div>
     </section>
+    <div class="credit"> &copy; Copyright @
+        <?= date('Y'); ?> by <span>Muhamad Luthfi </span>| alright reserved.
+    </div>
 </footer>

@@ -188,6 +188,25 @@
   .home {
     font-size: 0.9rem;
   }
+  footer .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 0.8rem;
+  }
+  footer .box-container .box h4 {
+    font-size: 1.3rem !important;
+  }
+  footer .box-container .box a {
+    display: block;
+    margin: 0.8rem 0;
+    font-size: 0.9rem;
+  }
+  footer .box-container .box a:hover i {
+    padding-right: 1.5rem;
+  }
+  footer .credit {
+    padding: 0.8remrem;
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -196,6 +215,11 @@
   }
   .container .product-card .product-card-body p {
     height: 9rem;
+  }
+  footer .box-container {
+    align-items: center !important;
+    padding: 0 5rem !important;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 }
 
