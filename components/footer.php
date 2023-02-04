@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer py-5">
     <section class="box-container px-3 px-5-md">
         <div class="box">
             <h4>Quick Links</h4>

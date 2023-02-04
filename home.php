@@ -9,7 +9,9 @@ $footer = 'components/footer.php';
 $carousel = 'components/carousel.php';
 
 //assets attribute
-$carousel_bg_1 = 'assets/images/slider/carousel_1.jpg';
+$carousel_bg_1 = 'assets/images/slider/wallpaperwatch1.jpg';
+$carousel_bg_2 = 'assets/images/slider/wallpaperwatch2.jpg';
+$carousel_bg_3 = 'assets/images/slider/wallpaperwatch3.jpg';
 
 include('components/connection.php');
 
