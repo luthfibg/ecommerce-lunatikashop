@@ -34,10 +34,12 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header); ?>
-    <div
-        class="container home mw-100 h-100 pos-absolute d-flex flex-justify-center flex-align-center justify-content-center align-items-center flex-column">
 
-        <?php include($content); ?>
+    <div class="home-bg">
+        <div class="home">
+            <div class="w"></div>
+            <?php include($carousel) ?>
+        </div>
     </div>
     <?php include($footer); ?>
 
