@@ -5,7 +5,7 @@
     <div class="img-content w-100 w-50-md">
         <span id="sp1">Up to 30% off</span>
         <h4>Special Weekend Sales</h4>
-        <a href="shop.php" class="btn btn-sm w-50 w-25-lg">Buy Now</a>
+        <a href="shop.php" class="btn btn-sm w-50">Buy Now</a>
     </div>
 </div>
 <div class="swiper-slide">

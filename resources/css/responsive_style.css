@@ -204,8 +204,21 @@
     padding-right: 1.5rem;
   }
   footer .credit {
-    padding: 0.8remrem;
+    padding: 0.8rem;
     font-size: 0.8rem;
+  }
+
+  .home-bg .swiper-slide .img-content span {
+    font-size: 0.95rem;
+  }
+  .home-bg .swiper-slide .img-content h4 {
+    font-size: 1.8rem !important;
+    margin: 1.1rem 0;
+  }
+  .home-bg .swiper-slide .img-content a.btn {
+    display: inline-block;
+    font-size: 1rem !important;
+    width: 40% !important;
   }
 }
 
