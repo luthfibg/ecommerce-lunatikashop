@@ -38,7 +38,7 @@
     <div class="home-bg">
         <div class="home">
             <div class="w"></div>
-            <?php include($carousel) ?>
+            <?php include($carousel_custom) ?>
         </div>
     </div>
     <?php include($footer); ?>
