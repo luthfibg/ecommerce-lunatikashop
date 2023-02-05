@@ -40,7 +40,7 @@
 <body style="background: var(--dark-base);">
     <?php include($header); ?>
 
-    <div class="home-bg">
+    <section class="home-bg">
         <div class="home swiper mySwiper">
             <div class="swiper-wrapper">
                 <?php include($carousel_custom) ?>
@@ -49,7 +49,11 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
-    </div>
+    </section>
+    <section class="home-category">
+        <?php include($category); ?>
+    </section>
+
     <?php include($footer); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

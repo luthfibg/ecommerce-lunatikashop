@@ -8,6 +8,7 @@ $footer = 'components/footer.php';
 //content attribute
 $carousel = 'components/carousel.php';
 $carousel_custom = 'components/carousel_customized.php';
+$category = 'components/category.php';
 
 //assets attribute
 $carousel_bg_1 = 'assets/images/slider/wallpaperwatch1.jpg';
