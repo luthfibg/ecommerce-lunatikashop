@@ -264,3 +264,11 @@ footer .credit {
 footer .credit span {
   color: var(--component-turquoise);
 }
+
+.carousel .carousel-inner .carousel-caption {
+  text-shadow: 0 0 10px var(--dark-second) !important;
+}
+
+.carousel .carousel-indicators button {
+  scrollbar-shadow-color: var(--dark-second) !important;
+}
