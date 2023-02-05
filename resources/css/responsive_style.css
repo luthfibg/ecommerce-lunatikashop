@@ -221,6 +221,10 @@
     padding: 0 5rem !important;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
+  .home-bg .swiper-slide .img-content a.btn {
+    width: 30% !important;
+    height: auto;
+  }
 }
 
 @media (min-width: 1452px) {

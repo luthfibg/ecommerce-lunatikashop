@@ -1,0 +1,35 @@
+@import 'theme.css';
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper .swiper-slide .img-content span#sp1 {
+  color: var(--component-emerald);
+}
+
+.swiper-wrapper .swiper-slide .img-content span#sp2 {
+  color: var(--component-crimson) !important;
+}
+.swiper-wrapper .swiper-slide .img-content span#sp3 {
+  color: var(--component-turquoise) !important;
+}
+.swiper-wrapper .swiper-slide .img-content span#sp4 {
+  color: var(--component-golden) !important;
+}
+
+.swiper .swiper-slide {
+  text-align: left;
+  background: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.swiper .swiper-slide .image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

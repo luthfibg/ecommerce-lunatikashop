@@ -272,3 +272,46 @@ footer .credit span {
 .carousel .carousel-indicators button {
   scrollbar-shadow-color: var(--dark-second) !important;
 }
+
+.home-bg {
+  background: url('../../assets/images/slider/abstract_dark_gold.png') no-repeat !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-bg .swiper-slide {
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 0.5rem;
+}
+
+/* .home-bg .slide .image {
+  flex: 1 1 40rem;
+}
+
+.home-bg .slide .image img {
+  object-fit: contain;
+} */
+
+.home-bg .swiper-slide .img-content {
+  flex: 1 1 40rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.home-bg .swiper-slide .img-content span {
+  font-size: 1.65rem;
+  color: var(--light-primary);
+}
+
+.home-bg .swiper-slide .img-content h4 {
+  text-transform: capitalize;
+  font-size: 2.5rem !important;
+  margin: 1rem 0;
+}
+
+.home-bg .swiper-slide .img-content a.btn {
+  display: inline-block;
+  font-size: 1.65rem !important;
+  width: 50%;
+}

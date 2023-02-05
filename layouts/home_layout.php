@@ -22,11 +22,16 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
     <link rel="stylesheet" href="resources/css/user.css">
     <link rel="stylesheet" href="resources/css/admin.css">
     <link rel="stylesheet" href="resources/css/home.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
+    <link rel="stylesheet" href="resources/css/swiper_keyboard.css">
     <title>
         <?php echo $title; ?>
     </title>
@@ -36,13 +41,19 @@
     <?php include($header); ?>
 
     <div class="home-bg">
-        <div class="home">
-            <div class="w"></div>
-            <?php include($carousel_custom) ?>
+        <div class="home swiper mySwiper">
+            <div class="swiper-wrapper">
+                <?php include($carousel_custom) ?>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <?php include($footer); ?>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="resources/js/swiper-keyboard.js"></script>
     <script src="resources/js/user.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
