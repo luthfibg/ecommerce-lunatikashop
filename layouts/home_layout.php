@@ -39,7 +39,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header); ?>
-
+    <!-- header carousel section -->
     <section class="home-bg">
         <div class="home-carousel swiper">
             <div class="swiper-wrapper">
@@ -50,8 +50,14 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="home-category container">
+    <!-- category section -->
+    <section class="home-category container py-3">
+        <h2 class="text-center section-title">Categories</h2>
         <?php include($category); ?>
+    </section>
+    <!-- products sliding section -->
+    <section class="home-products container py-3">
+        <h2 class="text-center section-title">Shop</h2>
     </section>
 
     <?php include($footer); ?>

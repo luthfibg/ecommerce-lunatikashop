@@ -279,6 +279,11 @@ footer .credit span {
   background-position: center;
 }
 
+section .section-title {
+  color: var(--component-orange) !important;
+  font-size: 1.75rem !important;
+}
+
 .home-bg .swiper-slide {
   flex-wrap: wrap;
   gap: 2rem;
