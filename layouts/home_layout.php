@@ -50,7 +50,7 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
-    <section class="home-category">
+    <section class="home-category container">
         <?php include($category); ?>
     </section>
 

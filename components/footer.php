@@ -1,5 +1,5 @@
 <footer class="footer py-5">
-    <section class="box-container px-3 px-5-md">
+    <section class="box-container container">
         <div class="box">
             <h4>Quick Links</h4>
             <a href="home.php"><i class="fas fa-angle-right"></i>home</a>

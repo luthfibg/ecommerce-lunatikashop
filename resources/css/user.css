@@ -319,7 +319,7 @@ footer .credit span {
 .home-category .category-slider .slide {
   text-align: center;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.1rem;
   box-shadow: var(--bottom-box-shadow);
   background-color: var(--dark-base);
   display: inline-block;

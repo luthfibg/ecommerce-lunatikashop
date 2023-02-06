@@ -1,4 +1,4 @@
-<div class="category-slider py-3 py-5-md px-5">
+<div class="category-slider py-3 py-5-md">
     <div class="w d-flex justify-content-between flex-wrap">
         <a href="category.php?category=gel" class="slide">
             <img src="assets/images/icons/gadgets.png" alt="image category 1">
