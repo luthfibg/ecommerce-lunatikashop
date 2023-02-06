@@ -41,7 +41,7 @@
     <?php include($header); ?>
 
     <section class="home-bg">
-        <div class="home swiper mySwiper">
+        <div class="home-carousel swiper">
             <div class="swiper-wrapper">
                 <?php include($carousel_custom) ?>
             </div>

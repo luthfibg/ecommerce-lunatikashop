@@ -333,6 +333,7 @@ footer .credit span {
 }
 
 .home-category .category-slider .slide h4 {
+  margin: 0 !important;
   font-size: 1.65rem;
   color: var(--light-primary);
 }

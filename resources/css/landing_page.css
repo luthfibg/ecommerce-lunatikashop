@@ -144,7 +144,7 @@ h6 {
 
 #home .container #needlight {
   color: black;
-  transition: 0.8s ease;
+  transition: 1.5s ease;
 }
 #home .container #needlight:hover {
   color: springgreen;

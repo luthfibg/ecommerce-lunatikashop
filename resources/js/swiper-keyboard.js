@@ -1,4 +1,4 @@
-var swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper('.home-carousel', {
   slidesPerView: 1,
   spaceBetween: 30,
   keyboard: {
