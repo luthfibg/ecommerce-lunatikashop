@@ -234,8 +234,8 @@
   }
   footer .box-container {
     align-items: center !important;
-    padding: 0 5rem !important;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    /* padding: 0 5rem !important; */
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   }
   .home-bg .swiper-slide .img-content a.btn {
     width: 30% !important;
