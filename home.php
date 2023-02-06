@@ -22,6 +22,7 @@ $carousel_bg_2 = 'assets/images/slider/wallpaperwatch2.jpg';
 $carousel_bg_3 = 'assets/images/slider/wallpaperwatch3.jpg';
 
 include('components/connection.php');
+include('components/_currency_format.php');
 
 session_start();
 

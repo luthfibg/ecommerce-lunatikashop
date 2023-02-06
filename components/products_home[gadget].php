@@ -12,6 +12,17 @@
                     <button type="submit" name="add_to_wishlist" class="fas fa-heart"></button>
                     <a href="quickview.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
                     <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image">
+                    <div class="name">
+                        <?= $fetch_products['name']; ?>
+                    </div>
+                    <div class="d-flex">
+                        <div class="price">Rp <span>
+                                <?= currency_formatter($fetch_products['price']); ?>
+                            </span>,-</div>
+                        <input type="number" name="qty" id="input-qty" class="qty" min="1" max="99" value="1"
+                            onkeypress="if(this.value.length == 2) return false;">
+                        <input type="submit" value="Add To Cart" name="add_to_cart_home">
+                    </div>
                 </form>
                 <?php
             }
