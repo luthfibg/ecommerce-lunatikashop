@@ -315,3 +315,36 @@ footer .credit span {
   font-size: 1.65rem !important;
   width: 50%;
 }
+
+.home-category .category-slider .slide {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: var(--bottom-box-shadow);
+  background-color: var(--dark-base);
+  display: inline-block;
+}
+
+.home-category .category-slider .slide img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.home-category .category-slider .slide h4 {
+  font-size: 1.65rem;
+  color: var(--light-primary);
+}
+
+.home-category .category-slider .slide:hover {
+  background-color: var(--dark-second);
+}
+
+.home-category .category-slider .slide:hover img {
+  filter: invert();
+}
+
+.home-category .category-slider .slide:hover h4 {
+  color: var(--light-primary);
+}
