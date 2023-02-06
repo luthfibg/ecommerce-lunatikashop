@@ -358,3 +358,12 @@ section .section-title {
 .home-category .category-slider .slide:hover h4 {
   color: var(--light-primary);
 }
+
+.home-products .products-gadget-slider .swiper-wrapper .slide {
+  background-color: var(--dark-warm);
+  border-radius: 0.5rem;
+  border: var(--light-border);
+  box-shadow: none;
+  padding: 1rem;
+  position: relative;
+}
