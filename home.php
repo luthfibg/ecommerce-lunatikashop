@@ -9,6 +9,12 @@ $footer = 'components/footer.php';
 $carousel = 'components/carousel.php';
 $carousel_custom = 'components/carousel_customized.php';
 $category = 'components/category.php';
+$products_home_gadget = 'components/products_home[gadget].php';
+$products_home_furniture = 'components/products_home[furniture].php';
+$products_home_cloth = 'components/products_home[cloth].php';
+$products_home_grocery = 'components/products_home[grocery].php';
+$products_home_tool = 'components/products_home[tool].php';
+$products_home_service = 'components/products_home[service].php';
 
 //assets attribute
 $carousel_bg_1 = 'assets/images/slider/wallpaperwatch1.jpg';
