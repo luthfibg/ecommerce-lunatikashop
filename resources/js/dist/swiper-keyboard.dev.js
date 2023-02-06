@@ -20,6 +20,8 @@ var swiper = new Swiper('.home-carousel', {
 var swiper = new Swiper('.category-slider', {
   slidesPerView: 3,
   spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
   keyboard: {
     enabled: true
   },
@@ -41,7 +43,5 @@ var swiper = new Swiper('.category-slider', {
     1024: {
       slidesPerView: 5
     }
-  },
-  grabCursor: true,
-  loop: true
+  }
 });
