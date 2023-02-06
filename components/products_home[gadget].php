@@ -1,31 +1,24 @@
-<div class="category-slider swiper py-3 py-5-md">
+<div class="products-gadget-slider swiper py-3 py-5-md">
     <div class="swiper-wrapper">
-        <a href="category.php?category=gel" class="swiper-slide slide">
-            <img src="assets/images/icons/gadgets.png" alt="image category 1">
-            <h4>Gadget</h4>
-        </a>
-        <a href="category.php?category=fur" class="swiper-slide slide">
-            <img src="assets/images/icons/furniture.png" alt="image category 2">
-            <h4>Furniture</h4>
-        </a>
-        <a href="category.php?category=cth" class="swiper-slide slide">
-            <img src="assets/images/icons/clothes-hanger.png" alt="image category 3">
-            <h4>Clothes</h4>
-        </a>
-        <a href="category.php?category=gro" class="swiper-slide slide">
-            <img src="assets/images/icons/shopping-bag.png" alt="image category 4">
-            <h4>Grocery</h4>
-        </a>
-        <a href="category.php?category=tls" class="swiper-slide slide">
-            <img src="assets/images/icons/settings.png" alt="image category 5">
-            <h4>Tools</h4>
-        </a>
-        <a href="category.php?category=svc" class="swiper-slide slide">
-            <img src="assets/images/icons/customer-service.png" alt="image category 6">
-            <h4>Services</h4>
-        </a>
+        <?php
+
+        $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
+        $select_products->execute();
+        if ($select_products->rowCount() > 0) {
+            while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
+                # code...
+                ?>
+                <form action="" method="POST" class="slide">
+                    <button type="submit" name="add_to_wishlist" class="fas fa-heart"></button>
+                    <a href="quickview.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
+                    <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image">
+                </form>
+                <?php
+            }
+        } else {
+            echo '<p class="empty">Nothing product to display</p>';
+        }
+
+        ?>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
 </div>

@@ -58,6 +58,7 @@
     <!-- products sliding section -->
     <section class="home-products container py-3">
         <h2 class="text-center section-title">Shop</h2>
+        <?php include($products_home_gadget); ?>
     </section>
 
     <?php include($footer); ?>
