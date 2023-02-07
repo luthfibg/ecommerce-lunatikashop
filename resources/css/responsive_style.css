@@ -229,6 +229,12 @@
   .home-products .products-gadget-slider .swiper-wrapper .slide > * {
     font-size: 1.1rem !important;
   }
+  .home-products .products-gadget-slider .swiper-wrapper .slide .name {
+    height: 3.5rem;
+  }
+  .home-products .products-gadget-slider .swiper-wrapper .slide input {
+    font-size: 0.9rem !important;
+  }
 }
 
 @media (min-width: 1200px) {

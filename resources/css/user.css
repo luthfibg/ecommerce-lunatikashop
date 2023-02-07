@@ -374,6 +374,7 @@ section .section-title {
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .name {
+  text-align: start !important;
   height: 5rem;
 }
 
@@ -436,4 +437,12 @@ section .section-title {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.home-products .products-gadget-slider .swiper-wrapper .slide .qty {
+  width: fit-content !important;
+}
+
+.home-products .products-gadget-slider .swiper-wrapper .slide input {
+  font-size: 1.35rem;
 }
