@@ -8,14 +8,14 @@
             while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
                 # code...
                 ?>
-                <form action="" method="POST" class="slide">
+                <form action="" method="POST" class="swiper-slide slide d-flex flex-column">
                     <button type="submit" name="add_to_wishlist" class="fas fa-heart"></button>
                     <a href="quickview.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
-                    <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image">
+                    <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image mb-3 mb-5-md">
                     <div class="name">
                         <?= $fetch_products['name']; ?>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex flex-wrap">
                         <div class="price">Rp <span>
                                 <?= currency_formatter($fetch_products['price']); ?>
                             </span>,-</div>
@@ -32,4 +32,6 @@
 
         ?>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 </div>

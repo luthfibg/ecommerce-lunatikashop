@@ -45,3 +45,24 @@ var swiper = new Swiper('.category-slider', {
     }
   }
 });
+var swiper = new Swiper('.products-gadget-slider', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  keyboard: {
+    enabled: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 4
+    }
+  }
+});

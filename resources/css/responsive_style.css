@@ -226,6 +226,9 @@
   section .section-title {
     font-size: 1.35rem !important;
   }
+  .home-products .products-gadget-slider .swiper-wrapper .slide > * {
+    font-size: 1.1rem !important;
+  }
 }
 
 @media (min-width: 1200px) {

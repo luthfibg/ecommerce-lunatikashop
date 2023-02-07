@@ -16,7 +16,7 @@ var swiper = new Swiper('.home-carousel', {
   loop: true,
 });
 
-var swiper = new Swiper('.category-slider', {
+var swiper2 = new Swiper('.category-slider', {
   slidesPerView: 3,
   spaceBetween: 30,
   grabCursor: true,
@@ -40,6 +40,31 @@ var swiper = new Swiper('.category-slider', {
       slidesPerView: 4,
     },
     1024: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+var swiper3 = new Swiper('.products-gadget-slider', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1200: {
       slidesPerView: 5,
     },
   },
