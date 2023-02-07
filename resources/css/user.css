@@ -393,30 +393,44 @@ section .section-title {
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .fa-heart {
   color: var(--component-crimson);
-  right: -5rem;
+  right: 1rem;
+  transition: opacity 0.5s linear;
+  opacity: 0;
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye {
   color: var(--component-turquoise);
-  left: -5rem;
+  left: 1rem;
+  transition: opacity 0.5s linear;
+  opacity: 0;
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .fa-heart:hover,
 .home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye:hover {
   /* background-color: var(--dark-base); */
-  text-shadow: 0 0 15px var(--dark-base);
+  text-shadow: 0 0 15px var(--component-orange);
   transition: 0.3s linear;
 }
 
 .home-products .products-gadget-slider:hover .fa-heart {
-  transition: 0.2s linear;
-  right: 1rem !important;
+  transition: opacity 0.5s linear;
+  opacity: 1 !important;
 }
 
 .home-products .products-gadget-slider:hover .fa-eye {
-  transition: 0.2s linear;
-  left: 1rem !important;
+  transition: opacity 0.5s linear;
+  opacity: 1 !important;
 }
+
+/* .home-products .products-gadget-slider:hover .fa-heart {
+  transition: 0.5s linear;
+  opacity: 1 !important;
+}
+
+.home-products .products-gadget-slider:hover .fa-eye {
+  transition: 0.5s linear;
+  opacity: 1 !important;
+} */
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .image {
   width: 100%;
