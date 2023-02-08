@@ -70,7 +70,7 @@ var swiper3 = new Swiper('.products-gadget-slider', {
   },
 });
 
-var swiper3 = new Swiper('.products-furniture-slider', {
+var swiper4 = new Swiper('.products-furniture-slider', {
   slidesPerView: 2,
   spaceBetween: 20,
   grabCursor: true,
@@ -95,7 +95,7 @@ var swiper3 = new Swiper('.products-furniture-slider', {
   },
 });
 
-var swiper3 = new Swiper('.products-cloth-slider', {
+var swiper5 = new Swiper('.products-cloth-slider', {
   slidesPerView: 2,
   spaceBetween: 20,
   grabCursor: true,
@@ -120,7 +120,32 @@ var swiper3 = new Swiper('.products-cloth-slider', {
   },
 });
 
-var swiper3 = new Swiper('.products-grocery-slider', {
+var swiper6 = new Swiper('.products-grocery-slider', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+var swiper7 = new Swiper('.products-tool-slider', {
   slidesPerView: 2,
   spaceBetween: 20,
   grabCursor: true,
