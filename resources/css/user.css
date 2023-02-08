@@ -363,6 +363,11 @@ section .section-title {
 /***** Home Product Section *****/
 /********************************/
 
+.home-products .swiper .products-header {
+  color: var(--component-turquoise) !important;
+  font-size: 1.7rem;
+}
+
 /**** Section 1 [Gadget] ******/
 
 .home-products .products-gadget-slider .swiper-wrapper .slide {
@@ -381,7 +386,8 @@ section .section-title {
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .name {
   text-align: start !important;
-  height: 4rem;
+  height: 3.5rem;
+  font-size: 1.45rem;
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .fa-heart,
@@ -471,7 +477,8 @@ section .section-title {
 
 .home-products .products-furniture-slider .swiper-wrapper .slide .name {
   text-align: start !important;
-  height: 4rem;
+  height: 3.5rem;
+  font-size: 1.45rem;
 }
 
 .home-products .products-furniture-slider .swiper-wrapper .slide .fa-heart,

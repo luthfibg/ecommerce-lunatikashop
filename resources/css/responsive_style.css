@@ -226,13 +226,16 @@
   section .section-title {
     font-size: 1.35rem !important;
   }
-  .home-products .products-gadget-slider .swiper-wrapper .slide > * {
+  .home-products .products-gadget-slider .swiper-wrapper .slide > *,
+  .home-products .products-furniture-slider .swiper-wrapper .slide > * {
     font-size: 1.1rem !important;
   }
-  .home-products .products-gadget-slider .swiper-wrapper .slide .name {
-    height: 3.5rem;
+  .home-products .products-gadget-slider .swiper-wrapper .slide .name,
+  .home-products .products-furniture-slider .swiper-wrapper .slide .name {
+    height: 3rem;
   }
-  .home-products .products-gadget-slider .swiper-wrapper .slide input {
+  .home-products .products-gadget-slider .swiper-wrapper .slide input,
+  .home-products .products-furniture-slider .swiper-wrapper .slide input {
     font-size: 0.9rem !important;
   }
 }

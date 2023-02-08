@@ -1,4 +1,5 @@
 <div class="products-furniture-slider swiper py-3 py-5-md">
+    <div class="products-header mb-3 mb-5-md">Furnitures</div>
     <div class="swiper-wrapper">
         <?php
 
@@ -16,12 +17,12 @@
                         <?= $fetch_products['name']; ?>
                     </div>
                     <div class="d-flex flex-wrap flex-column w-100">
-                        <div class="price mt-3">Rp <span>
+                        <div class="price mt-2 mt-3-md">Rp <span>
                                 <?= currency_formatter($fetch_products['price']); ?>
                             </span>,-</div>
-                        <input type="number" name="qty" id="input-qty" class="qty form-control mt-3" min="1" max="99" value="1"
-                            onkeypress="if(this.value.length == 2) return false;">
-                        <input type="submit" value="Add To Cart" name="add_to_cart_home" class="btn btn-sm mt-3">
+                        <input type="number" name="qty" id="input-qty" class="qty form-control mt-2 mt-3-md" min="1" max="99"
+                            value="1" onkeypress="if(this.value.length == 2) return false;">
+                        <input type="submit" value="Add To Cart" name="add_to_cart_home" class="btn btn-sm mt-2 mt-3-md">
                     </div>
                 </form>
                 <?php
