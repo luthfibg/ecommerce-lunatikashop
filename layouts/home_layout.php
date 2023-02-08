@@ -63,6 +63,7 @@
         <?php include($products_home_cloth); ?>
         <?php include($products_home_grocery); ?>
         <?php include($products_home_tool); ?>
+        <?php include($products_home_service); ?>
     </section>
 
     <?php include($footer); ?>
