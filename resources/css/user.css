@@ -368,9 +368,9 @@ section .section-title {
   font-size: 1.7rem;
 }
 
-/**** Section 1 [Gadget] ******/
-
-.home-products .products-gadget-slider .swiper-wrapper .slide {
+.home-products .products-gadget-slider .swiper-wrapper .slide,
+.home-products .products-furniture-slider .swiper-wrapper .slide,
+.home-products .products-cloth-slider .swiper-wrapper .slide {
   background-color: var(--dark-warm);
   border-radius: 0.5rem;
   border: var(--light-border);
@@ -380,18 +380,26 @@ section .section-title {
   overflow: hidden;
 }
 
-.home-products .products-gadget-slider .swiper-wrapper .slide > * {
+.home-products .products-gadget-slider .swiper-wrapper .slide > *,
+.home-products .products-furniture-slider .swiper-wrapper .slide > *,
+.home-products .products-cloth-slider .swiper-wrapper .slide > * {
   font-size: 1.65rem;
 }
 
-.home-products .products-gadget-slider .swiper-wrapper .slide .name {
+.home-products .products-gadget-slider .swiper-wrapper .slide .name,
+.home-products .products-furniture-slider .swiper-wrapper .slide .name,
+.home-products .products-cloth-slider .swiper-wrapper .slide .name {
   text-align: start !important;
   height: 3.5rem;
   font-size: 1.45rem;
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .fa-heart,
-.home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye {
+.home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye,
+.home-products .products-furniture-slider .swiper-wrapper .slide .fa-heart,
+.home-products .products-furniture-slider .swiper-wrapper .slide .fa-eye,
+.home-products .products-cloth-slider .swiper-wrapper .slide .fa-heart,
+.home-products .products-cloth-slider .swiper-wrapper .slide .fa-eye {
   position: absolute;
   top: 1rem;
   width: 3rem;
@@ -404,14 +412,18 @@ section .section-title {
   border-radius: 0.3rem;
 }
 
-.home-products .products-gadget-slider .swiper-wrapper .slide .fa-heart {
+.home-products .products-gadget-slider .swiper-wrapper .slide .fa-heart,
+.home-products .products-furniture-slider .swiper-wrapper .slide .fa-heart,
+.home-products .products-cloth-slider .swiper-wrapper .slide .fa-heart {
   color: var(--component-crimson);
   right: 1rem;
   transition: opacity 0.5s linear;
   opacity: 0;
 }
 
-.home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye {
+.home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye,
+.home-products .products-furniture-slider .swiper-wrapper .slide .fa-eye,
+.home-products .products-cloth-slider .swiper-wrapper .slide .fa-eye {
   color: var(--component-turquoise);
   left: 1rem;
   transition: opacity 0.5s linear;
@@ -419,133 +431,60 @@ section .section-title {
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .fa-heart:hover,
-.home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye:hover {
-  /* background-color: var(--dark-base); */
-  text-shadow: 0 0 15px var(--component-orange);
-  transition: 0.3s linear;
-}
-
-.home-products .products-gadget-slider:hover .fa-heart {
-  transition: opacity 0.5s linear;
-  opacity: 1 !important;
-}
-
-.home-products .products-gadget-slider:hover .fa-eye {
-  transition: opacity 0.5s linear;
-  opacity: 1 !important;
-}
-
-.home-products .products-gadget-slider .swiper-wrapper .slide .image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.home-products .products-gadget-slider .swiper-wrapper .slide .qty {
-  width: fit-content !important;
-}
-
-.home-products .products-gadget-slider .swiper-wrapper .slide input {
-  background-color: var(--dark-base);
-  color: var(--light-primary) !important;
-  font-size: 1.35rem;
-}
-
-.home-products .products-gadget-slider .swiper-wrapper .slide input[type='submit'] {
-  border: 1px solid var(--component-orange);
-}
-
-.home-products .products-gadget-slider .swiper-wrapper .slide input[type='submit']:hover {
-  color: var(--dark-base) !important;
-}
-
-/**** Section 2 [Furniture] ******/
-
-.home-products .products-furniture-slider .swiper-wrapper .slide {
-  background-color: var(--dark-warm);
-  border-radius: 0.5rem;
-  border: var(--light-border);
-  box-shadow: none;
-  padding: 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.home-products .products-furniture-slider .swiper-wrapper .slide > * {
-  font-size: 1.65rem;
-}
-
-.home-products .products-furniture-slider .swiper-wrapper .slide .name {
-  text-align: start !important;
-  height: 3.5rem;
-  font-size: 1.45rem;
-}
-
-.home-products .products-furniture-slider .swiper-wrapper .slide .fa-heart,
-.home-products .products-furniture-slider .swiper-wrapper .slide .fa-eye {
-  position: absolute;
-  top: 1rem;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  text-align: center;
-  border: none;
-  background-color: transparent;
-  border-radius: 0.3rem;
-}
-
-.home-products .products-furniture-slider .swiper-wrapper .slide .fa-heart {
-  color: var(--component-crimson);
-  right: 1rem;
-  transition: opacity 0.5s linear;
-  opacity: 0;
-}
-
-.home-products .products-furniture-slider .swiper-wrapper .slide .fa-eye {
-  color: var(--component-turquoise);
-  left: 1rem;
-  transition: opacity 0.5s linear;
-  opacity: 0;
-}
-
+.home-products .products-gadget-slider .swiper-wrapper .slide .fa-eye:hover,
 .home-products .products-furniture-slider .swiper-wrapper .slide .fa-heart:hover,
-.home-products .products-furniture-slider .swiper-wrapper .slide .fa-eye:hover {
+.home-products .products-furniture-slider .swiper-wrapper .slide .fa-eye:hover,
+.home-products .products-cloth-slider .swiper-wrapper .slide .fa-heart:hover,
+.home-products .products-cloth-slider .swiper-wrapper .slide .fa-eye:hover {
   /* background-color: var(--dark-base); */
   text-shadow: 0 0 15px var(--component-orange);
   transition: 0.3s linear;
 }
 
-.home-products .products-furniture-slider:hover .fa-heart {
+.home-products .products-gadget-slider:hover .fa-heart,
+.home-products .products-furniture-slider:hover .fa-heart,
+.home-products .products-cloth-slider:hover .fa-heart {
   transition: opacity 0.5s linear;
   opacity: 1 !important;
 }
 
-.home-products .products-furniture-slider:hover .fa-eye {
+.home-products .products-gadget-slider:hover .fa-eye,
+.home-products .products-furniture-slider:hover .fa-eye,
+.home-products .products-cloth-slider:hover .fa-eye {
   transition: opacity 0.5s linear;
   opacity: 1 !important;
 }
 
-.home-products .products-furniture-slider .swiper-wrapper .slide .image {
+.home-products .products-gadget-slider .swiper-wrapper .slide .image,
+.home-products .products-furniture-slider .swiper-wrapper .slide .image,
+.home-products .products-cloth-slider .swiper-wrapper .slide .image {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-.home-products .products-furniture-slider .swiper-wrapper .slide .qty {
+.home-products .products-gadget-slider .swiper-wrapper .slide .qty,
+.home-products .products-furniture-slider .swiper-wrapper .slide .qty,
+.home-products .products-cloth-slider .swiper-wrapper .slide .qty {
   width: fit-content !important;
 }
 
-.home-products .products-furniture-slider .swiper-wrapper .slide input {
+.home-products .products-gadget-slider .swiper-wrapper .slide input,
+.home-products .products-furniture-slider .swiper-wrapper .slide input,
+.home-products .products-cloth-slider .swiper-wrapper .slide input {
   background-color: var(--dark-base);
   color: var(--light-primary) !important;
   font-size: 1.35rem;
 }
 
-.home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit'] {
+.home-products .products-gadget-slider .swiper-wrapper .slide input[type='submit'],
+.home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit'],
+.home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit'] {
   border: 1px solid var(--component-orange);
 }
 
-.home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit']:hover {
+.home-products .products-gadget-slider .swiper-wrapper .slide input[type='submit']:hover,
+.home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit']:hover,
+.home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit']:hover {
   color: var(--dark-base) !important;
 }
