@@ -119,3 +119,28 @@ var swiper3 = new Swiper('.products-cloth-slider', {
     },
   },
 });
+
+var swiper3 = new Swiper('.products-grocery-slider', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
