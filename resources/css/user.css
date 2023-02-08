@@ -468,7 +468,8 @@ section .section-title {
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .image,
 .home-products .products-furniture-slider .swiper-wrapper .slide .image,
-.home-products .products-cloth-slider .swiper-wrapper .slide .image {
+.home-products .products-cloth-slider .swiper-wrapper .slide .image,
+.home-products .products-grocery-slider .swiper-wrapper .slide .image {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -476,13 +477,15 @@ section .section-title {
 
 .home-products .products-gadget-slider .swiper-wrapper .slide .qty,
 .home-products .products-furniture-slider .swiper-wrapper .slide .qty,
-.home-products .products-cloth-slider .swiper-wrapper .slide .qty {
+.home-products .products-cloth-slider .swiper-wrapper .slide .qty,
+.home-products .products-grocery-slider .swiper-wrapper .slide .qty {
   width: fit-content !important;
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide input,
 .home-products .products-furniture-slider .swiper-wrapper .slide input,
-.home-products .products-cloth-slider .swiper-wrapper .slide input {
+.home-products .products-cloth-slider .swiper-wrapper .slide input,
+.home-products .products-grocery-slider .swiper-wrapper .slide input {
   background-color: var(--dark-base);
   color: var(--light-primary) !important;
   font-size: 1.35rem;
@@ -490,12 +493,14 @@ section .section-title {
 
 .home-products .products-gadget-slider .swiper-wrapper .slide input[type='submit'],
 .home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit'],
-.home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit'] {
+.home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit'],
+.home-products .products-grocery-slider .swiper-wrapper .slide input[type='submit'] {
   border: 1px solid var(--component-orange);
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide input[type='submit']:hover,
 .home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit']:hover,
-.home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit']:hover {
+.home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit']:hover,
+.home-products .products-grocery-slider .swiper-wrapper .slide input[type='submit']:hover {
   color: var(--dark-base) !important;
 }
