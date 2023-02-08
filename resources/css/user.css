@@ -372,7 +372,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide,
 .home-products .products-cloth-slider .swiper-wrapper .slide,
 .home-products .products-grocery-slider .swiper-wrapper .slide,
-.home-products .products-tool-slider .swiper-wrapper .slide {
+.home-products .products-tool-slider .swiper-wrapper .slide,
+.home-products .products-service-slider .swiper-wrapper .slide {
   background-color: var(--dark-warm);
   border-radius: 0.5rem;
   border: var(--light-border);
@@ -386,7 +387,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide > *,
 .home-products .products-cloth-slider .swiper-wrapper .slide > *,
 .home-products .products-grocery-slider .swiper-wrapper .slide > *,
-.home-products .products-tool-slider .swiper-wrapper .slide > * {
+.home-products .products-tool-slider .swiper-wrapper .slide > *,
+.home-products .products-service-slider .swiper-wrapper .slide > * {
   font-size: 1.65rem;
 }
 
@@ -394,7 +396,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide .name,
 .home-products .products-cloth-slider .swiper-wrapper .slide .name,
 .home-products .products-grocery-slider .swiper-wrapper .slide .name,
-.home-products .products-tool-slider .swiper-wrapper .slide .name {
+.home-products .products-tool-slider .swiper-wrapper .slide .name,
+.home-products .products-service-slider .swiper-wrapper .slide .name {
   text-align: start !important;
   height: 3.5rem;
   font-size: 1.45rem;
@@ -409,7 +412,9 @@ section .section-title {
 .home-products .products-grocery-slider .swiper-wrapper .slide .fa-heart,
 .home-products .products-grocery-slider .swiper-wrapper .slide .fa-eye,
 .home-products .products-tool-slider .swiper-wrapper .slide .fa-heart,
-.home-products .products-tool-slider .swiper-wrapper .slide .fa-eye {
+.home-products .products-tool-slider .swiper-wrapper .slide .fa-eye,
+.home-products .products-service-slider .swiper-wrapper .slide .fa-heart,
+.home-products .products-service-slider .swiper-wrapper .slide .fa-eye {
   position: absolute;
   top: 1rem;
   width: 3rem;
@@ -426,7 +431,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide .fa-heart,
 .home-products .products-cloth-slider .swiper-wrapper .slide .fa-heart,
 .home-products .products-grocery-slider .swiper-wrapper .slide .fa-heart,
-.home-products .products-tool-slider .swiper-wrapper .slide .fa-heart {
+.home-products .products-tool-slider .swiper-wrapper .slide .fa-heart,
+.home-products .products-service-slider .swiper-wrapper .slide .fa-heart {
   color: var(--component-crimson);
   right: 1rem;
   transition: opacity 0.5s linear;
@@ -437,7 +443,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide .fa-eye,
 .home-products .products-cloth-slider .swiper-wrapper .slide .fa-eye,
 .home-products .products-grocery-slider .swiper-wrapper .slide .fa-eye,
-.home-products .products-tool-slider .swiper-wrapper .slide .fa-eye {
+.home-products .products-tool-slider .swiper-wrapper .slide .fa-eye,
+.home-products .products-service-slider .swiper-wrapper .slide .fa-eye {
   color: var(--component-turquoise);
   left: 1rem;
   transition: opacity 0.5s linear;
@@ -453,7 +460,9 @@ section .section-title {
 .home-products .products-grocery-slider .swiper-wrapper .slide .fa-heart:hover,
 .home-products .products-grocery-slider .swiper-wrapper .slide .fa-eye:hover,
 .home-products .products-tool-slider .swiper-wrapper .slide .fa-heart:hover,
-.home-products .products-tool-slider .swiper-wrapper .slide .fa-eye:hover {
+.home-products .products-tool-slider .swiper-wrapper .slide .fa-eye:hover,
+.home-products .products-service-slider .swiper-wrapper .slide .fa-heart:hover,
+.home-products .products-service-slider .swiper-wrapper .slide .fa-eye:hover {
   /* background-color: var(--dark-base); */
   text-shadow: 0 0 15px var(--component-orange);
   transition: 0.3s linear;
@@ -463,7 +472,8 @@ section .section-title {
 .home-products .products-furniture-slider:hover .fa-heart,
 .home-products .products-cloth-slider:hover .fa-heart,
 .home-products .products-grocery-slider:hover .fa-heart,
-.home-products .products-tool-slider:hover .fa-heart {
+.home-products .products-tool-slider:hover .fa-heart,
+.home-products .products-service-slider:hover .fa-heart {
   transition: opacity 0.5s linear;
   opacity: 1 !important;
 }
@@ -472,7 +482,8 @@ section .section-title {
 .home-products .products-furniture-slider:hover .fa-eye,
 .home-products .products-cloth-slider:hover .fa-eye,
 .home-products .products-grocery-slider:hover .fa-eye,
-.home-products .products-tool-slider:hover .fa-eye {
+.home-products .products-tool-slider:hover .fa-eye,
+.home-products .products-service-slider:hover .fa-eye {
   transition: opacity 0.5s linear;
   opacity: 1 !important;
 }
@@ -481,7 +492,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide .image,
 .home-products .products-cloth-slider .swiper-wrapper .slide .image,
 .home-products .products-grocery-slider .swiper-wrapper .slide .image,
-.home-products .products-tool-slider .swiper-wrapper .slide .image {
+.home-products .products-tool-slider .swiper-wrapper .slide .image,
+.home-products .products-service-slider .swiper-wrapper .slide .image {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -491,7 +503,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide .qty,
 .home-products .products-cloth-slider .swiper-wrapper .slide .qty,
 .home-products .products-grocery-slider .swiper-wrapper .slide .qty,
-.home-products .products-tool-slider .swiper-wrapper .slide .qty {
+.home-products .products-tool-slider .swiper-wrapper .slide .qty,
+.home-products .products-service-slider .swiper-wrapper .slide .qty {
   width: fit-content !important;
 }
 
@@ -499,7 +512,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide input,
 .home-products .products-cloth-slider .swiper-wrapper .slide input,
 .home-products .products-grocery-slider .swiper-wrapper .slide input,
-.home-products .products-tool-slider .swiper-wrapper .slide input {
+.home-products .products-tool-slider .swiper-wrapper .slide input,
+.home-products .products-service-slider .swiper-wrapper .slide input {
   background-color: var(--dark-base);
   color: var(--light-primary) !important;
   font-size: 1.35rem;
@@ -509,7 +523,8 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit'],
 .home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit'],
 .home-products .products-grocery-slider .swiper-wrapper .slide input[type='submit'],
-.home-products .products-tool-slider .swiper-wrapper .slide input[type='submit'] {
+.home-products .products-tool-slider .swiper-wrapper .slide input[type='submit'],
+.home-products .products-service-slider .swiper-wrapper .slide input[type='submit'] {
   border: 1px solid var(--component-orange);
 }
 
@@ -517,6 +532,7 @@ section .section-title {
 .home-products .products-furniture-slider .swiper-wrapper .slide input[type='submit']:hover,
 .home-products .products-cloth-slider .swiper-wrapper .slide input[type='submit']:hover,
 .home-products .products-grocery-slider .swiper-wrapper .slide input[type='submit']:hover,
-.home-products .products-tool-slider .swiper-wrapper .slide input[type='submit']:hover {
+.home-products .products-tool-slider .swiper-wrapper .slide input[type='submit']:hover,
+.home-products .products-service-slider .swiper-wrapper .slide input[type='submit']:hover {
   color: var(--dark-base) !important;
 }
