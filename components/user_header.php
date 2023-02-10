@@ -49,12 +49,12 @@ if (isset($message)) {
                 $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                 ?>
                 <p>
-                <? $fetch_profile['name']; ?>
+                    <? $fetch_profile['name']; ?>
                 </p>
                 <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
                 <div class="flex-btn">
-                    <a href="login.php" class="btn btn-sm btn-opt">Login</a>
-                    <a href="register.php" class="btn btn-sm btn-opt">Register</a>
+                    <a href="user_login.php" class="btn btn-sm btn-opt">Login</a>
+                    <a href="user_register.php" class="btn btn-sm btn-opt">Register</a>
                 </div>
                 <a href="../logout.php" onclick="return confirm('Are you sure logout from this site?');"
                     class="btn btn-sm btn-delete">Logout</a>
@@ -65,8 +65,8 @@ if (isset($message)) {
                         style="color: var(--component-crimson);"></i>&nbsp;User
                     haven't logged in</p>
                 <div class="flex-btn">
-                    <a href="login.php" class="btn btn-sm btn-opt">Login</a>
-                    <a href="register.php" class="btn btn-sm btn-opt">Register</a>
+                    <a href="user_login.php" class="btn btn-sm btn-opt">Login</a>
+                    <a href="user_register.php" class="btn btn-sm btn-opt">Register</a>
                 </div>
                 <?php
             }

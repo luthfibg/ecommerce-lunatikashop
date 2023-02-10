@@ -42,7 +42,6 @@
 </head>
 
 <body style="background: var(--dark-base);">
-    <?php include($header) ?>
     <div class="container">
 
         <?php
@@ -61,7 +60,6 @@
 
         <?php include($content) ?>
     </div>
-    <?php include($footer) ?>
 
     <script src="resources/js/admin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"

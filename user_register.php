@@ -2,7 +2,7 @@
 
 $title = 'Register';
 $header = 'components/user_header.php';
-$content = '';
+$content = 'components/user_register_card.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');
