@@ -17,10 +17,21 @@ if (!isset($_SESSION[$user_id])) {
 
 if (isset($_POST['user_submit_login'])) {
 
-    $username = $_POST['username'];
-    $username = filter_var(htmlspecialchars($username));
+    $email = $_POST['email'];
+    $email = filter_var(htmlspecialchars($email));
     $password = $_POST['password'];
     $password = filter_var(htmlspecialchars($password));
+
+    $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");
+    $select_user->execute([$email, $password]);
+    $row = $select_user->fetch(PDO::FETCH_ASSOC);
+
+    if ($select_user->rowCount() > 0) {
+        $_SESSION['user_id'] = $row['id'];
+        $message[] = 'Login Success';
+    } else {
+        $message[] = 'Login Failed, Please Check Email or Password';
+    }
 }
 
 include('layouts/user_login_layout.php');

@@ -5,8 +5,8 @@
     <div class="row p-2 d-flex flex-column text-center">
         <form action="" method="POST">
             <div class="mb-3">
-                <input type="text" name="username" oninput="this.value = this.value.replace(/\s/g, '')"
-                    data-role="input" class="form-control" id="inputUsername" placeholder="Username">
+                <input type="email" name="email" oninput="this.value = this.value.replace(/\s/g, '')" data-role="input"
+                    class="form-control" id="inputEmail" placeholder="Email">
             </div>
             <div class="mb-5">
                 <input type="password" name="password" oninput="this.value = this.value.replace(/\s/g, '')"
