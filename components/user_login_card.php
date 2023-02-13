@@ -15,6 +15,6 @@
             <input type="submit" name="user_submit_login" class="btn btn-sm button secondary component-tone mt-5"
                 value="Login">
         </form>
-        <span>Haven't account? <a href="<?= $user_register; ?>">register</a></span>
+        <span>Haven't account? <a href="user_register.php">register</a></span>
     </div>
 </div>
