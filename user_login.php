@@ -10,11 +10,11 @@ include('components/connection.php');
 
 session_start();
 
-if (!isset($_SESSION[$user_id])) {
-    $user_id = $_SESSION[$user_id];
-} else {
-    $user_id = '';
-}
+// if (!isset($_SESSION[$user_id])) {
+//     $user_id = $_SESSION[$user_id];
+// } else {
+//     $user_id = '';
+// }
 
 if (isset($_POST['user_submit_login'])) {
 
@@ -30,6 +30,7 @@ if (isset($_POST['user_submit_login'])) {
     if ($select_user->rowCount() > 0) {
         $_SESSION['user_id'] = $row['id'];
         $message[] = 'Login Success';
+        header('location:home.php');
     } else {
         $message[] = 'Login Failed, Please Check Email or Password';
     }
