@@ -20,7 +20,7 @@ if (isset($_POST['user_submit_login'])) {
 
     $email = $_POST['email'];
     $email = filter_var(htmlspecialchars($email));
-    $password = $_POST['password'];
+    $password = sha1($_POST['password']);
     $password = filter_var(htmlspecialchars($password));
 
     $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ? AND password = ?");

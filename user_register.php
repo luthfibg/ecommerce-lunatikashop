@@ -23,9 +23,9 @@ if (isset($_POST['user_submit_register'])) {
     $email = filter_var(htmlspecialchars($email));
     $phone = $_POST['phone'];
     $phone = filter_var(htmlspecialchars($phone));
-    $password = $_POST['password'];
+    $password = sha1($_POST['password']);
     $password = filter_var(htmlspecialchars($password));
-    $confirm_password = $_POST['confirm_password'];
+    $confirm_password = sha1($_POST['confirm_password']);
     $confirm_password = filter_var(htmlspecialchars($confirm_password));
 
     $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
@@ -41,6 +41,7 @@ if (isset($_POST['user_submit_register'])) {
             $insert_user = $conn->prepare("INSERT INTO `users` (name, email, number, password) VALUES (?, ?, ?, ?);");
             $insert_user->execute([$name, $email, $phone, $password]);
             $message[] = 'Registration was successful';
+            header('location:user_login.php');
         }
 
     }
