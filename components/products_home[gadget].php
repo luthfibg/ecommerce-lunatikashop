@@ -9,7 +9,7 @@
             while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
                 # code...
                 ?>
-                <form action="<?= $wishlist; ?>" method="POST" class="swiper-slide slide d-flex flex-column">
+                <form action="<?= $wishlist_click_handler; ?>" method="POST" class="swiper-slide slide d-flex flex-column">
                     <input type="hidden" name="pid" value="<?= $fetch_products['id']; ?>">
                     <input type="hidden" name="name" value="<?= $fetch_products['name']; ?>">
                     <input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">

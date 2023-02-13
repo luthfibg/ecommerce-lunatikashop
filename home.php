@@ -5,6 +5,7 @@ $title = 'Welcome';
 $header = 'components/user_header.php';
 $footer = 'components/footer.php';
 $wishlist = 'wishlist.php';
+$cart = 'cart.php';
 
 //content attribute
 $carousel = 'components/carousel.php';
