@@ -12,8 +12,9 @@
                 <input type="password" name="password" oninput="this.value = this.value.replace(/\s/g, '')"
                     class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <input type="submit" name="user_submit_login" class="button secondary component-tone mt-5" value="Login">
+            <input type="submit" name="user_submit_login" class="btn btn-sm button secondary component-tone mt-5"
+                value="Login">
         </form>
-        <span>Haven't account? <a href="register.php">register</a></span>
+        <span>Haven't account? <a href="<?= $user_register; ?>">register</a></span>
     </div>
 </div>

@@ -16,7 +16,8 @@
                 <input type="password" name="confirm_password" oninput="this.value = this.value.replace(/\s/g, '')"
                     class="form-control" id="inputPassword2" placeholder="Confirm Password">
             </div>
-            <input type="submit" name="submit_register" class="button secondary component-tone mt-5" value="Register">
+            <input type="submit" name="submit_register" class="btn btn-sm button secondary component-tone mt-5"
+                value="Register">
         </form>
     </div>
 </div>

@@ -58,7 +58,7 @@
         }
         ?>
 
-        <?php include($content) ?>
+        <?php include($content); ?>
     </div>
     <script src="resources/js/admin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"

@@ -4,6 +4,7 @@ $title = 'Login';
 $header = 'components/user_header.php';
 $content = 'components/user_login_card.php';
 $footer = 'components/footer.php';
+$user_register = 'user_register.php';
 
 include('components/connection.php');
 
