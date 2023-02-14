@@ -277,6 +277,7 @@ footer .credit span {
   background: url('../../assets/images/slider/abstract_dark_gold.png') no-repeat !important;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed !important;
 }
 
 section .section-title {

@@ -48,7 +48,7 @@ if (isset($message)) {
             if ($select_profile->rowCount() > 0) {
                 $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                 ?>
-                <p>
+                <p style="color: var(--light-primary);">
                     <? $fetch_profile['name']; ?>
                 </p>
                 <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
