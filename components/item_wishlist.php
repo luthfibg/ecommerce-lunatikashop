@@ -22,10 +22,11 @@
                         ,-
                     </div>
                     <div class="list-action me-3">
-                        <a href="" class="btn-custom del px-3 py-2">
+                        <a href="wishlist.php?delete=<?= $fetch_wishlist['id']; ?>" class="btn-custom del px-3 py-2">
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>
-                        <a href="" class="btn-custom throw-to-cart px-3 py-2 mt-3">
+                        <a href="wishlist.php?upcart=<?= $fetch_wishlist['id']; ?>"
+                            class="btn-custom throw-to-cart px-3 py-2 mt-3">
                             <i class="fa-solid fa-cart-shopping" style="color: var(--component-golden);"></i> </a>
                     </div>
                     <!-- <span class="badge bg-primary rounded-pill mt-4 me-4 d-block">new</span> -->
@@ -35,9 +36,9 @@
         }
     } else {
         ?>
-        <div class="container d-flex justify-content-between align-items-center">
-            <span class>Wishlist is empty</span>
-            <div class="btn">Go To Shop</div>
+        <div class="container d-flex justify-content-between flex-column align-items-center">
+            <span class="my-5">Wishlist is empty</span>
+            <div class="btn mb-5 w-100 w-50-md w-25-lg">Go To Shop</div>
         </div>
         <?php
     }

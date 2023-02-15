@@ -14,6 +14,14 @@ if (!isset($user_id)) {
     header('location:user_login.php');
 }
 
+if (isset($_GET['delete'])) {
+    $delete_id = $_GET['delete'];
+    $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE id = ?");
+    $delete_cart->execute([$delete_id]);
+
+    header('location:cart.php');
+}
+
 include('layouts/cart_layout.php');
 
 if (isset($_POST['add_to_cart_home'])) {

@@ -30,16 +30,23 @@
                         </span>
                     </div>
                     <div class="list-action me-3">
-                        <a href="" class="btn-custom del px-3 py-2">
+                        <a href="cart.php?delete=<?= $fetch_cart['id']; ?>" class="btn-custom del px-3 py-2">
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>
-                        <a href="" class="btn-custom throw-to-wishlist px-3 py-2 mt-3">
+                        <a href="cart.php?delete=<?= $fetch_cart['id']; ?>" class="btn-custom throw-to-wishlist px-3 py-2 mt-3">
                             <i class="fa-solid fa-heart" style="color: var(--component-emerald);"></i> </a>
                     </div>
                 </div>
             </li>
             <?php
         }
+    } else {
+        ?>
+        <div class="container d-flex justify-content-between flex-column align-items-center">
+            <span class="my-5">Cart is empty</span>
+            <div class="btn mb-5 w-100 w-50-md w-25-lg">Go To Shop</div>
+        </div>
+        <?php
     }
 
     ?>

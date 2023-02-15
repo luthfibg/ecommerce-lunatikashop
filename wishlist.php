@@ -14,7 +14,13 @@ if (!isset($user_id)) {
     header('location:user_login.php');
 }
 
-include('layouts/wishlist_layout.php');
+if (isset($_GET['delete'])) {
+    $delete_id = $_GET['delete'];
+    $delete_wishlist = $conn->prepare("DELETE FROM `wishlist` WHERE id = ?");
+    $delete_wishlist->execute([$delete_id]);
 
+    header('location:wishlist.php');
+}
+include('layouts/wishlist_layout.php');
 
 ?>
