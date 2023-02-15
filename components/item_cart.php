@@ -12,21 +12,31 @@
             $fixed_price = $price * $qty;
             ?>
             <li class="list-group-item d-flex justify-content-between align-items-start bg-dark py-3">
-                <div class="ms-2 me-auto">
+                <div class="d-flex w-100 align-items-center">
                     <div class="img-container">
                         <img src="assets/images/products/<?= $fetch_cart['image']; ?>" alt="pid=<?= $fetch_cart['pid']; ?>"
-                            class="image mb-3 mb-5-md" style="width: 4rem;height: 4rem;">
+                            class="image" style="width: 5rem;height: 5rem;">
                     </div>
-                    <div class="fw-bold">
-                        <?= $fetch_cart['name']; ?>
+                    <div class="me-auto ms-5">
+                        <div class="fw-bold">
+                            <?= $fetch_cart['name']; ?>
+                        </div>
+                        Rp
+                        <?= currency_formatter($fixed_price); ?>
+                        ,-
+                        <span class="badge bg-primary rounded-pill mb-3 ms-3">
+                            &nbsp;
+                            <?= $fetch_cart['quantity']; ?>&nbsp;
+                        </span>
                     </div>
-                    Rp
-                    <?= currency_formatter($fixed_price); ?>
-                    ,-
+                    <div class="list-action me-3">
+                        <a href="" class="btn-custom del px-3 py-2">
+                            <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
+                        </a>
+                        <a href="" class="btn-custom throw-to-cart px-3 py-2 mt-3">
+                            <i class="fa-solid fa-cart-shopping" style="color: var(--component-emerald);"></i> </a>
+                    </div>
                 </div>
-                <span class="badge bg-primary rounded-pill mt-4 me-4">
-                    <?= $fetch_cart['quantity']; ?>
-                </span>
             </li>
             <?php
         }

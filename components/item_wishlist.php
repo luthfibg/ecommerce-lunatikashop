@@ -21,14 +21,14 @@
                         <?= currency_formatter($fetch_wishlist['price']); ?>
                         ,-
                     </div>
-                    <div class="list-action me-5">
+                    <div class="list-action me-3">
                         <a href="" class="btn-custom del px-3 py-2">
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>
                         <a href="" class="btn-custom throw-to-cart px-3 py-2 mt-3">
                             <i class="fa-solid fa-cart-shopping" style="color: var(--component-emerald);"></i> </a>
                     </div>
-                    <span class="badge bg-primary rounded-pill mt-4 me-4 d-block">new</span>
+                    <!-- <span class="badge bg-primary rounded-pill mt-4 me-4 d-block">new</span> -->
                 </div>
             </li>
             <?php
