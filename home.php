@@ -17,7 +17,6 @@ $products_home_cloth = 'components/products_home[cloth].php';
 $products_home_grocery = 'components/products_home[grocery].php';
 $products_home_tool = 'components/products_home[tool].php';
 $products_home_service = 'components/products_home[service].php';
-$wishlist_cart_click_handler = 'components/wishlist_cart_click_handler.php';
 
 //assets attribute
 $carousel_bg_1 = 'assets/images/slider/wallpaperwatch1.jpg';
@@ -35,6 +34,5 @@ if (isset($_SESSION['user_id'])) {
     $user_id = '';
 }
 include('layouts/home_layout.php');
-include($wishlist_cart_click_handler);
 
 ?>

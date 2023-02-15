@@ -2,7 +2,7 @@
 
 if (isset($_POST['add_to_wishlist'])) {
     // if ($user_id == '') {
-    //     header('location:../user_login.php');
+    //     header('location:user_login.php');
     // } else {
 
     $pid = $_POST['pid'];
@@ -35,7 +35,7 @@ if (isset($_POST['add_to_wishlist'])) {
 
 if (isset($_POST['add_to_cart_home'])) {
     if ($user_id == '') {
-        header('location:../user_login.php');
+        header('location:user_login.php');
     } else {
 
         $pid = $_POST['pid'];
@@ -72,6 +72,7 @@ if (isset($_POST['add_to_cart_home'])) {
             $message[] = 'Success add cart!';
 
         }
+        // }
     }
 }
 
