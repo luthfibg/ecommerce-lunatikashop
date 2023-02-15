@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="resources/css/user.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
+    <link rel="stylesheet" href="resources/css/user_2.css">
     <title>
         <?php echo $title; ?>
     </title>
