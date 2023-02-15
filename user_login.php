@@ -10,11 +10,14 @@ include('components/connection.php');
 
 session_start();
 
-// if (!isset($_SESSION[$user_id])) {
+// if (isset($_SESSION[$user_id])) {
 //     $user_id = $_SESSION[$user_id];
 // } else {
 //     $user_id = '';
 // }
+
+// include('components/user_header.php');
+include('layouts/user_login_layout.php');
 
 if (isset($_POST['user_submit_login'])) {
 
@@ -35,7 +38,5 @@ if (isset($_POST['user_submit_login'])) {
         $message[] = 'Login Failed, Please Check Email or Password';
     }
 }
-
-include('layouts/user_login_layout.php');
 
 ?>
