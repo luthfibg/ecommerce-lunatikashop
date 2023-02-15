@@ -33,8 +33,8 @@
                         <a href="" class="btn-custom del px-3 py-2">
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>
-                        <a href="" class="btn-custom throw-to-cart px-3 py-2 mt-3">
-                            <i class="fa-solid fa-cart-shopping" style="color: var(--component-emerald);"></i> </a>
+                        <a href="" class="btn-custom throw-to-wishlist px-3 py-2 mt-3">
+                            <i class="fa-solid fa-heart" style="color: var(--component-emerald);"></i> </a>
                     </div>
                 </div>
             </li>

@@ -26,7 +26,7 @@
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>
                         <a href="" class="btn-custom throw-to-cart px-3 py-2 mt-3">
-                            <i class="fa-solid fa-cart-shopping" style="color: var(--component-emerald);"></i> </a>
+                            <i class="fa-solid fa-cart-shopping" style="color: var(--component-golden);"></i> </a>
                     </div>
                     <!-- <span class="badge bg-primary rounded-pill mt-4 me-4 d-block">new</span> -->
                 </div>

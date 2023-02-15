@@ -15,6 +15,10 @@
 }
 
 .list-group .list-group-item .list-action .throw-to-cart {
+  border: 0.05rem solid var(--component-golden) !important;
+}
+
+.list-group .list-group-item .list-action .throw-to-wishlist {
   border: 0.05rem solid var(--component-emerald) !important;
 }
 
@@ -22,11 +26,16 @@
   background-color: var(--component-crimson);
 }
 
-.list-group .list-group-item .list-action .throw-to-cart:hover {
+.list-group .list-group-item .list-action .throw-to-wishlist:hover {
   background-color: var(--component-emerald);
 }
 
+.list-group .list-group-item .list-action .throw-to-cart:hover {
+  background-color: var(--component-golden);
+}
+
 .list-group .list-group-item .list-action .del:hover i,
-.list-group .list-group-item .list-action .throw-to-cart:hover i {
+.list-group .list-group-item .list-action .throw-to-cart:hover i,
+.list-group .list-group-item .list-action .throw-to-wishlist:hover i {
   color: var(--dark-base) !important;
 }
