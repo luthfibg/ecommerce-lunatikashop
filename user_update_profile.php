@@ -25,25 +25,36 @@ if (isset($_POST['user_submit_update'])) {
     $email = filter_var(htmlspecialchars($email));
     $phone = $_POST['phone'];
     $phone = filter_var(htmlspecialchars($phone));
-    $password = sha1($_POST['password']);
-    $password = filter_var(htmlspecialchars($password));
-    $confirm_password = sha1($_POST['confirm_password']);
-    $confirm_password = filter_var(htmlspecialchars($confirm_password));
 
-    $select_user = $conn->prepare("SELECT * FROM `users` WHERE email = ?");
-    $select_user->execute([$email]);
-    $row = $select_user->fetch(PDO::FETCH_ASSOC);
+    $update_profile = $conn->prepare("UPDATE `users` SET name = ?, email = ?, number = ? WHERE id = ?");
+    $update_profile->execute([$name, $email, $phone, $user_id]);
 
-    if ($select_user->rowCount() > 0) {
-        $message[] = 'User already exist';
+    $empty_password = 'da39a3ee5e6b4b0d3255bfef95601890afd80709';
+    $select_previous_password = $conn->prepare("SELECT password FROM `users` WHERE id = ?");
+    $select_previous_password->execute([$user_id]);
+    $fetch_previous_password = $select_previous_password->fetch(PDO::FETCH_ASSOC);
+    $previous_password = $fetch_previous_password['password'];
+
+    $old_password = sha1($_POST['old_password']);
+    $old_password = filter_var(htmlspecialchars($old_password));
+    $new_password = sha1($_POST['new_password']);
+    $new_password = filter_var(htmlspecialchars($new_password));
+    $confirm_new_password = sha1($_POST['confirm_new_password']);
+    $confirm_new_password = filter_var(htmlspecialchars($confirm_new_password));
+
+    if ($old_password == $empty_password) {
+        $message[] = 'Old password must be filled';
+    } elseif ($old_password != $previous_password) {
+        $message[] = 'Old password didn\'t match';
+    } elseif ($new_password != $confirm_new_password) {
+        $message[] = 'New password didn\'t match';
     } else {
-        if ($password != $confirm_password) {
-            $message[] = 'Passsword doesn\'t match';
+        if ($new_password != $empty_password) {
+            $update_password = $conn->prepare("UPDATE `users` SET password = ? WHERE id = ?");
+            $update_password->execute([$confirm_new_password, $user_id]);
+            $message[] = 'Success password update!';
         } else {
-            $insert_user = $conn->prepare("INSERT INTO `users` (name, email, number, password) VALUES (?, ?, ?, ?);");
-            $insert_user->execute([$name, $email, $phone, $password]);
-            $message[] = 'Registration was successful';
-            header('location:user_login.php');
+            $message[] = 'Enter new password';
         }
 
     }

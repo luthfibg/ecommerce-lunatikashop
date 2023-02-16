@@ -32,7 +32,7 @@
                     class="form-control" id="inputPassword2" placeholder="Confirm New Password">
             </div>
             <input type="submit" name="user_submit_update" class="btn btn-sm button secondary component-tone mt-5"
-                value="Register">
+                value="Update">
         </form>
     </div>
 </div>
