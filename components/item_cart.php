@@ -1,16 +1,17 @@
-<ol class="list-group list-group-numbered bg-dark mb-3">
+<?php
 
-    <?php
+$select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+$select_cart->execute([$user_id]);
 
-    $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
-    $select_cart->execute([$user_id]);
-
-    if ($select_cart->rowCount() > 0) {
-        while ($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)) {
-            $price = $fetch_cart['price'];
-            $qty = $fetch_cart['quantity'];
-            $fixed_price = $price * $qty;
-            ?>
+if ($select_cart->rowCount() > 0) {
+    $total_price = 0;
+    while ($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)) {
+        $price = $fetch_cart['price'];
+        $qty = $fetch_cart['quantity'];
+        $fixed_price = $price * $qty;
+        $total_price += $fixed_price;
+        ?>
+        <ol class="list-group list-group-numbered bg-dark mb-3">
             <li class="list-group-item d-flex justify-content-between align-items-start bg-dark py-3">
                 <div class="d-flex w-100 align-items-center">
                     <div class="img-container">
@@ -38,17 +39,44 @@
                     </div>
                 </div>
             </li>
-            <?php
-        }
-    } else {
-        ?>
-        <div class="container d-flex justify-content-between flex-column align-items-center">
-            <span class="my-5">Cart is empty</span>
-            <div class="btn mb-5 w-100 w-50-md w-25-lg">Go To Shop</div>
-        </div>
+        </ol>
         <?php
     }
-
     ?>
+    <ol class="list-group list-group-numbered bg-dark mb-3">
+        <li class="list-group-item d-flex justify-content-between align-items-start bg-dark py-3">
+            <div class="d-flex w-100 align-items-center">
+                <div class="img-container d-flex justify-content-center align-items-center"
+                    style="width: 5rem;height: 5rem">
+                    <i class="fa-solid fa-shopping-cart fa-xl"></i>
+                </div>
+                <div class="me-auto ms-5">
+                    <div class="fw-bold">
+                        Total Harga
+                    </div>
+                </div>
+                <div class="me-auto ms-3">
+                    Rp
+                    <?= currency_formatter($total_price); ?>
+                    ,-
+                </div>
+                <div class="action-checkout me-3">
+                    <a href="payment.php>" class="btn-custom picker px-3 py-2" style="color: var(--light);">
+                        <i class="fa-solid fa-bag-shopping fa-xl" style="color: var(--component-emerald);"></i>
+                        &nbsp; Pick
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ol>
+    <?php
+} else {
+    ?>
+    <div class="container d-flex justify-content-between flex-column align-items-center">
+        <span class="my-5">Cart is empty</span>
+        <div class="btn mb-5 w-100 w-50-md w-25-lg">Go To Shop</div>
+    </div>
+    <?php
+}
 
-</ol>
+?>

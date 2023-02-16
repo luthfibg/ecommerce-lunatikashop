@@ -6,7 +6,8 @@
   width: fit-content;
 }
 
-.list-group .list-group-item .list-action a {
+.list-group .list-group-item .list-action a,
+.list-group .list-group-item .action-checkout a {
   display: block;
   border-radius: 0.5rem;
 }
@@ -22,12 +23,17 @@
   border: 0.05rem solid var(--component-emerald) !important;
 }
 
+.list-group .list-group-item .action-checkout .picker {
+  border: 0.05rem solid var(--component-emerald) !important;
+}
+
 .list-group .list-group-item .list-action .del:hover {
   background-color: var(--component-crimson);
   transition: 0.8s;
 }
 
-.list-group .list-group-item .list-action .throw-to-wishlist:hover {
+.list-group .list-group-item .list-action .throw-to-wishlist:hover,
+.list-group .list-group-item .action-checkout .picker:hover {
   background-color: var(--component-emerald);
   transition: 0.8s;
 }
@@ -39,6 +45,8 @@
 
 .list-group .list-group-item .list-action .del:hover i,
 .list-group .list-group-item .list-action .throw-to-cart:hover i,
-.list-group .list-group-item .list-action .throw-to-wishlist:hover i {
+.list-group .list-group-item .list-action .throw-to-wishlist:hover i,
+.list-group .list-group-item .action-checkout .picker:hover,
+.list-group .list-group-item .action-checkout .picker:hover i {
   color: var(--dark-base) !important;
 }
