@@ -51,7 +51,7 @@ if (isset($message)) {
                 <p style="color: var(--light-primary);">
                     <? $fetch_profile['name']; ?>
                 </p>
-                <a href="update_profile.php" class="btn btn-sm">Update Profile</a>
+                <a href="user_update_profile.php" class="btn btn-sm">Update Profile</a>
                 <div class="flex-btn">
                     <a href="user_login.php" class="btn btn-sm btn-opt">Login</a>
                     <a href="user_register.php" class="btn btn-sm btn-opt">Register</a>
