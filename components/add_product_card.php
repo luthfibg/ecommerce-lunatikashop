@@ -15,6 +15,17 @@
                         placeholder="Price (Required)" onkeypress="if(this.value.length == 13) return false;" required>
                 </div>
                 <div class="mb-5">
+                    <select class="form-select" aria-label="Default select example" name="category">
+                        <option selected disabled>Select Category</option>
+                        <option value="gadget">Gadget</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="cloth">Cloth</option>
+                        <option value="grocery">Grocery</option>
+                        <option value="tool">Tool</option>
+                        <option value="service">Service</option>
+                    </select>
+                </div>
+                <div class="mb-5">
                     <label for="img1" class="text-start">Product Image 1</label>
                     <input type="file" name="img1" class="form-control box" id="img1" placeholder="Product Image 1"
                         accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff" required>
@@ -22,12 +33,12 @@
                 <div class="mb-5">
                     <label for="img2" class="text-start">Product Image 2</label>
                     <input type="file" name="img2" class="form-control box" id="img2" placeholder="Product Image 2"
-                        accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff" required>
+                        accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff">
                 </div>
                 <div class="mb-5" class="text-start">
                     <label for="img3">Product Image 3</label>
                     <input type="file" name="img3" class="form-control box" id="img3" placeholder="Product Image 3"
-                        accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff" required>
+                        accept="image/jpg, image/jpeg, image/png, image/webp, image/tiff">
                 </div>
                 <div class="mb-5">
                     <textarea name="details" class="form-control box" maxlength="5000" id="details" cols="100" rows="10"

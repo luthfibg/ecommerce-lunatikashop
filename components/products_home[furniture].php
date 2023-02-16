@@ -3,8 +3,9 @@
     <div class="swiper-wrapper">
         <?php
 
-        $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
-        $select_products->execute();
+        $cat = 'furniture';
+        $select_products = $conn->prepare("SELECT * FROM `products` WHERE category = ? LIMIT 6");
+        $select_products->execute([$cat]);
         if ($select_products->rowCount() > 0) {
             while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
                 # code...
@@ -16,7 +17,7 @@
                     <input type="hidden" name="image" value="<?= $fetch_products['image_01']; ?>">
                     <button type="submit" name="add_to_wishlist" class="fas fa-heart"></button>
                     <a href="quickview.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
-                    <img src="assets/images/products/<?= $fetch_products['image_02']; ?>" alt="" class="image mb-3 mb-5-md">
+                    <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image mb-3 mb-5-md">
                     <div class="name text-start">
                         <?= $fetch_products['name']; ?>
                     </div>

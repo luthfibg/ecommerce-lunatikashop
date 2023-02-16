@@ -1,5 +1,5 @@
 <div class="card product-card g-col-12 g-col-md-6 g-col-lg-4 g-col-xl-3">
-    <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="Haylou GS">
+    <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" class="card-img-top" alt="a product image">
     <div class="card-body product-card-body">
         <h5 class="card-title product-card-spec">
             <?= $fetch_products['name']; ?>

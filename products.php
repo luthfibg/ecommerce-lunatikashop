@@ -16,6 +16,8 @@ if (isset($_POST['submit_add_product'])) {
     $price = filter_var(htmlspecialchars($price));
     $details = $_POST['details'];
     $details = filter_var(htmlspecialchars($details));
+    $category = $_POST['category'];
+    $category = filter_var(htmlspecialchars($category));
 
     $img1 = $_FILES['img1']['name'];
     $img1 = filter_var(htmlspecialchars($img1));
@@ -48,8 +50,8 @@ if (isset($_POST['submit_add_product'])) {
             move_uploaded_file($img2_tmp_name, $img2_path);
             move_uploaded_file($img3_tmp_name, $img3_path);
 
-            $insert_product = $conn->prepare("INSERT INTO `products`(name, price, image_01, image_02, image_03, details) VALUES (?,?,?,?,?,?)");
-            $insert_product->execute([$name, $price, $img1, $img2, $img3, $details]);
+            $insert_product = $conn->prepare("INSERT INTO `products`(name, price, category, image_01, image_02, image_03, details) VALUES (?,?,?,?,?,?,?)");
+            $insert_product->execute([$name, $price, $category, $img1, $img2, $img3, $details]);
 
             $message[] = 'New product successfully inserted';
         }

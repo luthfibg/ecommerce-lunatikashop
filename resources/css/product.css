@@ -89,7 +89,8 @@ header .flex .navbar a {
   width: 100%;
 }
 
-.container .card .row .flex input {
+.container .card .row .flex input,
+.container .card .row .flex div .form-select {
   background-color: var(--dark-warm);
   color: var(--light-secondary) !important;
   font-weight: 300 !important;
