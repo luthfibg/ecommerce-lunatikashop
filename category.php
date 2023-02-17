@@ -15,9 +15,6 @@ if (!isset($user_id)) {
 }
 
 if (isset($_POST['add_to_wishlist'])) {
-    // if ($user_id == '') {
-    //     header('location:user_login.php');
-    // } else {
 
     $pid = $_POST['pid'];
     $pid = filter_var(htmlspecialchars($pid));
@@ -44,7 +41,6 @@ if (isset($_POST['add_to_wishlist'])) {
         $message[] = 'Success add wishlist!';
 
     }
-    // }
 }
 
 if (isset($_POST['add_to_cart_home'])) {
@@ -76,11 +72,7 @@ if (isset($_POST['add_to_cart_home'])) {
             if ($check_wishlist_nums->rowCount() > 0) {
                 $delete_wishlist = $conn->prepare("DELETE FROM `wishlist` WHERE name = ? AND user_id = ?");
                 $delete_wishlist->execute([$name, $user_id]);
-            } //else {
-            //     $insert_wishlist = $conn->prepare("INSERT INTO `wishlist` (user_id, pid, name, price, quantity, image) VALUES (?, ?, ?, ?, ?, ?)");
-            //     $insert_wishlist->execute([$user_id, $pid, $name, $price, $qty, $image]);
-            //     $message[] = 'Success add wishlist!';
-            // }
+            }
             $insert_cart = $conn->prepare("INSERT INTO `cart` (user_id, pid, name, price, quantity, image) VALUES (?, ?, ?, ?, ?, ?)");
             $insert_cart->execute([$user_id, $pid, $name, $price, $qty, $image]);
             $message[] = 'Success add cart!';
