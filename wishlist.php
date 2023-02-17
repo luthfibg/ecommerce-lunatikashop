@@ -21,6 +21,30 @@ if (isset($_GET['delete'])) {
 
     header('location:wishlist.php');
 }
+
+if (isset($_GET['upcart'])) {
+
+    $default_qty = 1;
+    $upto_cart_id = $_GET['upcart'];
+    $select_wishlist = $conn->prepare("SELECT * FROM `wishlist` WHERE id = ?");
+    $select_wishlist->execute([$upto_cart_id]);
+    $fetch_wishlist = $select_wishlist->fetch(PDO::FETCH_ASSOC);
+    $pid = $fetch_wishlist['pid'];
+    $name = $fetch_wishlist['name'];
+    $price = $fetch_wishlist['price'];
+    $qty = $default_qty;
+    $img = $fetch_wishlist['image'];
+
+    $upto_cart = $conn->prepare("INSERT INTO `cart` (user_id, pid, name, price, quantity, image) VALUES (?, ?, ?, ?, ?, ?)");
+    $upto_cart->execute([$user_id, $pid, $name, $price, $qty, $img]);
+
+    $delete_id = $_GET['upcart'];
+    $delete_wishlist = $conn->prepare("DELETE FROM `wishlist` WHERE id = ?");
+    $delete_wishlist->execute([$delete_id]);
+
+    header('location:wishlist.php');
+}
+
 include('layouts/wishlist_layout.php');
 
 ?>
