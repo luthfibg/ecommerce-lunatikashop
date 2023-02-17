@@ -14,14 +14,14 @@
                         <img src="assets/images/products/<?= $fetch_wishlist['image']; ?>"
                             alt="pid=<?= $fetch_wishlist['pid']; ?>" class="image" style="width: 5rem;height: 5rem;">
                     </div>
-                    <div class="me-auto ms-5">
+                    <div class="me-auto ms-3 ms-md-5">
                         <div class="fw-bold">
                             <?= $fetch_wishlist['name']; ?>
                         </div>Rp
                         <?= currency_formatter($fetch_wishlist['price']); ?>
                         ,-
                     </div>
-                    <div class="list-action me-3">
+                    <div class="list-action me-1 me-md-3">
                         <a href="wishlist.php?delete=<?= $fetch_wishlist['id']; ?>" class="btn-custom del px-3 py-2">
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>

@@ -19,10 +19,7 @@
   border: 0.05rem solid var(--component-golden) !important;
 }
 
-.list-group .list-group-item .list-action .throw-to-wishlist {
-  border: 0.05rem solid var(--component-emerald) !important;
-}
-
+.list-group .list-group-item .list-action .throw-to-wishlist,
 .list-group .list-group-item .action-checkout .picker {
   border: 0.05rem solid var(--component-emerald) !important;
 }
