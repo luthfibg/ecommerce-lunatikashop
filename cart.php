@@ -22,6 +22,27 @@ if (isset($_GET['delete'])) {
     header('location:cart.php');
 }
 
+if (isset($_GET['downto_wishlist'])) {
+
+    $downto_wishlist_id = $_GET['downto_wishlist'];
+    $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE id = ?");
+    $select_cart->execute([$downto_wishlist_id]);
+    $fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC);
+    $pid = $fetch_cart['pid'];
+    $name = $fetch_cart['name'];
+    $price = $fetch_cart['price'];
+    $img = $fetch_cart['image'];
+
+    $downto_wishlist = $conn->prepare("INSERT INTO `wishlist` (user_id, pid, name, price, image) VALUES (?, ?, ?, ?, ?)");
+    $downto_wishlist->execute([$user_id, $pid, $name, $price, $img]);
+
+    $delete_id = $_GET['downto_wishlist'];
+    $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE id = ?");
+    $delete_cart->execute([$delete_id]);
+
+    header('location:cart.php');
+}
+
 include('layouts/cart_layout.php');
 
 if (isset($_POST['add_to_cart_home'])) {

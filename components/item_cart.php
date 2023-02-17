@@ -36,7 +36,7 @@ if ($select_cart->rowCount() > 0) {
                         <a href="cart.php?delete=<?= $fetch_cart['id']; ?>" class="btn-custom del px-3 py-2">
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>
-                        <a href="cart.php?delete=<?= $fetch_cart['id']; ?>"
+                        <a href="cart.php?downto_wishlist=<?= $fetch_cart['id']; ?>"
                             class="btn-custom throw-to-wishlist px-3 py-2 mt-2 mt-3-md">
                             <i class="fa-solid fa-heart" style="color: var(--component-emerald);"></i> </a>
                     </div>
