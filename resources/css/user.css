@@ -471,20 +471,20 @@ section .section-title {
 
 .home-products .products-gadget-slider .swiper-wrapper .slide:hover .fa-heart,
 .home-products .products-furniture-slider .swiper-wrapper .slide:hover .fa-heart,
-.home-products .products-cloth-slider:hover .fa-heart,
-.home-products .products-grocery-slider:hover .fa-heart,
-.home-products .products-tool-slider:hover .fa-heart,
-.home-products .products-service-slider:hover .fa-heart {
+.home-products .products-cloth-slider .swiper-wrapper .slide:hover .fa-heart,
+.home-products .products-grocery-slider .swiper-wrapper .slide:hover .fa-heart,
+.home-products .products-tool-slider .swiper-wrapper .slide:hover .fa-heart,
+.home-products .products-service-slider .swiper-wrapper .slide:hover .fa-heart {
   transition: opacity 0.5s linear;
   opacity: 1 !important;
 }
 
-.home-products .products-gadget-slider:hover .fa-eye,
-.home-products .products-furniture-slider:hover .fa-eye,
-.home-products .products-cloth-slider:hover .fa-eye,
-.home-products .products-grocery-slider:hover .fa-eye,
-.home-products .products-tool-slider:hover .fa-eye,
-.home-products .products-service-slider:hover .fa-eye {
+.home-products .products-gadget-slider .swiper-wrapper .slide:hover .fa-eye,
+.home-products .products-furniture-slider .swiper-wrapper .slide:hover .fa-eye,
+.home-products .products-cloth-slider .swiper-wrapper .slide:hover .fa-eye,
+.home-products .products-grocery-slider .swiper-wrapper .slide:hover .fa-eye,
+.home-products .products-tool-slider .swiper-wrapper .slide:hover .fa-eye,
+.home-products .products-service-slider .swiper-wrapper .slide:hover .fa-eye {
   transition: opacity 0.5s linear;
   opacity: 1 !important;
 }
