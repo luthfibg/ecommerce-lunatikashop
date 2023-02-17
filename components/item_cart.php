@@ -43,7 +43,7 @@ if ($select_cart->rowCount() > 0) {
         <?php
     }
     ?>
-    <ol class="list-group list-group-numbered bg-dark mb-3">
+    <ol class="list-group bottom-list bg-dark mb-3">
         <li class="list-group-item d-flex justify-content-between align-items-start bg-dark py-3">
             <div class="d-flex w-100 align-items-center">
                 <div class="img-container d-flex justify-content-center align-items-center"

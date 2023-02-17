@@ -29,18 +29,18 @@
 
 .list-group .list-group-item .list-action .del:hover {
   background-color: var(--component-crimson);
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .list-group .list-group-item .list-action .throw-to-wishlist:hover,
 .list-group .list-group-item .action-checkout .picker:hover {
   background-color: var(--component-emerald);
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .list-group .list-group-item .list-action .throw-to-cart:hover {
   background-color: var(--component-golden);
-  transition: 0.8s;
+  transition: 0.5s;
 }
 
 .list-group .list-group-item .list-action .del:hover i,
@@ -49,4 +49,9 @@
 .list-group .list-group-item .action-checkout .picker:hover,
 .list-group .list-group-item .action-checkout .picker:hover i {
   color: var(--dark-base) !important;
+}
+
+.bottom-list .list-group-item .d-flex > *,
+.bottom-list .list-group-item .d-flex .fw-bold {
+  color: var(--component-emerald) !important;
 }
