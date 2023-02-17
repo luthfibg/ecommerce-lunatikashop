@@ -10,7 +10,7 @@ $cart = 'cart.php';
 //content attribute
 $carousel = 'components/carousel.php';
 $carousel_custom = 'components/carousel_customized.php';
-$category = 'components/category.php';
+$category = 'components/category_slider.php';
 $products_home_gadget = 'components/products_home[gadget].php';
 $products_home_furniture = 'components/products_home[furniture].php';
 $products_home_cloth = 'components/products_home[cloth].php';

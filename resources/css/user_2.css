@@ -1,6 +1,10 @@
 @import 'theme.css';
 
-/* Wishlist & Cart Page*/
+/**/ /**/ /**/
+/**/ /**/ /**/
+/***************************************************************************** Wishlist & Cart Page*/
+/**/ /**/ /**/
+/**/ /**/ /**/
 
 .list-group .list-group-item div .img-container {
   width: fit-content;
@@ -51,4 +55,100 @@
 .bottom-list .list-group-item .d-flex > *,
 .bottom-list .list-group-item .d-flex .fw-bold {
   color: var(--component-emerald) !important;
+}
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Category Inner Item */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+.container .items-container .item-card {
+  background-color: var(--dark-warm) !important;
+  width: 48% !important;
+  border-radius: 0.5rem;
+  border: var(--light-border) !important;
+  box-shadow: none;
+  padding: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .items-container .item-card > * {
+  font-size: 1.65rem;
+}
+
+.container .items-container .item-card .name {
+  text-align: start !important;
+  height: 3.5rem;
+  font-size: 1.45rem;
+}
+
+.container .items-container .item-card .fa-heart,
+.container .items-container .item-card .fa-eye {
+  position: absolute;
+  top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  border-radius: 0.3rem;
+}
+
+.container .items-container .item-card .fa-heart {
+  color: var(--component-crimson);
+  right: 1rem;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.container .items-container .item-card .fa-eye {
+  color: var(--component-turquoise);
+  left: 1rem;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.container .items-container .item-card .fa-heart:hover,
+.container .items-container .item-card .fa-eye:hover {
+  /* background-color: var(--dark-base); */
+  text-shadow: 0 0 15px var(--component-orange);
+  transition: 0.3s linear;
+}
+
+.container .items-container .item-card:hover .fa-heart {
+  transition: opacity 0.5s linear;
+  opacity: 1 !important;
+}
+
+.container .items-container .item-card:hover .fa-eye {
+  transition: opacity 0.5s linear;
+  opacity: 1 !important;
+}
+
+.container .items-container .item-card .image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.container .items-container .item-card .qty {
+  width: fit-content !important;
+}
+
+.container .items-container .item-card input {
+  background-color: var(--dark-base);
+  color: var(--light-primary) !important;
+  font-size: 1.35rem;
+}
+
+.container .items-container .item-card input[type='submit'] {
+  border: 1px solid var(--component-orange);
+}
+
+.container .items-container .item-card input[type='submit']:hover {
+  color: var(--dark-base) !important;
 }

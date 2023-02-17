@@ -469,8 +469,8 @@ section .section-title {
   transition: 0.3s linear;
 }
 
-.home-products .products-gadget-slider:hover .fa-heart,
-.home-products .products-furniture-slider:hover .fa-heart,
+.home-products .products-gadget-slider .swiper-wrapper .slide:hover .fa-heart,
+.home-products .products-furniture-slider .swiper-wrapper .slide:hover .fa-heart,
 .home-products .products-cloth-slider:hover .fa-heart,
 .home-products .products-grocery-slider:hover .fa-heart,
 .home-products .products-tool-slider:hover .fa-heart,
