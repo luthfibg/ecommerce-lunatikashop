@@ -2,7 +2,7 @@
 
 $title = 'Category';
 $header = 'components/user_header.php';
-$content = '';
+$content = 'components/category_inner.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');
@@ -13,6 +13,6 @@ if (!isset($user_id)) {
     header('location:user_login.php');
 }
 
-include('layouts/shop_layout.php');
+include('layouts/category_layout.php');
 
 ?>

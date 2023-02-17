@@ -65,7 +65,7 @@ if ($select_cart->rowCount() > 0) {
                     ,-
                 </div>
                 <div class="action-checkout me-1 me-md-3">
-                    <a href="payment.php>" class="btn-custom picker px-3 py-2" style="color: var(--light);">
+                    <a href="payment.php" class="btn-custom picker px-3 py-2" style="color: var(--light);">
                         <i class="fa-solid fa-bag-shopping fa-xl" style="color: var(--component-emerald);"></i>
                         &nbsp; Pick
                     </a>
