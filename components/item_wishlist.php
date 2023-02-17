@@ -26,7 +26,7 @@
                             <i class="fa-regular fa-circle-xmark" style="color: var(--component-crimson);"></i>
                         </a>
                         <a href="wishlist.php?upcart=<?= $fetch_wishlist['id']; ?>"
-                            class="btn-custom throw-to-cart px-3 py-2 mt-3">
+                            class="btn-custom throw-to-cart px-3 py-2 mt-2 mt-3-md">
                             <i class="fa-solid fa-cart-shopping" style="color: var(--component-golden);"></i> </a>
                     </div>
                     <!-- <span class="badge bg-primary rounded-pill mt-4 me-4 d-block">new</span> -->
