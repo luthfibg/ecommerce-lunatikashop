@@ -213,6 +213,10 @@
   font-size: 1.8rem !important;
 }
 
+.user_header .icons a span {
+  color: var(--dark-base) !important;
+}
+
 .user_header .icons #wishlist-btn .badge,
 .user_header .icons #cart-btn .badge {
   font-size: 1.1rem !important;
