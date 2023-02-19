@@ -15,7 +15,7 @@
                     <input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">
                     <input type="hidden" name="image" value="<?= $fetch_products['image_01']; ?>">
                     <button type="submit" name="add_to_wishlist" class="fas fa-heart"></button>
-                    <a href="quickview.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
+                    <a href="quick_view.php?pid=<?= $fetch_products['id']; ?>" class="fas fa-eye"></a>
                     <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image mb-3 mb-5-md">
                     <div class="name text-start">
                         <?= $fetch_products['name']; ?>
