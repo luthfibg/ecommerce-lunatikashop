@@ -2,7 +2,7 @@
 
 $title = 'Quick View';
 $header = 'components/user_header.php';
-$content = '';
+$content = 'components/quick_view_item.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');

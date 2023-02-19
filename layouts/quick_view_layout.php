@@ -58,8 +58,22 @@
             }
         }
         ?>
+        <?php
 
-        <?php include($content) ?>
+        $category = $_GET['category'];
+        $select_products = $conn->prepare("SELECT * FROM `products` WHERE category LIKE '%{$category}%'");
+        $select_products->execute();
+        if ($select_products->rowCount() > 0) {
+            while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
+                ?>
+                <?php include($content) ?>
+                <?php
+            }
+        } else {
+            echo '<p class="empty">Nothing product to display</p>';
+        }
+
+        ?>
     </div>
     <?php include($footer) ?>
 
