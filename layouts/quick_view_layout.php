@@ -60,9 +60,9 @@
         ?>
         <?php
 
-        $category = $_GET['category'];
-        $select_products = $conn->prepare("SELECT * FROM `products` WHERE category LIKE '%{$category}%'");
-        $select_products->execute();
+        $pid = $_GET['pid'];
+        $select_products = $conn->prepare("SELECT * FROM `products` WHERE id = ?");
+        $select_products->execute([$pid]);
         if ($select_products->rowCount() > 0) {
             while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
                 ?>

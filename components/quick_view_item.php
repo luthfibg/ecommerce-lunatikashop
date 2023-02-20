@@ -4,7 +4,16 @@
     <input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">
     <input type="hidden" name="image" value="<?= $fetch_products['image_01']; ?>">
     <button type="submit" name="add_to_wishlist" class="fas fa-heart"></button>
-    <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image mb-3 mb-5-md">
+    <div class="main-image">
+        <div class="big-image">
+            <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image mb-3 mb-5-md">
+        </div>
+        <div class="little-image">
+            <img src="assets/images/products/<?= $fetch_products['image_01']; ?>" alt="" class="image mb-3 mb-5-md">
+            <img src="assets/images/products/<?= $fetch_products['image_02']; ?>" alt="" class="image mb-3 mb-5-md">
+            <img src="assets/images/products/<?= $fetch_products['image_03']; ?>" alt="" class="image mb-3 mb-5-md">
+        </div>
+    </div>
     <div class="card-body product-card-body">
         <div class="name text-start">
             <?= $fetch_products['name']; ?>
@@ -15,8 +24,13 @@
                 </span>,-</div>
             <input type="number" name="qty" id="input-qty" class="qty form-control mt-2 mt-3-md" min="1" max="99"
                 value="1" onkeypress="if(this.value.length == 2) return false;">
-            <input type="submit" value="Add To Cart" name="add_to_cart_home" class="btn btn-sm mt-2 mt-3-md">
-            <input type="submit" value="Add To Wishlist" name="add_to_wishlist" class="btn btn-sm mt-2 mt-3-md">
+            <div class="d-flex">
+                <input type="submit" value="Add To Cart" name="add_to_cart_home" class="btn btn-sm mt-2 mt-3-md">
+                <input type="submit" value="Add To Wishlist" name="add_to_wishlist" class="btn btn-sm mt-2 mt-3-md">
+            </div>
+        </div>
+        <div class="detail-item">
+            <?= $fetch_products['details']; ?>
         </div>
     </div>
 </form>
