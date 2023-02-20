@@ -42,13 +42,23 @@
             <div class="detail-item mt-5">
                 <?= $fetch_products['details']; ?>
             </div>
-            <div class="d-flex flex-wrap flex-column w-100">
-                <input type="number" name="qty" id="input-qty" class="qty form-control mt-2 mt-3-md" min="1" max="99"
-                    value="1" onkeypress="if(this.value.length == 2) return false;">
+            <div class="d-flex flex-wrap flex-column w-100 mt-3 mt-md-5">
                 <div class="d-flex">
-                    <input type="submit" value="Purchase" name="purchase" class="btn btn-sm mt-2 mt-3-md me-2">
-                    <input type="submit" value="Add To Cart" name="add_to_cart_quick_view"
-                        class="btn btn-sm mt-2 mt-3-md">
+                    <input type="text" value="Select Qty" class="form-control mt-2 mt-3-md ps-0" disabled>
+                    <input type="number" name="qty" id="input-qty" class="qty form-control mt-2 mt-3-md" min="1"
+                        max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+                </div>
+                <div class="d-flex">
+                    <a href="quick_view.php?pick_to_purchase=<?= $fetch_products['id']; ?>"
+                        class="btn-custom btn-sm mt-2 mt-3-md me-3 py-2 px-3">
+                        <i class="fa-solid fa-bag-shopping"></i>&nbsp;
+                        <span>Purchase</span>
+                    </a>
+                    <a href="quick_view.php?add_to_cart=<?= $fetch_products['id']; ?>"
+                        class="btn-custom btn-sm mt-2 mt-3-md py-2 px-3">
+                        <i class="fa-solid fa-shopping-cart"></i>&nbsp;
+                        <span>Add To Cart</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -62,7 +72,7 @@
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Similiar Products</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                     content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>

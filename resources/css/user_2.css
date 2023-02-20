@@ -204,10 +204,29 @@
   background-color: var(--component-livid);
 }
 
-.quick-view-section .item-card .row .card-body > *,
-.quick-view-section .item-card .row .card-body div input {
+.quick-view-section .item-card .row .card-body > * {
   font-size: 1.55rem;
   line-height: 1.6rem;
+}
+
+.quick-view-section .item-card .row .card-body input[type='text'],
+.quick-view-section .item-card .row .card-body input[type='number'],
+.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom {
+  border: 0.05rem solid var(--component-emerald) !important;
+  border-radius: 0.5rem;
+  color: var(--component-emerald) !important;
+  font-size: 1.45rem;
+  background-color: var(--dark-second);
+  width: fit-content;
+}
+
+.quick-view-section .item-card .row .card-body input[type='text'] {
+  width: 9rem !important;
+  border: none !important;
+  border-radius: 0.5rem;
+  color: var(--component-emerald) !important;
+  font-size: 1.45rem;
+  background-color: var(--dark-second);
 }
 
 .quick-view-section .item-card .row .card-body div div .fa-heart {
@@ -217,4 +236,18 @@
   background-color: transparent !important;
   font-size: 1.7rem;
   border: none;
+}
+
+.quick-view-section .item-card .row .card-body div div .fa-heart:hover {
+  text-shadow: 0 0 15px var(--component-crimson);
+  transition: 0.3s linear;
+}
+
+.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom:hover {
+  background-color: var(--component-emerald);
+}
+
+.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom:hover span,
+.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom:hover i {
+  color: var(--dark-second);
 }

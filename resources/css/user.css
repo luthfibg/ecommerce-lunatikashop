@@ -469,7 +469,7 @@ section .section-title {
 .home-products .products-service-slider .swiper-wrapper .slide .fa-heart:hover,
 .home-products .products-service-slider .swiper-wrapper .slide .fa-eye:hover {
   /* background-color: var(--dark-base); */
-  text-shadow: 0 0 15px var(--component-orange);
+  text-shadow: 0 0 15px var(--component-crimson);
   transition: 0.3s linear;
 }
 
