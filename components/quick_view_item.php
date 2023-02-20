@@ -20,7 +20,20 @@
                     <h5 class="card-title">
                         <?= $fetch_products['name']; ?>
                     </h5>
-                    <button type="submit" name="add_to_wishlist" class="fas fa-heart align-self-end"></button>
+                    <?php
+
+                    $select_wishlist = $conn->prepare("SELECT * FROM `wishlist` WHERE user_id = ? AND pid = ?");
+                    $select_wishlist->execute([$user_id, $pid]);
+                    if ($select_wishlist->rowCount() > 0) {
+                        ?>
+                        <button type="submit" name="add_to_wishlist" class="fa-solid fa-heart align-self-end"></button>
+                        <?php
+                    } else {
+                        ?>
+                        <button type="submit" name="add_to_wishlist" class="fa-regular fa-heart align-self-end"></button>
+                        <?php
+                    }
+                    ?>
                 </div>
                 <div class="price mt-2 mt-3-md p-2">Rp <span>
                         <?= currency_formatter($fetch_products['price']); ?>
@@ -33,9 +46,9 @@
                 <input type="number" name="qty" id="input-qty" class="qty form-control mt-2 mt-3-md" min="1" max="99"
                     value="1" onkeypress="if(this.value.length == 2) return false;">
                 <div class="d-flex">
-                    <input type="submit" value="Add To Cart" name="add_to_cart_home"
-                        class="btn btn-sm mt-2 mt-3-md me-2">
-                    <input type="submit" value="Add To Wishlist" name="add_to_wishlist" class="btn btn-sm mt-2 mt-3-md">
+                    <input type="submit" value="Purchase" name="purchase" class="btn btn-sm mt-2 mt-3-md me-2">
+                    <input type="submit" value="Add To Cart" name="add_to_cart_quick_view"
+                        class="btn btn-sm mt-2 mt-3-md">
                 </div>
             </div>
         </div>

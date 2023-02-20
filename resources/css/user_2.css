@@ -209,3 +209,12 @@
   font-size: 1.55rem;
   line-height: 1.6rem;
 }
+
+.quick-view-section .item-card .row .card-body div div .fa-heart {
+  width: 3rem;
+  height: 3rem;
+  color: var(--component-crimson) !important;
+  background-color: transparent !important;
+  font-size: 1.7rem;
+  border: none;
+}
