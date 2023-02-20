@@ -26,10 +26,15 @@
                     $select_wishlist->execute([$user_id, $pid]);
                     if ($select_wishlist->rowCount() > 0) {
                         ?>
-                        <button type="submit" name="add_to_wishlist" class="fa-solid fa-heart align-self-end"></button>
+                        <input type="hidden" name="pid" value="<?= $fetch_products['id']; ?>">
+                        <button type="submit" name="delete_from_wishlist" class="fa-solid fa-heart align-self-end"></button>
                         <?php
                     } else {
                         ?>
+                        <input type="hidden" name="pid" value="<?= $fetch_products['id']; ?>">
+                        <input type="hidden" name="name" value="<?= $fetch_products['name']; ?>">
+                        <input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">
+                        <input type="hidden" name="image" value="<?= $fetch_products['image_01']; ?>">
                         <button type="submit" name="add_to_wishlist" class="fa-regular fa-heart align-self-end"></button>
                         <?php
                     }
