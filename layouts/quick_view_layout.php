@@ -34,6 +34,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="resources/css/user.css">
+    <link rel="stylesheet" href="resources/css/user_2.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
     <title>
@@ -43,7 +44,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
-    <div class="container">
+    <div class="container quick-view-section">
 
         <?php
         $message = array();

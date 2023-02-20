@@ -152,3 +152,54 @@
 .container .items-container .item-card input[type='submit']:hover {
   color: var(--dark-base) !important;
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Quick View */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+.quick-view-section .item-card {
+  background-color: var(--dark-second);
+  border: var(--light-border);
+  gap: 1rem;
+  width: 100% !important;
+  border-radius: 0.3rem;
+  box-shadow: none;
+}
+
+.quick-view-section .item-card .img-container {
+  flex: 1 1 20rem;
+}
+
+.quick-view-section .item-card .card-body {
+  flex: 1 1 20rem;
+}
+
+.quick-view-section .item-card .img-container .big-img img {
+  height: fit-content;
+  width: 100%;
+  object-fit: contain;
+}
+
+.quick-view-section .item-card .img-container .little-imgs {
+  gap: 0.8rem;
+}
+
+.quick-view-section .item-card .img-container .little-imgs img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border: var(--light-border);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.quick-view-section .item-card .card-body div input {
+  width: fit-content;
+}
+
+.quick-view-section .item-card .card-body div .price {
+  width: fit-content;
+  border-radius: 0.3rem;
+  background-color: var(--component-livid);
+}
