@@ -269,6 +269,13 @@
   .container .items-container .item-card input {
     font-size: 0.9rem !important;
   }
+  .quick-view-section .item-card .row .card-body > * {
+    font-size: 0.95rem !important;
+    line-height: 1.2rem;
+  }
+  .quick-view-section .item-card .row .card-body div input {
+    font-size: 0.85rem !important;
+  }
 }
 
 @media (min-width: 1200px) {
