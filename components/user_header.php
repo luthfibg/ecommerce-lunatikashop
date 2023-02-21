@@ -37,7 +37,7 @@ if (isset($message)) {
             <a href="home.php">Home</a>
             <a href="shop.php">Shop</a>
             <a href="my_orders.php">My Orders</a>
-            <a href="javascript:;" onclick="menu()" id="product-btn">About</a>
+            <a href="about.php" id="about-nav">About</a>
             <a href="contact.php">Contact</a>
             <a href="help.php">Help Center</a>
         </nav>

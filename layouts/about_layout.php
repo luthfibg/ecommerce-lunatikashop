@@ -34,6 +34,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="resources/css/user.css">
+    <link rel="stylesheet" href="resources/css/user_2.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
     <title>
@@ -43,7 +44,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
-    <div class="container">
+    <div class="container about-section">
 
         <?php
         $message = array();
@@ -58,12 +59,14 @@
             }
         }
         ?>
-
-        <?php include($content) ?>
+        <div class="row my-3 d-flex align-items-center flex-wrap">
+            <?php include($headline_ilustration) ?>
+            <?php include($text_content) ?>
+        </div>
     </div>
     <?php include($footer) ?>
 
-    <script src="resources/js/admin.js"></script>
+    <script src="resources/js/user.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

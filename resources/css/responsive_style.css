@@ -278,6 +278,14 @@
   .quick-view-section .item-card .row .card-body div input {
     font-size: 0.85rem !important;
   }
+  .about-section .about-content > p {
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+  }
+  .about-section .about-content a.btn {
+    padding: 0.6rem 4.5rem 0.6rem 4.5rem;
+    font-size: 0.95rem;
+  }
 }
 
 @media (min-width: 1200px) {

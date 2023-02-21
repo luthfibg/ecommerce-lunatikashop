@@ -251,3 +251,32 @@
 .quick-view-section .item-card .row .card-body .d-flex div a.btn-custom:hover i {
   color: var(--dark-second);
 }
+
+.about-section .row {
+  gap: 1.5rem;
+}
+
+.about-section .ilustration {
+  flex: 1 1 40rem;
+}
+
+.about-section .about-content {
+  flex: 1 1 40rem;
+}
+
+.about-section .about-content h4 {
+  text-transform: capitalize !important;
+}
+
+.about-section .about-content > p,
+.about-section .about-content > a {
+  font-weight: 200 !important;
+  font-size: 1.55rem;
+  line-height: 1.8rem;
+}
+
+.about-section .about-content a.btn {
+  padding: 0.9rem 4.5rem 0.9rem 4.5rem;
+  width: fit-content;
+  align-self: center;
+}
