@@ -1,21 +1,21 @@
 <footer class="footer py-5">
     <section class="box-container container">
         <div class="box">
-            <h4>Quick Links</h4>
-            <a href="home.php"><i class="fas fa-angle-right"></i>home</a>
-            <a href="about.php"><i class="fas fa-angle-right"></i>about</a>
-            <a href="shop.php"><i class="fas fa-angle-right"></i>shop</a>
-            <a href="contact.php"><i class="fas fa-angle-right"></i>contact</a>
+            <h4>Tautan Cepat</h4>
+            <a href="home.php"><i class="fas fa-angle-right"></i>beranda</a>
+            <a href="about.php"><i class="fas fa-angle-right"></i>tentang</a>
+            <a href="shop.php"><i class="fas fa-angle-right"></i>belanja</a>
+            <a href="contact.php"><i class="fas fa-angle-right"></i>kontak</a>
         </div>
         <div class="box">
-            <h4>Extra Links</h4>
-            <a href="orders.php"><i class="fas fa-angle-right"></i>my orders</a>
-            <a href="cart.php"><i class="fas fa-angle-right"></i>cart</a>
+            <h4>Tautan Ekstra</h4>
+            <a href="orders.php"><i class="fas fa-angle-right"></i>pesanan saya</a>
+            <a href="cart.php"><i class="fas fa-angle-right"></i>keranjang</a>
             <a href="wishlist.php"><i class="fas fa-angle-right"></i>wishlist</a>
-            <a href="logout.php"><i class="fas fa-angle-right"></i>logout</a>
+            <a href="logout.php"><i class="fas fa-angle-right"></i>keluar</a>
         </div>
         <div class="box">
-            <h4>Contact Info</h4>
+            <h4>Info Kontak</h4>
             <a href="tel:+62822217777">
                 <i class="fas fa-phone"></i>
                 +628-2221-7777
@@ -34,7 +34,7 @@
             </a>
         </div>
         <div class="box">
-            <h4>Follow Us</h4>
+            <h4>Ikuti Kami</h4>
             <a href="#">
                 <i class="fab fa-facebook-f"></i>
                 Facebook

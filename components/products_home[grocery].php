@@ -1,5 +1,5 @@
 <div class="products-grocery-slider swiper py-3 py-5-md">
-    <div class="products-header mb-3 mb-5-md">Groceries</div>
+    <div class="products-header mb-3 mb-5-md">Kebutuhan Sehari-Hari</div>
     <div class="swiper-wrapper">
         <?php
 

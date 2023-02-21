@@ -34,12 +34,12 @@ if (isset($message)) {
             </a>
         </div>
         <nav class="navbar">
-            <a href="home.php">Home</a>
-            <a href="shop.php">Shop</a>
-            <a href="my_orders.php">My Orders</a>
-            <a href="about.php" id="about-nav">About</a>
-            <a href="contact.php">Contact</a>
-            <a href="help.php">Help Center</a>
+            <a href="home.php">Beranda</a>
+            <a href="shop.php">Belanja</a>
+            <a href="my_orders.php">Pesanan Saya</a>
+            <a href="about.php" id="about-nav">Tentang</a>
+            <a href="contact.php">Kontak</a>
+            <a href="help.php">Pusat Bantuan</a>
         </nav>
         <div class="profile">
             <?php
@@ -51,22 +51,21 @@ if (isset($message)) {
                 <p style="color: var(--light-primary);">
                     <? $fetch_profile['name']; ?>
                 </p>
-                <a href="user_update_profile.php" class="btn btn-sm">Update Profile</a>
+                <a href="user_update_profile.php" class="btn btn-sm">Perbarui Profil</a>
                 <div class="flex-btn">
-                    <a href="user_login.php" class="btn btn-sm btn-opt">Login</a>
-                    <a href="user_register.php" class="btn btn-sm btn-opt">Register</a>
+                    <a href="user_login.php" class="btn btn-sm btn-opt">Masuk</a>
+                    <a href="user_register.php" class="btn btn-sm btn-opt">Daftar</a>
                 </div>
                 <a href="../user_logout.php" onclick="return confirm('Are you sure logout from this site?');"
-                    class="btn btn-sm btn-delete">Logout</a>
+                    class="btn btn-sm btn-delete">Keluar</a>
                 <?php
             } else {
                 ?>
                 <p class="when-no-user"><i class="fa-solid fa-person-circle-exclamation"
-                        style="color: var(--component-crimson);"></i>&nbsp;User
-                    haven't logged in</p>
+                        style="color: var(--component-crimson);"></i>&nbsp;Pengguna belum masuk</p>
                 <div class="flex-btn">
-                    <a href="user_login.php" class="btn btn-sm btn-opt">Login</a>
-                    <a href="user_register.php" class="btn btn-sm btn-opt">Register</a>
+                    <a href="user_login.php" class="btn btn-sm btn-opt">Masuk</a>
+                    <a href="user_register.php" class="btn btn-sm btn-opt">Daftar</a>
                 </div>
                 <?php
             }

@@ -132,12 +132,12 @@ if (isset($_POST['add_to_cart_home'])) {
     </section>
     <!-- category section -->
     <section class="home-category container py-3">
-        <h2 class="text-center section-title">Categories</h2>
+        <h2 class="text-center section-title">Kategori</h2>
         <?php include($category); ?>
     </section>
     <!-- products sliding section -->
     <section class="home-products container py-3">
-        <h2 class="text-center section-title">Shop</h2>
+        <h2 class="text-center section-title">Belanja</h2>
         <?php include($products_home_gadget); ?>
         <?php include($products_home_furniture); ?>
         <?php include($products_home_cloth); ?>

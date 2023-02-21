@@ -1,7 +1,7 @@
 <?php
 
 // basic attribute
-$title = 'Welcome';
+$title = 'Selamat Berbelanja';
 $header = 'components/user_header.php';
 $footer = 'components/footer.php';
 $wishlist = 'wishlist.php';
