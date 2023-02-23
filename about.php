@@ -7,6 +7,7 @@ $footer = 'components/footer.php';
 
 $headline_ilustration = 'components/about_headline_ilustration.php';
 $text_content = 'components/about_txt_content.php';
+$reviews = 'components/reviews.php';
 
 include('components/connection.php');
 

@@ -73,8 +73,13 @@
         <div class="row-12">
             <div class="col-12" style="height: 5rem;"></div>
         </div>
+        <div class="row-12">
+            <div class="col-12" style="height: 5rem;">
+                <?php include($reviews); ?>
+            </div>
+        </div>
     </div>
-    <?php include($footer) ?>
+    <?php include($footer); ?>
 
     <script src="resources/js/user.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
