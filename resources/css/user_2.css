@@ -256,13 +256,13 @@
   gap: 1.5rem;
 }
 
-.about-section .ilustration {
+/* .about-section .ilustration {
   flex: 1 1 40rem;
 }
 
 .about-section .about-content {
   flex: 1 1 40rem;
-}
+} */
 
 .about-section .about-content h4 {
   text-transform: capitalize !important;

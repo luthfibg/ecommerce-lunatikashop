@@ -26,7 +26,7 @@
                             </span>,-</div>
                         <input type="number" name="qty" id="input-qty" class="qty form-control mt-2 mt-3-md" min="1" max="99"
                             value="1" onkeypress="if(this.value.length == 2) return false;">
-                        <input type="submit" value="Add To Cart" name="add_to_cart_home" class="btn btn-sm mt-2 mt-3-md">
+                        <input type="submit" value="+ Keranjang" name="add_to_cart_home" class="btn btn-sm mt-2 mt-3-md">
                     </div>
                 </form>
                 <?php

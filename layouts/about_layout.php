@@ -44,7 +44,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
-    <div class="container about-section">
+    <div class="container about-section py-md-5 py-3">
 
         <?php
         $message = array();
@@ -59,9 +59,19 @@
             }
         }
         ?>
-        <div class="row my-3 d-flex align-items-center flex-wrap">
-            <?php include($headline_ilustration) ?>
-            <?php include($text_content) ?>
+        <div class="row-12">
+            <div class="col-12" style="height: 5rem;"></div>
+        </div>
+        <div class="row-12 d-flex flex-column flex-row-md my-3">
+            <div class="col-12 col-md-4">
+                <?php include($headline_ilustration) ?>
+            </div>
+            <div class="col-12 col-md-8">
+                <?php include($text_content) ?>
+            </div>
+        </div>
+        <div class="row-12">
+            <div class="col-12" style="height: 5rem;"></div>
         </div>
     </div>
     <?php include($footer) ?>
