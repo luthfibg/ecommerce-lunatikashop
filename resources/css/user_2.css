@@ -252,8 +252,17 @@
   color: var(--dark-second);
 }
 
-.about-section .row {
+.about-section {
+  height: fit-content;
+}
+
+.about-section .row-12 {
   gap: 1.5rem;
+}
+
+.about-section .row-12 section.reviews .reviews-slider .w .slider {
+  width: 100%;
+  height: fit-content !important;
 }
 
 .about-section .ilustration {

@@ -71,10 +71,10 @@
             </div>
         </div>
         <div class="row-12">
-            <div class="col-12" style="height: 5rem;"></div>
+            <div class="col-12" style="height: 3rem;"></div>
         </div>
         <div class="row-12">
-            <div class="col-12" style="height: 5rem;">
+            <div class="col-12">
                 <?php include($reviews); ?>
             </div>
         </div>
