@@ -170,7 +170,7 @@ var swiper7 = new Swiper('.products-tool-slider', {
   },
 });
 
-var swiper7 = new Swiper('.products-service-slider', {
+var swiper8 = new Swiper('.products-service-slider', {
   slidesPerView: 2,
   spaceBetween: 20,
   grabCursor: true,
@@ -191,6 +191,30 @@ var swiper7 = new Swiper('.products-service-slider', {
     },
     1200: {
       slidesPerView: 5,
+    },
+  },
+});
+
+var swiper9 = new Swiper('.reviews-slider', {
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
     },
   },
 });

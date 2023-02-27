@@ -286,6 +286,17 @@
     padding: 0.6rem 4.5rem 0.6rem 4.5rem;
     font-size: 0.95rem;
   }
+  .about-section .reviews .reviews-slider .slider p {
+    line-height: 1.6;
+    font-size: 0.9rem !important;
+  }
+  .about-section .reviews .reviews-slider .slider .stars i {
+    font-size: 0.8rem !important;
+  }
+  .about-section .reviews .reviews-slider .slider h3 {
+    font-size: 1.8rem;
+    /* margin-top: 1rem; */
+  }
 }
 
 @media (min-width: 1200px) {
