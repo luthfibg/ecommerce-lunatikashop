@@ -1,6 +1,6 @@
 <section class="reviews">
     <h4>Reviews</h4>
-    <div class="swiper reviews-slider">
+    <div class="swiper reviews-slider mb-3 mb-md-5">
         <div class="swiper-wrapper">
             <div class="swiper-slide slider">
                 <img src="assets/images/avatars/yoga_yobek.jpg" alt="user1" style="width: 6rem;">

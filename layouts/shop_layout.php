@@ -58,7 +58,7 @@
             }
         }
         ?>
-
+        <?php include($latest_row) ?>
         <?php include($content) ?>
     </div>
     <?php include($footer) ?>

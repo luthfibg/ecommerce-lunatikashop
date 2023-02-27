@@ -2,7 +2,8 @@
 
 $title = 'Shop Display';
 $header = 'components/user_header.php';
-$content = '';
+$latest_row = 'components/products_latest_row.php';
+$content = 'components/products_all_row.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');
