@@ -1,4 +1,4 @@
-<div class="products-latest py-3 py-5-md">
+<div class="row products-all-row py-3 py-5-md">
     <div class="products-row-header mb-3 mb-5-md">All Products</div>
     <div class="wrapper">
         <?php

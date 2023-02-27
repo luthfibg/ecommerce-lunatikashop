@@ -252,6 +252,12 @@
   color: var(--dark-second);
 }
 
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* About */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
 .about-section {
   height: fit-content;
 }
@@ -334,4 +340,23 @@
 .reviews .reviews-slider .slider h3 {
   font-size: 1.8rem;
   /* margin-top: 1rem; */
+}
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Shop Page */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+/*** Card Setup ***/
+
+.section-latest .products-latest-row .wrapper .product-card {
+  width: 100% !important;
+  height: auto;
+}
+
+/*** Latest Row ***/
+
+.section-latest .products-latest-row {
+  margin: 0;
 }

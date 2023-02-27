@@ -58,12 +58,15 @@
             }
         }
         ?>
-        <?php include($latest_row) ?>
-        <?php include($content) ?>
+        <div class="section-latest mb-3 mb-md-5">
+            <?php include($latest_row) ?>
+        </div>
+        <div class="section-all">
+            <?php include($content) ?>
+        </div>
     </div>
     <?php include($footer) ?>
 
-    <script src="resources/js/admin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

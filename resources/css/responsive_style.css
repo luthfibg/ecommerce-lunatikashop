@@ -35,6 +35,10 @@
   .container .items-container .item-card {
     width: 30% !important;
   }
+  .section-latest .products-latest-row .wrapper .product-card {
+    width: 30% !important;
+    height: auto;
+  }
 }
 
 @media (min-width: 992px) {
