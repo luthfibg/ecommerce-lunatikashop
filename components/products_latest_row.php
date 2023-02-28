@@ -1,6 +1,6 @@
 <div class="row products-latest-row py-3 py-5-md">
     <div class="products-row-header mb-3 mb-5-md">Latest Products</div>
-    <div class="wrapper d-flex align-items-center flex-wrapp">
+    <div class="wrapper d-flex align-items-center flex-wrap">
         <?php
 
         $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");

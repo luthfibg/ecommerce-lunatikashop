@@ -1,4 +1,4 @@
-<form action="" method="POST" class="swiper-slide slide d-flex flex-column">
+<form action="" method="POST" class="product-card d-flex flex-column mt-3 mt-md-0 m-md-2">
     <input type="hidden" name="pid" value="<?= $fetch_products['id']; ?>">
     <input type="hidden" name="name" value="<?= $fetch_products['name']; ?>">
     <input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">
