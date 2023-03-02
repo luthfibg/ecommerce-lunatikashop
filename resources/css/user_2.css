@@ -489,7 +489,18 @@
   color: var(--light-primary) !important;
 }
 
+.contact-section .card input {
+  border: none !important;
+  color: var(--light-primary) !important;
+}
+
 .contact-section form .iti input[type='tel'] {
-  background-color: var(--dark-base);
+  background-color: var(--dark-warm);
   width: 100% !important;
+}
+
+.contact-section .card input[type='text'],
+.contact-section .card input[type='email'] {
+  background-color: var(--dark-warm);
+  color: var(--light-primary);
 }
