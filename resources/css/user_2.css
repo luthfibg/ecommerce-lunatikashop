@@ -501,11 +501,10 @@
 
 .contact-section form .iti input[type='tel'] {
   background-color: var(--dark-warm);
-  width: 100% !important;
 }
 
 .contact-section .card input {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .contact-section .card input[type='text'],
@@ -513,4 +512,17 @@
 .contact-section .card textarea {
   background-color: var(--dark-warm);
   color: var(--light-primary);
+}
+
+.contact-section form button.btn-custom {
+  background-color: var(--dark-second);
+  border: 0.08rem solid var(--component-turquoise) !important;
+  color: var(--component-turquoise);
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.contact-section form button.btn-custom:hover {
+  background-color: var(--component-turquoise);
+  color: var(--dark-second);
 }
