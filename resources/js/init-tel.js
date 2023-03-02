@@ -1,3 +1,5 @@
+// import intlTelInput from 'intl-tel-input';
+
 const phoneInputField = document.querySelector('#phone');
 const phoneInput = window.intlTelInput(phoneInputField, {
   initialCountry: 'auto',
