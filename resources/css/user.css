@@ -1,5 +1,11 @@
 @import 'theme.css';
 
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Message Notification */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
 .message {
   position: sticky;
   top: 0;
@@ -27,6 +33,12 @@
 .message i:hover {
   color: var(--component-livid);
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Global Button */
+/**/ /**/ /**/
+/**/ /**/ /**/
 
 .btn {
   outline: auto;
@@ -64,6 +76,61 @@
   display: flex;
   gap: 1rem;
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* User Login Form */
+/**/ /**/ /**/
+/**/ /**/ /**/
+.login-container {
+  height: 100vh !important;
+}
+.login-card {
+  width: 90%;
+  border: 0.08rem solid var(--component-turquoise) !important;
+  box-shadow: var(--bottom-box-shadow);
+}
+
+.login-card .row .title-card {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--component-turquoise);
+}
+
+.login-card .row form input {
+  background-color: var(--dark-warm);
+  border: none;
+  outline: none;
+  color: var(--light-primary) !important;
+  font-size: 1.65rem;
+  border-radius: 0.5rem;
+}
+
+.login-card .row form input[type='submit'].btn {
+  background-color: transparent !important;
+  color: var(--light-primary) !important;
+  border: 0.08rem solid var(--component-turquoise) !important;
+  width: 100%;
+}
+
+.login-card .row form input[type='submit'].btn:hover {
+  background-color: var(--component-turquoise) !important;
+  color: var(--dark-second) !important;
+  border: 0.08rem solid var(--component-turquoise) !important;
+}
+
+.login-card .row span {
+  font-size: 1.45rem;
+}
+
+.login-card .row span a {
+  color: var(--component-turquoise);
+}
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* User Navigation Bar */
+/**/ /**/ /**/
+/**/ /**/ /**/
 
 .user_header section.flex a.logo {
   font-size: 1.9rem !important;
@@ -105,10 +172,6 @@
 .user_header section.flex .icons .account-btn {
   color: var(--component-turquoise) !important;
 }
-
-/* .user_header section.flex .profile > * {
-  font-size: 1.65rem !important;
-} */
 
 .user_header section.flex .logo span {
   color: var(--component-livid);
@@ -222,7 +285,11 @@
   font-size: 1.1rem !important;
 }
 
-/* Footer Section */
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Footer */
+/**/ /**/ /**/
+/**/ /**/ /**/
 
 footer {
   background-color: var(--dark-second);
@@ -268,6 +335,12 @@ footer .credit {
 footer .credit span {
   color: var(--component-turquoise);
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Headline Carousel */
+/**/ /**/ /**/
+/**/ /**/ /**/
 
 .carousel .carousel-inner .carousel-caption {
   text-shadow: 0 0 10px var(--dark-second) !important;
@@ -326,6 +399,12 @@ section .section-title {
   width: 50%;
 }
 
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Category Section */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
 .home-category .category-slider .swiper-wrapper {
   margin-bottom: 1.2rem;
 }
@@ -364,9 +443,11 @@ section .section-title {
   color: var(--light-primary);
 }
 
-/********************************/
-/***** Home Product Section *****/
-/********************************/
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Home Product Section */
+/**/ /**/ /**/
+/**/ /**/ /**/
 
 .home-products .swiper .products-header {
   color: var(--component-turquoise) !important;
@@ -468,7 +549,6 @@ section .section-title {
 .home-products .products-tool-slider .swiper-wrapper .slide .fa-eye:hover,
 .home-products .products-service-slider .swiper-wrapper .slide .fa-heart:hover,
 .home-products .products-service-slider .swiper-wrapper .slide .fa-eye:hover {
-  /* background-color: var(--dark-base); */
   text-shadow: 0 0 15px var(--component-crimson);
   transition: 0.3s linear;
 }
