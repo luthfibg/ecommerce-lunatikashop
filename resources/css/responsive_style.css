@@ -336,6 +336,26 @@
   .section-all .products-all-row .wrapper .product-card input {
     font-size: 0.9rem !important;
   }
+  .login-card .row .title-card {
+    font-size: 1.4rem;
+  }
+  .login-card .row form input,
+  .login-card .row form input[type='submit'] {
+    font-size: 1rem !important;
+  }
+  .login-card .row span {
+    font-size: 0.9rem;
+  }
+  .reg-card .row .title-card {
+    font-size: 1.4rem !important;
+  }
+  .reg-card .row form input,
+  .reg-card .row form input[type='submit'] {
+    font-size: 1rem !important;
+  }
+  .reg-card .row span {
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 1200px) {

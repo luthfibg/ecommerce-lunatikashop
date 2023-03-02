@@ -82,6 +82,7 @@
 /********************************************************************* User Login Form */
 /**/ /**/ /**/
 /**/ /**/ /**/
+
 .login-container {
   height: 100vh !important;
 }
@@ -126,6 +127,58 @@
 .login-card .row span a {
   color: var(--component-turquoise);
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* User Register Form */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+.reg-container {
+  height: 100vh !important;
+}
+.reg-card {
+  width: 90%;
+  border: 0.08rem solid var(--component-turquoise) !important;
+  box-shadow: var(--bottom-box-shadow);
+}
+
+.reg-card .row .title-card {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--component-turquoise);
+}
+
+.reg-card .row form input {
+  background-color: var(--dark-warm);
+  border: none;
+  outline: none;
+  color: var(--light-primary) !important;
+  font-size: 1.65rem;
+  border-radius: 0.5rem;
+}
+
+.reg-card .row form input[type='submit'].btn {
+  background-color: transparent !important;
+  color: var(--light-primary) !important;
+  border: 0.08rem solid var(--component-turquoise) !important;
+  width: 100%;
+}
+
+.reg-card .row form input[type='submit'].btn:hover {
+  background-color: var(--component-turquoise) !important;
+  color: var(--dark-second) !important;
+  border: 0.08rem solid var(--component-turquoise) !important;
+}
+
+.reg-card .row span {
+  font-size: 1.45rem;
+}
+
+.reg-card .row span a {
+  color: var(--component-turquoise);
+}
+
 /**/ /**/ /**/
 /**/ /**/ /**/
 /********************************************************************* User Navigation Bar */
