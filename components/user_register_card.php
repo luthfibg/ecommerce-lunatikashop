@@ -14,7 +14,7 @@
             </div>
             <div class="mb-3">
                 <input type="tel" name="phone" oninput="this.value = this.value.replace(/\s/g, '')" data-role="input"
-                    class="form-control py-2" id="inputPhone" placeholder="Phone Number">
+                    class="form-control py-2" id="phone" placeholder="Phone Number">
             </div>
             <div class="mb-5">
                 <input type="password" name="password" oninput="this.value = this.value.replace(/\s/g, '')"

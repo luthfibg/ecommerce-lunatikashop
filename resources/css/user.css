@@ -1,4 +1,5 @@
 @import 'theme.css';
+@import '../../node_modules/intl-tel-input/build/css/intlTelInput.css';
 
 /**/ /**/ /**/
 /**/ /**/ /**/
@@ -156,6 +157,13 @@
   color: var(--light-primary) !important;
   font-size: 1.65rem;
   border-radius: 0.5rem;
+}
+
+.reg-card .row form .iti input[type='tel'] {
+  background-color: var(--dark-warm);
+  width: 100% !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
 }
 
 .reg-card .row form input[type='submit'].btn {
