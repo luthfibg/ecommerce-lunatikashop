@@ -4,6 +4,7 @@ const phoneInputField = document.querySelector('#phone');
 const phoneInput = window.intlTelInput(phoneInputField, {
   initialCountry: 'auto',
   geoIpLookup: getIp,
+  preferredCountries: ['ru', 'cn', 'id', 'ir'],
   utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js',
 });
 
@@ -28,4 +29,4 @@ function getIp(callback) {
     })
     .then((resp) => callback(resp.country));
 }
-// 2d93dc8a68046d
+// ipinfo.io token: 2d93dc8a68046d
