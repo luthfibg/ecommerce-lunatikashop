@@ -75,6 +75,7 @@
     </div>
 
     <script src="resources/js/admin.js"></script>
+    <script src="resources/js/prevent-resubmission.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
