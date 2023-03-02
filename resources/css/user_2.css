@@ -489,9 +489,14 @@
   color: var(--light-primary) !important;
 }
 
-.contact-section .card input {
+.contact-section .card input,
+.contact-section .card textarea {
   border: none !important;
   color: var(--light-primary) !important;
+}
+
+.contact-section .card textarea {
+  resize: none;
 }
 
 .contact-section form .iti input[type='tel'] {
@@ -499,8 +504,13 @@
   width: 100% !important;
 }
 
+.contact-section .card input {
+  margin-bottom: 1.5rem !important;
+}
+
 .contact-section .card input[type='text'],
-.contact-section .card input[type='email'] {
+.contact-section .card input[type='email'],
+.contact-section .card textarea {
   background-color: var(--dark-warm);
   color: var(--light-primary);
 }
