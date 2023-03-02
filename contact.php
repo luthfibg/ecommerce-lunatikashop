@@ -2,7 +2,7 @@
 
 $title = 'Contact';
 $header = 'components/user_header.php';
-$content = '';
+$content = 'components/contact_form.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');

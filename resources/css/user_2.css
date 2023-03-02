@@ -470,3 +470,26 @@
 .section-latest .products-latest-row {
   margin: 0;
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Contact Page */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+.contact-section form .iti .iti__flag-container ul .iti__country {
+  background-color: var(--dark-warm) !important;
+}
+
+.contact-section form .iti .iti__flag-container ul .iti__country .iti__flag-box {
+  background-color: var(--dark-warm) !important;
+}
+
+.contact-section form .iti .iti__flag-container ul .iti__country span {
+  color: var(--light-primary) !important;
+}
+
+.contact-section form .iti input[type='tel'] {
+  background-color: var(--dark-base);
+  width: 100% !important;
+}
