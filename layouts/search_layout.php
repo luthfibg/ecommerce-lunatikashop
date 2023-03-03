@@ -33,7 +33,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
-    <div class="container search-container">
+    <div class="container search-container my-5 py-5">
 
         <?php
         $message = array();
@@ -50,6 +50,7 @@
         ?>
 
         <?php include($content) ?>
+        <?php include($result) ?>
     </div>
     <?php include($footer) ?>
 
