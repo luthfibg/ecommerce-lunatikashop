@@ -206,6 +206,64 @@ select:-webkit-autofill:focus {
 
 /**/ /**/ /**/
 /**/ /**/ /**/
+/********************************************************************* User Update Profile Form */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+.upd-container {
+  height: 100vh !important;
+}
+.upd-card {
+  width: 90%;
+  border: 0.08rem solid var(--component-turquoise) !important;
+  box-shadow: var(--bottom-box-shadow);
+}
+
+.upd-card .row .title-card {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--component-turquoise);
+}
+
+.upd-card .row form input {
+  background-color: var(--dark-warm);
+  border: none;
+  outline: none;
+  color: var(--light-primary) !important;
+  font-size: 1.65rem;
+  border-radius: 0.5rem;
+}
+
+.upd-card .row form .iti input[type='tel'] {
+  background-color: var(--dark-warm);
+  width: 100% !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+}
+
+.upd-card .row form input[type='submit'].btn {
+  background-color: transparent !important;
+  color: var(--light-primary) !important;
+  border: 0.08rem solid var(--component-turquoise) !important;
+  width: 100%;
+}
+
+.upd-card .row form input[type='submit'].btn:hover {
+  background-color: var(--component-turquoise) !important;
+  color: var(--dark-second) !important;
+  border: 0.08rem solid var(--component-turquoise) !important;
+}
+
+.upd-card .row span {
+  font-size: 1.45rem;
+}
+
+.upd-card .row span a {
+  color: var(--component-turquoise);
+}
+
+/**/ /**/ /**/
+/**/ /**/ /**/
 /********************************************************************* User Navigation Bar */
 /**/ /**/ /**/
 /**/ /**/ /**/

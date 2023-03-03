@@ -356,6 +356,16 @@
   .reg-card .row span {
     font-size: 0.9rem;
   }
+  .upd-card .row .title-card {
+    font-size: 1.4rem !important;
+  }
+  .upd-card .row form input,
+  .upd-card .row form input[type='submit'] {
+    font-size: 1rem !important;
+  }
+  .upd-card .row span {
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 1200px) {
