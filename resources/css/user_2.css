@@ -29,11 +29,13 @@ select:-webkit-autofill:focus {
 }
 
 .list-group .list-group-item .list-action a,
-.list-group .list-group-item .action-checkout a {
+.list-group .list-group-item .action-checkout a,
+.list-group .list-group-item .action-remove a {
   display: block;
   border-radius: 0.5rem;
 }
-.list-group .list-group-item .list-action .del {
+.list-group .list-group-item .list-action .del,
+.list-group .list-group-item .action-remove .remove {
   border: 0.05rem solid var(--component-crimson) !important;
 }
 
@@ -46,7 +48,8 @@ select:-webkit-autofill:focus {
   border: 0.05rem solid var(--component-emerald) !important;
 }
 
-.list-group .list-group-item .list-action .del:hover {
+.list-group .list-group-item .list-action .del:hover,
+.list-group .list-group-item .action-remove .remove:hover {
   background-color: var(--component-crimson);
   transition: 0.5s;
 }
@@ -66,7 +69,9 @@ select:-webkit-autofill:focus {
 .list-group .list-group-item .list-action .throw-to-cart:hover i,
 .list-group .list-group-item .list-action .throw-to-wishlist:hover i,
 .list-group .list-group-item .action-checkout .picker:hover,
-.list-group .list-group-item .action-checkout .picker:hover i {
+.list-group .list-group-item .action-checkout .picker:hover i,
+.list-group .list-group-item .action-remove .remove:hover,
+.list-group .list-group-item .action-remove .remove:hover i {
   color: var(--dark-base) !important;
 }
 

@@ -64,6 +64,12 @@ if ($select_cart->rowCount() > 0) {
                     <?= currency_formatter($total_price); ?>
                     ,-
                 </div>
+                <div class="action-remove me-1 me-md-3">
+                    <a href="payment.php" class="btn-custom remove px-3 py-2" style="color: var(--component-crimson);">
+                        <i class="fa-solid fa-circle-xmark fa-xl" style="color: var(--component-crimson);"></i>
+                        &nbsp; Remove
+                    </a>
+                </div>
                 <div class="action-checkout me-1 me-md-3">
                     <a href="payment.php" class="btn-custom picker px-3 py-2" style="color: var(--light);">
                         <i class="fa-solid fa-bag-shopping fa-xl" style="color: var(--component-emerald);"></i>

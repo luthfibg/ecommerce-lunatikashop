@@ -17,7 +17,7 @@
                 }
             }
         } else {
-            echo '<p class="empty" style="font-size: 1.65rem;">Nothing product to display</p>';
+            echo '<p class="empty" style="font-size: 1.65rem;color: var(--light-shadow);">Nothing product to display</p>';
         }
 
         ?>
