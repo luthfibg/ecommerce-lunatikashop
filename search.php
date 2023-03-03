@@ -2,7 +2,7 @@
 
 $title = 'Search';
 $header = 'components/user_header.php';
-$content = '';
+$content = 'components/search_input.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');

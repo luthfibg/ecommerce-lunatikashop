@@ -544,3 +544,39 @@ select:-webkit-autofill:focus {
   background-color: var(--component-turquoise);
   color: var(--dark-second);
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Search Page */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+.search-container form {
+  gap: 1rem !important;
+}
+
+.search-container form input {
+  padding: 0.5rem;
+  font-size: 1.65rem;
+  color: var(--light-primary) !important;
+  background-color: var(--dark-warm);
+  width: 100% !important;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.search-container form .btn-custom {
+  width: 15%;
+  background-color: var(--dark-base);
+  color: var(--component-turquoise);
+  border: 0.08rem solid var(--component-turquoise);
+  border-radius: 0.5rem;
+  font-size: 1.65rem;
+}
+
+.search-container form .btn-custom:hover {
+  background-color: var(--component-turquoise);
+  color: var(--dark-base);
+  border: 0.08rem solid var(--component-turquoise);
+}

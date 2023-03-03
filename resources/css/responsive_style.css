@@ -366,6 +366,16 @@
   .upd-card .row span {
     font-size: 0.9rem;
   }
+  .search-container form input {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    width: 100% !important;
+  }
+  .search-container form .btn-custom {
+    width: 10%;
+    border: 0.08rem solid var(--component-turquoise);
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 1200px) {
