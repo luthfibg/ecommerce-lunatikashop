@@ -1,6 +1,6 @@
 <div class="row search-product-result py-3 py-5-md">
     <div class="products-result-header mb-3 mb-5-md">Result</div>
-    <div class="wrapper d-flex align-items-center flex-wrap">
+    <div class="wrapper d-flex align-items-center justify-content-center flex-wrap px-5 px-md-0">
         <?php
 
         if (isset($_POST['search_box']) or isset($_POST['search_btn'])) {
