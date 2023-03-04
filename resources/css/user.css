@@ -62,7 +62,7 @@ select:-webkit-autofill:focus {
   outline: auto;
   outline-width: 1px;
   outline-style: solid;
-  outline-color: var(--component-orange) !important;
+  outline-color: var(--component-turquoise) !important;
   background-color: transparent;
   font-size: 12pt;
 }
@@ -382,6 +382,26 @@ select:-webkit-autofill:focus {
   display: none;
   animation: fadeIn 0.2s linear;
 }
+
+.user_header .flex .profile .btn:hover {
+  color: var(--dark-second);
+}
+
+/* .user_header .flex .profile .btn,
+.user_header .flex .profile .flex-btn .btn-opt,
+.user_header .flex .profile .btn-delete {
+  border: 0.08rem solid var(--component-turquoise);
+  color: var(--component-turquoise);
+  background-color: var(--dark-second);
+}
+
+.user_header .flex .profile .btn:hover,
+.user_header .flex .profile .flex-btn .btn-opt:hover,
+.user_header .flex .profile .btn-delete:hover {
+  border: 0.08rem solid var(--component-turquoise);
+  color: var(--dark-second);
+  background-color: var(--component-turquoise);
+} */
 
 .user_header .flex .profile p {
   margin-bottom: 1rem;
@@ -746,7 +766,8 @@ section .section-title {
 .home-products .products-grocery-slider .swiper-wrapper .slide input[type='submit'],
 .home-products .products-tool-slider .swiper-wrapper .slide input[type='submit'],
 .home-products .products-service-slider .swiper-wrapper .slide input[type='submit'] {
-  border: 1px solid var(--component-orange);
+  border: 1px solid var(--component-turquoise);
+  transition: 0.5s;
 }
 
 .home-products .products-gadget-slider .swiper-wrapper .slide input[type='submit']:hover,
@@ -756,4 +777,5 @@ section .section-title {
 .home-products .products-tool-slider .swiper-wrapper .slide input[type='submit']:hover,
 .home-products .products-service-slider .swiper-wrapper .slide input[type='submit']:hover {
   color: var(--dark-base) !important;
+  background-color: var(--component-turquoise) !important;
 }
