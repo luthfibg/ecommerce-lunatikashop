@@ -58,7 +58,9 @@ if ($select_wishlist->rowCount() > 0) {
                     ,-
                 </div>
                 <div class="action-remove me-1 me-md-3">
-                    <a href="payment.php" class="btn-custom remove px-3 py-2" style="color: var(--component-crimson);">
+                    <a href="wishlist.php?=remove"
+                        class="btn-custom remove px-3 py-2 <?= ($total_price > 1) ? '' : 'disabled'; ?>"
+                        style="color: var(--component-crimson);">
                         <i class="fa-solid fa-circle-xmark fa-xl" style="color: var(--component-crimson);"></i>
                         &nbsp; <span class="btn-value">Remove</span>
                     </a>

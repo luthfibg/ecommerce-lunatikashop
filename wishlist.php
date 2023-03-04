@@ -14,6 +14,15 @@ if (!isset($user_id)) {
     header('location:user_login.php');
 }
 
+if (isset($_GET['remove'])) {
+    $remove = $_GET['remove'];
+    $remove_all_wishlist = $conn->prepare("DELETE FROM `wishlist` WHERE user_id = ?");
+    $remove_all_wishlist->execute([$user_id]);
+    $message[] = 'Remove all wishlist success';
+
+    header('location:wishlist.php');
+}
+
 if (isset($_GET['delete'])) {
     $delete_id = $_GET['delete'];
     $delete_wishlist = $conn->prepare("DELETE FROM `wishlist` WHERE id = ?");
