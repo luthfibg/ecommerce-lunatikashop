@@ -77,9 +77,9 @@ if ($select_wishlist->rowCount() > 0) {
     <?php
 } else {
     ?>
-    <div class="container d-flex justify-content-between flex-column align-items-center">
-        <span class="my-5">Wishlist is empty</span>
-        <div class="btn mb-5 w-100 w-50-md w-25-lg">Go To Shop</div>
+    <div class="container empty-holder d-flex justify-content-between flex-column align-items-center">
+        <h4 class="my-5">Wishlist is empty</h4>
+        <a href="shop.php" class="btn-custom py-3 mb-5 w-75 w-25-md">Go To Shop</a>
     </div>
     <?php
 }

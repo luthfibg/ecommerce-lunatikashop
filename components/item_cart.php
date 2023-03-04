@@ -65,7 +65,7 @@ if ($select_cart->rowCount() > 0) {
                     ,-
                 </div>
                 <div class="action-remove me-1 me-md-3">
-                    <a href="payment.php" class="btn-custom remove px-3 py-2" style="color: var(--component-crimson);">
+                    <a href="cart.php?remove" class="btn-custom remove px-3 py-2" style="color: var(--component-crimson);">
                         <i class="fa-solid fa-circle-xmark fa-xl" style="color: var(--component-crimson);"></i>
                         &nbsp; <span class="btn-value">Remove</span>
                     </a>
@@ -82,9 +82,9 @@ if ($select_cart->rowCount() > 0) {
     <?php
 } else {
     ?>
-    <div class="container d-flex justify-content-between flex-column align-items-center">
-        <span class="my-5">Cart is empty</span>
-        <div class="btn mb-5 w-100 w-50-md w-25-lg">Go To Shop</div>
+    <div class="container empty-holder d-flex justify-content-between flex-column align-items-center">
+        <h4 class="my-5">Cart is empty</h4>
+        <a href="shop.php" class="btn-custom py-3 mb-5 w-75 w-25-md">Go To Shop</a href="shop.php">
     </div>
     <?php
 }

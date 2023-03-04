@@ -402,6 +402,10 @@
   .search-container .search-product-result .wrapper .product-card input[type='submit'] {
     font-size: 0.9rem;
   }
+  .wishlist-container .empty-holder a.btn-custom,
+  .cart-container .empty-holder a.btn-custom {
+    font-size: 0.9rem !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -419,6 +423,11 @@
   .home-bg .swiper-slide .img-content a.btn {
     width: 30% !important;
     height: auto;
+  }
+  .wishlist-container .empty-holder a.btn-custom,
+  .cart-container .empty-holder a.btn-custom {
+    padding: 1.2rem 0 !important;
+    font-size: 1.1rem !important;
   }
 }
 

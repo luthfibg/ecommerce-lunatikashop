@@ -14,6 +14,15 @@ if (!isset($user_id)) {
     header('location:user_login.php');
 }
 
+if (isset($_GET['remove'])) {
+    $remove = $_GET['remove'];
+    $remove_all_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
+    $remove_all_cart->execute([$user_id]);
+    $message[] = 'Remove all cart success';
+
+    header('location:cart.php');
+}
+
 if (isset($_GET['delete'])) {
     $delete_id = $_GET['delete'];
     $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE id = ?");
