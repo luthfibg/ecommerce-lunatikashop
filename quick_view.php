@@ -5,6 +5,8 @@ $header = 'components/user_header.php';
 $content = 'components/quick_view_item.php';
 $footer = 'components/footer.php';
 
+$pid = 0;
+
 include('components/connection.php');
 include('components/_currency_format.php');
 
@@ -55,6 +57,36 @@ if (isset($_POST['delete_from_wishlist'])) {
         $delete_id = $fetch_wishlist['id'];
         $delete_cart = $conn->prepare("DELETE FROM `wishlist` WHERE id = ?");
         $delete_cart->execute([$delete_id]);
+    }
+}
+
+if (isset($_POST['add_to_cart_qv'])) {
+    if ($user_id == '') {
+        header('location:user_login.php');
+    } else {
+
+        $pid = $_POST['pid'];
+        $pid = filter_var(htmlspecialchars($pid));
+        $name = $_POST['name'];
+        $name = filter_var(htmlspecialchars($name));
+        $price = $_POST['price'];
+        $price = filter_var(htmlspecialchars($price));
+        $image = $_POST['image'];
+        $image = filter_var(htmlspecialchars($image));
+        $qty = $_POST['qty'];
+        $qty = filter_var(htmlspecialchars($qty));
+
+        $check_cart_nums = $conn->prepare("SELECT * FROM `cart` WHERE name = ? AND user_id = ?");
+        $check_cart_nums->execute([$user_id, $name]);
+
+        if ($check_cart_nums->rowCount() > 0) {
+            $message[] = 'Cart already exist';
+        } else {
+
+            $insert_cart = $conn->prepare("INSERT INTO `cart` (user_id, pid, name, price, quantity, image) VALUES (?, ?, ?, ?, ?, ?)");
+            $insert_cart->execute([$user_id, $pid, $name, $price, $qty, $image]);
+            $message[] = 'Success add to cart!';
+        }
     }
 }
 

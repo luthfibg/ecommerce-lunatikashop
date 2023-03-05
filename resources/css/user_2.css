@@ -278,7 +278,7 @@ select:-webkit-autofill:focus {
 
 .quick-view-section .item-card .row .card-body input[type='text'],
 .quick-view-section .item-card .row .card-body input[type='number'],
-.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom {
+.quick-view-section .item-card .row .card-body .d-flex div button.btn-custom {
   border: 0.05rem solid var(--component-emerald) !important;
   border-radius: 0.5rem;
   color: var(--component-emerald) !important;
@@ -310,12 +310,12 @@ select:-webkit-autofill:focus {
   transition: 0.3s linear;
 }
 
-.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom:hover {
+.quick-view-section .item-card .row .card-body .d-flex div button.btn-custom:hover {
   background-color: var(--component-emerald);
 }
 
-.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom:hover span,
-.quick-view-section .item-card .row .card-body .d-flex div a.btn-custom:hover i {
+.quick-view-section .item-card .row .card-body .d-flex div button.btn-custom:hover span,
+.quick-view-section .item-card .row .card-body .d-flex div button.btn-custom:hover i {
   color: var(--dark-second);
 }
 

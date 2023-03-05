@@ -54,16 +54,18 @@
                         max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
                 </div>
                 <div class="d-flex">
-                    <a href="quick_view.php?pick_to_purchase=<?= $fetch_products['id']; ?>"
-                        class="btn-custom btn-sm mt-2 mt-3-md me-3 py-2 px-3">
+                    <button name="pick_to_purchase" class="btn-custom btn-sm mt-2 mt-3-md me-3 py-2 px-3">
                         <i class="fa-solid fa-bag-shopping"></i>&nbsp;
                         <span>Purchase</span>
-                    </a>
-                    <a href="quick_view.php?add_to_cart=<?= $fetch_products['id']; ?>"
-                        class="btn-custom btn-sm mt-2 mt-3-md py-2 px-3">
+                    </button>
+                    <input type="hidden" name="pid" value="<?= $fetch_products['id']; ?>">
+                    <input type="hidden" name="name" value="<?= $fetch_products['name']; ?>">
+                    <input type="hidden" name="price" value="<?= $fetch_products['price']; ?>">
+                    <input type="hidden" name="image" value="<?= $fetch_products['image_01']; ?>">
+                    <button type="submit" name="add_to_cart_qv" class="btn-custom btn-sm mt-2 mt-3-md py-2 px-3">
                         <i class="fa-solid fa-shopping-cart"></i>&nbsp;
                         <span>Add To Cart</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
