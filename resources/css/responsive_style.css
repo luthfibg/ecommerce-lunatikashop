@@ -36,7 +36,8 @@
     width: 30% !important;
   }
   .section-all .products-all-row .wrapper,
-  .section-latest .products-latest-row .wrapper {
+  .section-latest .products-latest-row .wrapper,
+  .search-container .search-product-result .wrapper {
     gap: 1rem;
   }
 }
@@ -64,7 +65,8 @@
     height: auto;
   }
   .section-all .products-all-row .wrapper,
-  .section-latest .products-latest-row .wrapper {
+  .section-latest .products-latest-row .wrapper,
+  .search-container .search-product-result .wrapper {
     gap: 0.7rem;
   }
 
@@ -214,7 +216,14 @@
     padding: 0.5rem 5rem !important;
     font-size: 0.9rem;
   }
-
+  .user_header section.flex .icons #menu-btn,
+  .user_header section.flex .icons #user-btn {
+    font-size: 0.9rem;
+  }
+  .user_header .flex .profile a,
+  .user_header .flex .profile .flex-btn a {
+    font-size: 0.9rem;
+  }
   .user_header .flex .profile .when-no-user {
     margin-bottom: 0;
     font-size: 0.9rem !important;
@@ -347,7 +356,8 @@
     height: auto;
   }
   .section-all .products-all-row .wrapper,
-  .section-latest .products-latest-row .wrapper {
+  .section-latest .products-latest-row .wrapper,
+  .search-container .search-product-result .wrapper {
     gap: 0;
   }
   .section-latest .products-latest-row .wrapper .product-card > * {
@@ -457,8 +467,9 @@
   }
   .wishlist-container .empty-holder a.btn-custom,
   .cart-container .empty-holder a.btn-custom {
-    padding: 1.2rem 0 !important;
-    font-size: 1.1rem !important;
+    padding: 0.5rem 0 !important;
+    font-size: 1rem !important;
+    width: 15% !important;
   }
 }
 

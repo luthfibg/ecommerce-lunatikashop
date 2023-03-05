@@ -425,7 +425,8 @@ select:-webkit-autofill:focus {
 }
 
 .section-all .products-all-row .wrapper,
-.section-latest .products-latest-row .wrapper {
+.section-latest .products-latest-row .wrapper,
+.search-container .search-product-result .wrapper {
   gap: 1.6rem;
 }
 

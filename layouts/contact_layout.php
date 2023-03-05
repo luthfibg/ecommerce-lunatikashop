@@ -73,6 +73,7 @@
 
     <!-- <script src="resources/js/admin.js"></script> -->
     <script src="resources/js/prevent-resubmission.js"></script>
+    <script src="resources/js/user.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"
         integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

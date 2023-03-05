@@ -309,6 +309,11 @@ select:-webkit-autofill:focus {
   color: var(--component-turquoise) !important;
 }
 
+.user_header section.flex .icons #menu-btn,
+.user_header section.flex .icons #user-btn {
+  font-size: 1.65rem;
+}
+
 .user_header section.flex .logo span {
   color: var(--component-livid);
 }
@@ -316,7 +321,16 @@ select:-webkit-autofill:focus {
 .user_header section.flex .profile .btn {
   padding: 5px;
 }
-
+.user_header .flex .profile a,
+.user_header .flex .profile .flex-btn a {
+  font-size: 1.55rem;
+  color: var(--component-turquoise) !important;
+}
+.user_header .flex .profile a:hover,
+.user_header .flex .profile .flex-btn a:hover {
+  background-color: var(--component-turquoise) !important;
+  color: var(--dark-second) !important;
+}
 .user_header section.flex .profile p {
   color: var(--light-primary);
 }
