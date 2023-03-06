@@ -48,7 +48,8 @@
             }
         }
         ?>
-        <div class="display-orders d-flex flex-wrap justify-content-center align-items-start">
+        <h4 class="checkout-heading mt-5 text-center">Pesananan Anda</h4>
+        <div class="display-orders d-flex flex-wrap justify-content-center align-items-start pt-3">
             <?php
             $grand_total = 0;
             $cart_items[] = '';

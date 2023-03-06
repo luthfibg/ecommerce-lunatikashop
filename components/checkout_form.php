@@ -1,11 +1,12 @@
-<input type="hidden" name="total_products" value="<?= $total_products; ?>">
-<input type="hidden" name="total_price" value="<?= $total_price; ?>">
-<p class="grand-total p-2 mt-3 text-center mb-3 mb-sm-5">Grand Total: <span> Rp
+<p class="grand-total p-2 mt-3 text-center mb-5 pb-3">Total Tagihan: <span> Rp
         <?= currency_formatter($grand_total); ?>
         ,-
     </span> </p>
 
 <form action="" method="POST" class="mt-3 mt-sm-5">
+    <h4 class="checkout-form-heading text-center mb-3">Kelengkapan Data Pemesan</h4>
+    <input type="hidden" name="total_products" value="<?= $total_products; ?>">
+    <input type="hidden" name="total_price" value="<?= $total_price; ?>">
     <div class="d-flex flex-wrap justify-content-center">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" id="floatingName" name="name" maxlength="55"
@@ -61,5 +62,6 @@
             </select>
             <label for="floatingPayment">Metode Pembayaran</label>
         </div>
+        <input type="submit" value="Konfirmasi Pembelian" class="btn-custom" name="submit_checkout">
     </div>
 </form>

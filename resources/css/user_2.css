@@ -704,6 +704,10 @@ select:-webkit-autofill:focus {
   min-height: 100vh;
 }
 
+.checkout-container h4 {
+  font-size: 2rem;
+}
+
 .checkout-container .display-orders {
   gap: 0;
 }
@@ -725,12 +729,20 @@ select:-webkit-autofill:focus {
 .checkout-container .grand-total {
   width: 100%;
   font-size: 1.45rem;
+  margin-bottom: 4rem !important;
 }
 
 .checkout-container .grand-total span {
   color: var(--component-emerald);
 }
 
+.checkout-container form {
+  margin-bottom: 5rem;
+}
+
+.checkout-container form .checkout-form-heading {
+  margin-bottom: 3rem !important;
+}
 .checkout-container form .form-floating {
   width: 100%;
 }
@@ -757,4 +769,19 @@ select:-webkit-autofill:focus {
 .checkout-container form .form-floating label {
   color: var(--light-secondary) !important;
   font-size: 1.3rem;
+}
+
+.checkout-container form .btn-custom {
+  border-radius: 0.5rem;
+  background-color: var(--dark-base);
+  border: 0.08rem solid var(--component-emerald);
+  color: var(--component-emerald) !important;
+  font-size: 1.45rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.checkout-container form .btn-custom:hover {
+  background-color: var(--component-emerald);
+  color: var(--dark-base) !important;
 }

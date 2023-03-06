@@ -48,6 +48,9 @@
   .checkout-container form .form-floating {
     width: 45%;
   }
+  .checkout-container form .btn-custom {
+    width: 91%;
+  }
   .checkout-container form .d-flex {
     gap: 0.5rem;
   }
@@ -464,6 +467,9 @@
   .cart-container .empty-holder a.btn-custom {
     font-size: 0.9rem !important;
   }
+  .checkout-container h4 {
+    font-size: 1.6rem;
+  }
   .checkout-container .display-orders p {
     padding: 0.5rem 1.6rem;
     font-size: 0.9rem;
@@ -482,6 +488,10 @@
   }
   .checkout-container form .form-floating select option {
     font-size: 0.95rem !important;
+  }
+  .checkout-container form .btn-custom {
+    font-size: 0.9rem;
+    height: 3rem;
   }
 }
 
@@ -506,6 +516,9 @@
     padding: 0.5rem 0 !important;
     font-size: 1rem !important;
     width: 15% !important;
+  }
+  .checkout-container form .btn-custom {
+    height: 2.8rem;
   }
 }
 
