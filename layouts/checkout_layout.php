@@ -1,14 +1,3 @@
-<?php
-
-// include('components/connection.php');
-
-// session_start();
-
-// $admin_id = $_SESSION['admin_id'];
-// if (!isset($admin_id)) {
-//     header('location:login.php');
-// }
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +32,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
-    <div class="container">
+    <div class="container checkout-container">
 
         <?php
         $message = array();
@@ -58,8 +47,37 @@
             }
         }
         ?>
-
-        <?php include($content) ?>
+        <div class="display-orders">
+            <?php
+            $grand_total = 0;
+            $cart_items[] = '';
+            $select_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+            $select_cart->execute([$user_id]);
+            if ($select_cart->rowCount() > 0) {
+                while ($fetch_cart = $select_cart->fetch(PDO::FETCH_ASSOC)) {
+                    $grand_total += ($fetch_cart['price'] * $fetch_cart['quantity']);
+                    $cart_items[] = $fetch_cart['name'] . '(' . $fetch_cart['quantity'] . ')-';
+                    $total_products = implode($cart_items);
+                    ?>
+                    <p>
+                        <?= $fetch_cart['name']; ?> <span>
+                            <?= $fetch_cart['price']; ?> -/ x
+                            <?= $fetch_cart['quantity']; ?>
+                        </span>
+                    </p>
+                    <?php
+                }
+            } else {
+                ?>
+                <div class="container empty-holder d-flex justify-content-between flex-column align-items-center">
+                    <h4 class="my-5">Keranjang kosong...</h4>
+                    <a href="shop.php" class="btn-custom py-3 mb-5 w-75 w-25-md">Berbelanja</a href="shop.php">
+                </div>
+                <?php
+            }
+            ?>
+            <?php include($content) ?>
+        </div>
     </div>
     <?php include($footer) ?>
 
