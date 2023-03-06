@@ -23,6 +23,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="resources/css/user.css">
+    <link rel="stylesheet" href="resources/css/user_2.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
     <title>
@@ -47,7 +48,7 @@
             }
         }
         ?>
-        <div class="display-orders">
+        <div class="display-orders d-flex flex-wrap justify-content-center align-items-start">
             <?php
             $grand_total = 0;
             $cart_items[] = '';
@@ -59,9 +60,9 @@
                     $cart_items[] = $fetch_cart['name'] . '(' . $fetch_cart['quantity'] . ')-';
                     $total_products = implode($cart_items);
                     ?>
-                    <p>
-                        <?= $fetch_cart['name']; ?> <span>
-                            <?= $fetch_cart['price']; ?> -/ x
+                    <p class="mt-2 mb-0">
+                        <?= $fetch_cart['name']; ?> <span class="mb-0"> Rp
+                            <?= currency_formatter($fetch_cart['price']); ?> ,- &nbsp; x
                             <?= $fetch_cart['quantity']; ?>
                         </span>
                     </p>
@@ -76,12 +77,13 @@
                 <?php
             }
             ?>
-            <?php include($content) ?>
         </div>
+        <?php include($content) ?>
     </div>
     <?php include($footer) ?>
 
-    <script src="resources/js/admin.js"></script>
+    <script src="resources/js/user.js"></script>
+    <script src="resources/js/prevent-resubmission.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

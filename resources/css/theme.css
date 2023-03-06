@@ -17,6 +17,7 @@
   
   --min-box-shadow: 0 0 2px rgb(121, 120, 119);
   --box-shadow: 0 0 5px rgb(121, 120, 119);
+  --box-shadow-2: 0 0 5px rgb(78, 91, 110);
   --bottom-clip-path: inset(0px 0px -5px 0px);
   --bottom-box-shadow: {
     var(--box-shadow)

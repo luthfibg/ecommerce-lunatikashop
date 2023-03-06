@@ -681,3 +681,50 @@ select:-webkit-autofill:focus {
   width: 100%;
   height: 100%;
 }
+
+/**/ /**/ /**/
+/**/ /**/ /**/
+/********************************************************************* Checkout Page */
+/**/ /**/ /**/
+/**/ /**/ /**/
+
+.checkout-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.checkout-container .display-orders {
+  gap: 0;
+}
+
+.checkout-container .display-orders p {
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.45rem;
+  color: var(--light-primary);
+  background-color: var(--dark-second);
+  box-shadow: var(--box-shadow-2);
+}
+
+.checkout-container .display-orders p span {
+  color: var(--component-golden);
+}
+
+.checkout-container .grand-total {
+  width: 100%;
+  font-size: 1.45rem;
+}
+
+.checkout-container .grand-total span {
+  color: var(--component-emerald);
+}
+
+.checkout-container form .form-floating input {
+  background-color: var(--dark-second);
+  border: none;
+}
+
+.checkout-container form .form-floating label {
+  color: var(--light-shadow);
+}

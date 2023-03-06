@@ -4,6 +4,11 @@
   width: 100%;
 }
 
+@media (min-width: 400px) {
+  .checkout-container .display-orders {
+    gap: 1rem;
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -74,6 +79,9 @@
     margin: 0.5rem;
     width: 30% !important;
     height: auto;
+  }
+  .checkout-container .display-orders {
+    gap: 1rem;
   }
 }
 
@@ -446,6 +454,13 @@
   .wishlist-container .empty-holder a.btn-custom,
   .cart-container .empty-holder a.btn-custom {
     font-size: 0.9rem !important;
+  }
+  .checkout-container .display-orders p {
+    padding: 0.5rem 1.6rem;
+    font-size: 0.9rem;
+  }
+  .checkout-container .grand-total {
+    font-size: 0.95rem;
   }
 }
 
