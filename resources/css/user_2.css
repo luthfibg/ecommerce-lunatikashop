@@ -688,6 +688,17 @@ select:-webkit-autofill:focus {
 /**/ /**/ /**/
 /**/ /**/ /**/
 
+.checkout-container form .form-floating input:-webkit-autofill,
+.checkout-container form .form-floating input:-webkit-autofill:hover,
+.checkout-container form .form-floating input:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--component-livid-lighter) !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--dark-second) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .checkout-container {
   width: 100%;
   min-height: 100vh;
@@ -720,11 +731,30 @@ select:-webkit-autofill:focus {
   color: var(--component-emerald);
 }
 
-.checkout-container form .form-floating input {
+.checkout-container form .form-floating {
+  width: 100%;
+}
+
+.checkout-container form .d-flex {
+  gap: 0;
+}
+
+.checkout-container form .form-floating input,
+.checkout-container form .form-floating select {
   background-color: var(--dark-second);
+  color: var(--component-livid-lighter) !important;
   border: none;
+  font-size: 1.45rem;
+  min-height: 4.4rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.checkout-container form .form-floating select option {
+  font-size: 1.45rem !important;
 }
 
 .checkout-container form .form-floating label {
-  color: var(--light-shadow);
+  color: var(--light-secondary) !important;
+  font-size: 1.3rem;
 }

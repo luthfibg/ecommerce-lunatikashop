@@ -45,6 +45,12 @@
   .search-container .search-product-result .wrapper {
     gap: 1rem;
   }
+  .checkout-container form .form-floating {
+    width: 45%;
+  }
+  .checkout-container form .d-flex {
+    gap: 0.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -82,6 +88,9 @@
   }
   .checkout-container .display-orders {
     gap: 1rem;
+  }
+  .checkout-container form .d-flex {
+    gap: 0.8rem;
   }
 }
 
@@ -461,6 +470,18 @@
   }
   .checkout-container .grand-total {
     font-size: 0.95rem;
+  }
+  .checkout-container form .form-floating label {
+    color: var(--light-shadow);
+    font-size: 0.85rem;
+  }
+  .checkout-container form .form-floating select,
+  .checkout-container form .form-floating input {
+    font-size: 0.95rem;
+    min-height: 3.2rem;
+  }
+  .checkout-container form .form-floating select option {
+    font-size: 0.95rem !important;
   }
 }
 
