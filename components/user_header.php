@@ -36,7 +36,7 @@ if (isset($message)) {
         <nav class="navbar">
             <a href="home.php">Beranda</a>
             <a href="shop.php">Belanja</a>
-            <a href="my_orders.php">Pesanan Saya</a>
+            <a href="myorders.php">Pesanan Saya</a>
             <a href="about.php" id="about-nav">Tentang</a>
             <a href="contact.php">Kontak</a>
             <a href="help.php">Pusat Bantuan</a>

@@ -43,7 +43,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
-    <div class="container">
+    <div class="container myorders-section">
 
         <?php
         $message = array();
@@ -59,7 +59,24 @@
         }
         ?>
 
-        <?php include($content) ?>
+        <div class="show-orders">
+            <?php
+
+            $show_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = ?");
+            $show_orders->execute([$user_id]);
+            if ($show_orders->rowCount() > 0) {
+                while ($fetch_orders = $show_orders->fetch(PDO::FETCH_ASSOC)) {
+                    ?>
+                    <?php include($content) ?>
+                    <?php
+                }
+            } else {
+                # code...
+            }
+
+
+            ?>
+        </div>
     </div>
     <?php include($footer) ?>
 

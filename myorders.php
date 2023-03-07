@@ -2,7 +2,7 @@
 
 $title = 'My Orders';
 $header = 'components/user_header.php';
-$content = '';
+$content = 'components/myorder_card.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');
