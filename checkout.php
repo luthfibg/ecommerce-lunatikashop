@@ -23,8 +23,26 @@ if (isset($_POST['submit_checkout'])) {
     $email = filter_var(htmlspecialchars($email));
     $address = $_POST['address'] . ', ' . $_POST['address_street'] . ', ' . $_POST['address_town'] . ', ' . $_POST['address_province'] . ', ' . $_POST['address_country'] . ' - ' . $_POST['address_post_code'];
     $address = filter_var(htmlspecialchars($address));
-    $payment = $_POST['payment'];
-    $payment = filter_var(htmlspecialchars($payment));
+    $method = $_POST['method'];
+    $method = filter_var(htmlspecialchars($method));
+    $total_products = $_POST['total_products'];
+    $total_products = filter_var(htmlspecialchars($total_products));
+    $total_price = $_POST['total_price'];
+    $total_price = filter_var(htmlspecialchars($total_price));
+
+    $check_cart = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
+    $check_cart->execute([$user_id]);
+    if ($check_cart->rowCount() > 0) {
+        $insert_order = $conn->prepare("INSERT INTO `orders` (user_id, name, number, email, method, address, total_products, total_price) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $insert_order->execute([$user_id, $name, $phone, $email, $method, $address, $total_products, $total_price]);
+
+        $delete_cart_items = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
+        $delete_cart_items->execute([$user_id]);
+
+        $message[] = 'Pesanan berhasil di buat!';
+    } else {
+        $message[] = 'Keranjangmu masih kosong!';
+    }
 }
 
 include('layouts/checkout_layout.php');

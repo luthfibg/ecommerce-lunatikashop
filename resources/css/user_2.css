@@ -108,7 +108,8 @@ select:-webkit-autofill:focus {
 }
 
 .wishlist-container .empty-holder a.btn-custom,
-.cart-container .empty-holder a.btn-custom {
+.cart-container .empty-holder a.btn-custom,
+.checkout-container .empty-holder a.btn-custom {
   text-align: center;
   border-radius: 0.5rem;
   border: 0.08rem solid var(--component-turquoise);
@@ -118,7 +119,8 @@ select:-webkit-autofill:focus {
 }
 
 .wishlist-container .empty-holder a.btn-custom:hover,
-.cart-container .empty-holder a.btn-custom:hover {
+.cart-container .empty-holder a.btn-custom:hover,
+.checkout-container .empty-holder a.btn-custom:hover {
   border: 0.08rem solid var(--component-turquoise);
   color: var(--dark-base);
   background-color: var(--component-turquoise);
@@ -784,4 +786,9 @@ select:-webkit-autofill:focus {
 .checkout-container form .btn-custom:hover {
   background-color: var(--component-emerald);
   color: var(--dark-base) !important;
+}
+
+.checkout-container .empty-holder h4 {
+  font-size: 1.35rem;
+  text-align: center;
 }

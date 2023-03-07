@@ -34,7 +34,6 @@
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
     <div class="container checkout-container">
-
         <?php
         $message = array();
         if (isset($message)) {
@@ -72,14 +71,24 @@
             } else {
                 ?>
                 <div class="container empty-holder d-flex justify-content-between flex-column align-items-center">
-                    <h4 class="my-5">Keranjang kosong...</h4>
+                    <h4 class="my-5" style="color: var(--light-shadow);font-size">Saat ini, keranjang anda kosong. Semua
+                        item yang akan anda pesan akan tampil disini...
+                    </h4>
                     <a href="shop.php" class="btn-custom py-3 mb-5 w-75 w-25-md">Berbelanja</a href="shop.php">
                 </div>
                 <?php
             }
             ?>
         </div>
-        <?php include($content) ?>
+        <?php
+        $select_user = $conn->prepare("SELECT * FROM `users` WHERE id = ?");
+        $select_user->execute([$user_id]);
+        if ($select_user->rowCount() > 0) {
+            while ($fetch_user = $select_user->fetch(PDO::FETCH_ASSOC)) {
+                include($content);
+            }
+        }
+        ?>
     </div>
     <?php include($footer) ?>
 

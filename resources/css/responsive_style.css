@@ -464,9 +464,15 @@
     font-size: 0.9rem;
   }
   .wishlist-container .empty-holder a.btn-custom,
-  .cart-container .empty-holder a.btn-custom {
+  .cart-container .empty-holder a.btn-custom,
+  .checkout-container .empty-holder a.btn-custom {
     font-size: 0.9rem !important;
   }
+
+  .checkout-container .empty-holder h4 {
+    font-size: 1.1rem;
+  }
+
   .checkout-container h4 {
     font-size: 1.6rem;
   }
