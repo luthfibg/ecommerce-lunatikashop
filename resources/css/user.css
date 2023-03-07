@@ -568,6 +568,9 @@ section .section-title {
   font-size: 1.65rem !important;
   width: 50%;
 }
+.home-bg .swiper-slide .img-content a.btn:hover {
+  background-color: var(--component-turquoise) !important;
+}
 
 /**/ /**/ /**/
 /**/ /**/ /**/

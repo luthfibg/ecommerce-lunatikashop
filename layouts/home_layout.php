@@ -107,7 +107,7 @@ if (isset($_POST['add_to_cart_home'])) {
 
 
     <link rel="stylesheet" href="resources/css/user.css">
-    <link rel="stylesheet" href="resources/css/admin.css">
+    <link rel="stylesheet" href="resources/css/user_2.css">
     <link rel="stylesheet" href="resources/css/home.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
