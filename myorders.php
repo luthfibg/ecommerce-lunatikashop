@@ -3,6 +3,7 @@
 $title = 'My Orders';
 $header = 'components/user_header.php';
 $content = 'components/myorder_card.php';
+$empty_holder = 'components/myorders_empty.php';
 $footer = 'components/footer.php';
 
 include('components/connection.php');

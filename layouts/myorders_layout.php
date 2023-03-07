@@ -34,6 +34,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="resources/css/user.css">
+    <link rel="stylesheet" href="resources/css/user_2.css">
     <link rel="stylesheet" href="resources/css/responsive_style.css">
     <link rel="stylesheet" href="resources/css/theme.css">
     <title>
@@ -43,7 +44,7 @@
 
 <body style="background: var(--dark-base);">
     <?php include($header) ?>
-    <div class="container myorders-section">
+    <div class="container myorders-section d-flex flex-column align-items-center justify-content-center">
 
         <?php
         $message = array();
@@ -71,7 +72,7 @@
                     <?php
                 }
             } else {
-                # code...
+                include($empty_holder);
             }
 
 
@@ -80,7 +81,8 @@
     </div>
     <?php include($footer) ?>
 
-    <script src="resources/js/admin.js"></script>
+    <script src="resources/js/prevent-resubmission.js"></script>
+    <script src="resources/js/user.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
