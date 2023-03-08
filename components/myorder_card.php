@@ -14,6 +14,7 @@
         <span class="card-text">Status <span class="order-value">
                 <?= $fetch_orders['payment_status']; ?>
             </span> </span>
-        <a href="#" class="btn-custom mt-3">Lihat Detail</a>
+        <a href="order_details.php?id=<?= $fetch_orders['id']; ?>" class="btn-custom mt-3" name="show_details">Lihat
+            Detail</a>
     </div>
 </div>
