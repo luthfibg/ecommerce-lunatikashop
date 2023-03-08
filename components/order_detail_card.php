@@ -26,9 +26,23 @@
         <span class="card-text mb-3">Total Harga: <br>&nbsp;&nbsp;&nbsp;&nbsp; <span class="order-value">Rp
                 <?= currency_formatter($fetch_orders['total_price']); ?>,-
             </span> </span>
-        <span class="card-text mb-3">Status <br>&nbsp;&nbsp;&nbsp;&nbsp; <span class="order-value">
-                <?= $fetch_orders['payment_status']; ?>
-            </span> </span>
+        <span class="card-text mb-3">Status <br>&nbsp;&nbsp;&nbsp;&nbsp;
+            <?php
+            if ($fetch_orders['payment_status'] == 'completed') {
+                ?>
+                <span class="order-value" style="color: var(--component-turquoise);">
+                    <?= $fetch_orders['payment_status']; ?>
+                </span>
+                <?php
+            } else {
+                ?>
+                <span class="order-value" style="color: var(--component-orange);">
+                    <?= $fetch_orders['payment_status']; ?>
+                </span>
+                <?php
+            }
+            ?>
+        </span>
         <a href="myorders.php" class="btn-custom mt-3" name="show_details">Kembali</a>
     </div>
 </div>

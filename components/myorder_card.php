@@ -11,9 +11,23 @@
                 <?= $fetch_orders['total_products']; ?>
             </span>
         </span>
-        <span class="card-text">Status <span class="order-value">
-                <?= $fetch_orders['payment_status']; ?>
-            </span> </span>
+        <span class="card-text">Status
+            <?php
+            if ($fetch_orders['payment_status'] == 'completed') {
+                ?>
+                <span class="order-value" style="color: var(--component-turquoise);">
+                    <?= $fetch_orders['payment_status']; ?>
+                </span>
+                <?php
+            } else {
+                ?>
+                <span class="order-value" style="color: var(--component-orange);">
+                    <?= $fetch_orders['payment_status']; ?>
+                </span>
+                <?php
+            }
+            ?>
+        </span>
         <a href="order_details.php?id=<?= $fetch_orders['id']; ?>" class="btn-custom mt-3" name="show_details">Lihat
             Detail</a>
     </div>
