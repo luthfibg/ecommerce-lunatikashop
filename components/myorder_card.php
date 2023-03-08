@@ -1,13 +1,19 @@
-<div class="card">
+<div class="card order-card mx-0 my-2 my-0-md">
     <div class="card-header">
         <h5 class="title-card">
             <?= $fetch_orders['placed_on']; ?>
         </h5>
-        <h5 class="subtitle-card"></h5>
+        <!-- <h5 class="subtitle-card"></h5> -->
     </div>
-    <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="card-body d-flex flex-column">
+        <span class="card-title">Pesanan
+            <span class="order-value">
+                <?= $fetch_orders['total_products']; ?>
+            </span>
+        </span>
+        <span class="card-text">Status <span class="order-value">
+                <?= $fetch_orders['payment_status']; ?>
+            </span> </span>
+        <a href="#" class="btn-custom mt-3">Lihat Detail</a>
     </div>
 </div>

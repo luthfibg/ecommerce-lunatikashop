@@ -111,7 +111,8 @@ select:-webkit-autofill:focus {
 .cart-container .empty-holder a.btn-custom,
 .checkout-container .empty-holder a.btn-custom,
 .about-section .about-content a.btn-custom,
-.myorders-section .show-orders .empty-holder a.btn-custom {
+.myorders-section .show-orders .empty-holder a.btn-custom,
+.myorders-section .show-orders .order-card .card-body a.btn-custom {
   text-align: center;
   border-radius: 0.5rem;
   border: 0.08rem solid var(--component-turquoise);
@@ -124,7 +125,8 @@ select:-webkit-autofill:focus {
 .cart-container .empty-holder a.btn-custom:hover,
 .checkout-container .empty-holder a.btn-custom:hover,
 .about-section .about-content a.btn-custom:hover,
-.myorders-section .show-orders .empty-holder a.btn-custom:hover {
+.myorders-section .show-orders .empty-holder a.btn-custom:hover,
+.myorders-section .show-orders .order-card .card-body a.btn-custom:hover {
   border: 0.08rem solid var(--component-turquoise);
   color: var(--dark-base);
   background-color: var(--component-turquoise);
@@ -807,4 +809,37 @@ select:-webkit-autofill:focus {
 .myorders-section {
   width: 100%;
   min-height: 100vh;
+}
+
+.myorders-section .show-orders .order-card {
+  width: 100%;
+  height: auto;
+}
+
+.myorders-section .show-orders .order-card .card-header {
+  width: auto;
+  height: fit-content !important;
+}
+
+.myorders-section .show-orders .order-card .card-header .title-card {
+  font-size: 1.45rem;
+  color: var(--component-livid-lighter);
+}
+
+.myorders-section .show-orders .order-card .card-body span {
+  font-size: 1.45rem;
+}
+
+.myorders-section .show-orders .order-card .card-body span.card-title {
+  white-space: nowrap;
+  overflow-x: hidden !important;
+}
+
+.myorders-section .show-orders .order-card .card-body span .order-value {
+  color: var(--component-turquoise);
+}
+
+.myorders-section .show-orders .order-card .card-body a.btn-custom {
+  padding: 1rem 3rem;
+  font-size: 1.45rem;
 }

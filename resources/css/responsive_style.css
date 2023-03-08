@@ -8,6 +8,10 @@
   .checkout-container .display-orders {
     gap: 1rem;
   }
+  .myorders-section .show-orders .order-card {
+    width: 80% !important;
+    height: auto;
+  }
 }
 @media (min-width: 576px) {
   .container {
@@ -54,6 +58,10 @@
   .checkout-container form .d-flex {
     gap: 0.5rem;
   }
+  .myorders-section .show-orders .order-card {
+    width: 60%;
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -94,6 +102,13 @@
   }
   .checkout-container form .d-flex {
     gap: 0.8rem;
+  }
+  .myorders-section .show-orders {
+    gap: 1rem;
+  }
+  .myorders-section .show-orders .order-card {
+    width: 45% !important;
+    height: auto;
   }
 }
 
@@ -504,6 +519,21 @@
     font-size: 0.9rem;
     height: 3rem;
   }
+  .myorders-section .display-orders .order-card {
+    width: 40%;
+    height: auto;
+  }
+  .myorders-section .show-orders .order-card .card-header .title-card {
+    font-size: 0.9rem;
+    color: var(--component-livid-lighter);
+  }
+  .myorders-section .show-orders .order-card .card-body span {
+    font-size: 1rem !important;
+  }
+  .myorders-section .show-orders .order-card .card-body a.btn-custom {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -530,6 +560,9 @@
   }
   .checkout-container form .btn-custom {
     height: 2.8rem;
+  }
+  .myorders-section .show-orders {
+    gap: 1.3rem;
   }
 }
 

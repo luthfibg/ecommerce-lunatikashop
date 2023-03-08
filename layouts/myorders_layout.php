@@ -60,7 +60,7 @@
         }
         ?>
 
-        <div class="show-orders">
+        <div class="show-orders d-flex flex-wrap align-items-center justify-content-center w-100">
             <?php
 
             $show_orders = $conn->prepare("SELECT * FROM `orders` WHERE user_id = ?");
